@@ -1,0 +1,1735 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3840" height="2160" viewBox="0 -200 6715 5800 ">
+<!-- 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -200 6715 5800 " >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6715" height="5800">
+-->
+<defs>
+<style type="text/css">
+   <![CDATA[
+    @font-face {
+        font-family:'CRYSTAL';
+        src: url('CRYSTAL.ttf');
+    }
+		svg{background:#41413F;}
+		.contur-24{fill:none; stroke-width:24; stroke:#A7A7A5}
+		.contur-12{fill:none; stroke-width:12; stroke:#A7A7A5}
+		.contur-30{fill:none; stroke-width:30; stroke:#A7A7A5}
+		.contur-16{fill:none; stroke-width:16; stroke:#A7A7A5}
+		.contur-14{fill:none; stroke-width:14; stroke:#A7A7A5}
+		.contur-8{fill:none; stroke-width:8; stroke:#A7A7A5}
+		.contur-6{fill:none; stroke-width:6; stroke:#A7A7A5}
+		.border{fill:none; stroke-width:1; stroke:#A7A7A5}
+		.border2{fill:none; stroke-width:2; stroke:#A7A7A5}
+		.contur-10{fill:none; stroke-width:10; stroke:#A7A7A5}
+		.contur-9{fill:none; stroke-width:9; stroke:#A7A7A5}
+		.border-full{fill:#A7A7A5; stroke-width:0; stroke:#A7A7A5}
+		.contur-18{fill:none; stroke-width:18; stroke:#A7A7A5}
+		.contur-38{fill:none; stroke-width:38; stroke:#A7A7A5}
+		.contur-4{fill:none; stroke-width:4; stroke:#A7A7A5}
+		.contur-20{fill:none; stroke-width:20; stroke:#A7A7A5}
+		.contur-26{fill:none; stroke-width:26; stroke:#A7A7A5}
+		.lift{stroke-width:1; }
+		.lift2{stroke-width:2;}
+		.lift3{ stroke-width:2;}
+		.lift-green{fill:#93f630; stroke:#5a991b;}
+		.lift-yellow{fill:#fdf46c; stroke:#ffd200;}
+		.lift-gray{fill:#ececec; stroke:#c5c5c5;}
+		.number_et{fill:#A7A7A5; stroke-width:0; stroke:#A7A7A5;}
+		.number_active{fill:#93F630; stroke-width:0; stroke:#93F630;}
+		.gray_term{font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; fill:#A7A7A5; stroke-width:0; stroke:#545452;}
+		.green_term{font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; fill:#80ff00; stroke-width:0; stroke:#80ff00;}
+		.yellow_term{font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; fill:#ffff00; stroke-width:0; stroke:#ffff00;}
+		.lampa_gray{fill:#A7A7A5; stroke-width:0; font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; stroke:#545452;}
+		.lampa_green{fill:#80ff00; stroke-width:0; font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; stroke:#80ff00;}
+		.lampa_yellow{fill:#ffff00; stroke-width:0; font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; stroke:#ffff00;}
+		.white{fill:#ffffff; stroke-width:0; stroke:#ffffff;}
+		.white_a{fill:none; stroke-width:3; stroke:white; }
+		.TXspeed{stroke-width:0; font-size:30px;  font-family:'CRYSTAL'; font-weight:normal; fill:#fff;}
+		.tmp{fill:none; stroke-width:2;}
+		.TXtmp{stroke-width:0; font-size:19px;  font-family:'CRYSTAL'; font-weight:normal; }
+		.black{fill:#000000; stroke-width:0;}
+		.line{fill:#fff; stroke-width:0; }
+		.TXt1{stroke-width:0; font-size:220px;  font-family:'CRYSTAL'; font-weight:normal; fill:#fff;}
+		.TXt2{stroke-width:0; font-size:82px;  font-family:'CRYSTAL'; font-weight:normal; fill:#fff;}
+		.TXc{stroke-width:0; font-size:68px;  font-family:'CRYSTAL'; font-weight:normal; fill:#fff;}
+		.TXo{stroke-width:0; font-size:25px;  font-family:'CRYSTAL'; font-weight:normal; fill:#fff;}
+		.str{fill:none; stroke:#ffffff; stroke-width:3;  stroke-linecap:round;}
+		#lower, #up {cursor:pointer;}
+		.key{fill:#2F2F2D; cursor:pointer;}
+		.keyActive{fill:#232321; cursor:default;}
+		.ONactive{stroke:#ffffff; fill:#fff; cursor:pointer;}
+		.OFFactive{stroke:#c6c6c6; fill:#c6c6c6;}
+		#close{font-size:70px; font-family:Arial, Helvetica, sans-serif; fill:#FFFFFF; cursor:pointer;}
+		.etText{font-family:arial;text-anchor: middle;font-size:52px; font-weight:700;}
+		.number_et{fill:#A7A7A5; stroke-width:0; stroke:#A7A7A5; cursor:pointer;}
+		.number_active{fill:#93F630; stroke-width:0; stroke:#93F630; cursor:default;}
+   ]]>
+ </style>
+<g>
+	<desc>Термостат</desc>
+<desc>Иконка вентиляция шаблон</desc>
+		<symbol id="vent" viewBox="0 0 125 125">
+			<path id="lop" d="M 50,50 C 50,0 92,-5 99,20 Q100 40 90 35 C80,35 79,30 50,50"/>
+			<use xlink:href="#lop" transform="rotate(90, 50,50)" />
+			<use xlink:href="#lop" transform="rotate(180, 50,50)" />
+			<use xlink:href="#lop" transform="rotate(270, 50,50)" />
+			<circle cx="50" cy="50" r="15" style="fill:#000000;opacity:1; stroke:white; stroke-width:2" />
+			<circle cx="50" cy="50" r="10" style="fill:none; stroke:white; stroke-width:2" />
+		</symbol>
+	<desc>подложка для кнопки</desc>
+	<symbol id="but" viewBox="0 0 100 100">
+		<rect height="100" width="100" y="0" x="0" class="black" />
+	</symbol>
+	<symbol id="but2" >
+		<rect height="110" width="158" y="0" x="0" />
+	</symbol>
+	<g>
+		<desc>Иконка вентиляция 1</desc>
+			<symbol id="speed_1" viewBox="0 0 100 100">
+				<use xlink:href="#but" x="0" y="0" />
+				<use xlink:href="#vent" width="70" height="70" x="15" y="23" class="white" />
+				<text x="75" y="45" class="TXspeed" >1</text>
+			</symbol>
+		<desc>Иконка вентиляция 2</desc>
+			<symbol id="speed_2" viewBox="0 0 100 100">
+				<use xlink:href="#but" x="0" y="0" />
+				<use xlink:href="#vent" width="70" height="70" x="15" y="23" class="white" />
+				<text x="75" y="45" class="TXspeed" >2</text>
+			</symbol>
+		<desc>Иконка вентиляция 3</desc>
+			<symbol id="speed_3" viewBox="0 0 100 100">
+				<use xlink:href="#but" x="0" y="0" />
+				<use xlink:href="#vent" width="70" height="70" x="15" y="23" class="white" />
+				<text x="75" y="45" class="TXspeed" >3</text>
+			</symbol>
+		<desc>Иконка вентиляция auto</desc>
+			<symbol id="speed_a" viewBox="0 0 100 100">
+				<use xlink:href="#but" x="0" y="0" />
+				<use xlink:href="#vent" width="70" height="70" x="15" y="23" class="white_a" />
+				<text x="75" y="45" class="TXspeed" >A</text>
+			</symbol>
+	</g>
+	<g>
+		<desc>Иконки авто выкл вкл</desc>
+		<symbol id="on_tmp"  viewBox="0 0 55 55" >
+			<circle cx="26" cy="26" r="25"  stroke-dasharray="300%" stroke-dashoffset="60%" class="tmp" />
+			<path d="M23,13 H31 L27,23 H36 L21,39 24,27 H16.5 z" class="tmp" />
+			<circle cx="47" cy="15" r="4" class="tmp" />
+		</symbol>
+		<symbol id="off_tmp"  viewBox="0 0 55 55" >
+			<circle cx="26" cy="26" r="25" stroke-dasharray="300%" stroke-dashoffset="60%" class="tmp" />
+			<path d="M23,13 H31 L27,23 H36 L21,39 24,27 H16.5 z" class="tmp" />
+			<path d="M10,7 L43,44" class="tmp"/>
+			<circle cx="47" cy="15" r="4" class="tmp" />
+		</symbol>
+		<symbol id="auto_tmp"  viewBox="0 0 55 55" >
+			<circle cx="26" cy="26" r="25" stroke-dasharray="300%" stroke-dashoffset="60%" class="tmp" />
+			<path d="M23,13 H31 L27,23 H36 L21,39 24,27 H16.5 z" class="tmp" />
+			<text x="42" y="22" class="TXtmp" >A</text>
+		</symbol>
+		
+		<symbol id="on"  viewBox="0 0 100 100" >
+			<use xlink:href="#but" x="0" y="0" />
+			<use xlink:href="#on_tmp" width="60" height="60" x="22" y="20" />
+		</symbol>
+		<symbol id="off"  viewBox="0 0 100 100" >
+			<use xlink:href="#but" x="0" y="0" />
+			<use xlink:href="#off_tmp" width="60" height="60" x="22" y="20" />
+		</symbol>
+		<symbol id="auto"  viewBox="0 0 100 100" >
+			<use xlink:href="#but" x="0" y="0" />
+			<use xlink:href="#auto_tmp" width="60" height="60" x="22" y="20" />
+		</symbol>
+	</g>
+	<g>
+		<desc>Кнопки вниз вверх</desc>	
+		<symbol id="lower_tmp"  viewBox="0 0 40 40" >
+			<path d="M5,5 L20,20 M20,20 35,5" class="str" />
+		</symbol>
+		<symbol id="up_tmp" viewBox="0 0 40 40" >
+			<path d="M5,20 L20,5 M20,5 35,20" class="str" />
+		</symbol>
+		<desc>Кнопки вниз</desc>	
+		<symbol id="lower"  viewBox="0 0 100 100" >
+			<use xlink:href="#but" x="0" y="0" />
+			<use xlink:href="#lower_tmp" width="110" height="110" x="-5" y="18" />
+		</symbol>
+		<desc>Кнопки вверх</desc>	
+		<symbol id="up"  viewBox="0 0 100 100" >
+			<use xlink:href="#but" x="0" y="0" />
+			<use xlink:href="#up_tmp" width="110" height="110" x="-5" y="18" />
+		</symbol>
+	</g>
+	<g>
+		<desc>Иконка снежинка</desc>
+		<symbol id="snow"  viewBox="0 0 50 50">
+			<path d="M4,13 L45,37 M4,37 L45,13 M25,1 V49" fill="none" stroke="#FFFFFF" stroke-width="4"  />
+			<path d="M4,22 L12,18 M11,9 L12,18" fill="none" stroke="#FFFFFF" stroke-width="2" />
+			<path d="M45,22 L36,18 M37,9 L36,18" fill="none" stroke="#FFFFFF" stroke-width="2" />
+			<path d="M4,28 L13,32 M11,41 L13,32" fill="none" stroke="#FFFFFF" stroke-width="2" />
+			<path d="M45,28 L36,32 M37,41 L36,32" fill="none" stroke="#FFFFFF" stroke-width="2" />
+			<path d="M18,5 L25,10 M32,5 L25,10" fill="none" stroke="#FFFFFF" stroke-width="2" />
+			<path d="M18,45 L25,40 M32,45 L25,40" fill="none" stroke="#FFFFFF" stroke-width="2" />
+		</symbol>
+	</g>
+	<g>
+		<desc>кнопка холод</desc>
+		<symbol id="cold"  viewBox="0 0 100 100" >
+			<use xlink:href="#but" x="0" y="0" />
+			<use xlink:href="#snow" width="60" height="60" x="20" y="20" />
+		</symbol>
+	</g>
+	<g>
+		<desc>температура кружок</desc>
+		<symbol id="WPterm"  viewBox="0 0 720 180" >
+			<circle cx="249" cy="90" r="14" class="white" />
+			<circle cx="212" cy="90" r="13" class="white" />
+			<circle cx="177" cy="90" r="12" class="white" />
+			<circle cx="144" cy="90" r="11" class="white" />
+			<circle cx="113" cy="90" r="10" class="white" />
+			<circle cx="84" cy="90" r="9" class="white" />
+			<circle cx="57" cy="90" r="8" class="white" />
+			<circle cx="32" cy="90" r="7" class="white" />
+			<circle cx="360" cy="90" r="84" stroke="#FFFFFF" stroke-width="3"  stroke-dasharray="4 4" />
+			<circle cx="471" cy="90" r="14" class="white" />
+			<circle cx="508" cy="90" r="13" class="white" />
+			<circle cx="543" cy="90" r="12" class="white" />
+			<circle cx="576" cy="90" r="11" class="white" />
+			<circle cx="607" cy="90" r="10" class="white" />
+			<circle cx="636" cy="90" r="9" class="white" />
+			<circle cx="663" cy="90" r="8" class="white" />
+			<circle cx="688" cy="90" r="7" class="white" />
+		</symbol>
+		<desc>градус</desc>
+			<symbol id="c"  viewBox="0 0 100 100" >
+				<text x="17" y="70" class="TXc" >C</text>
+				<text x="0" y="34" class="TXo" >o</text>
+			</symbol>
+	</g>
+	<g>
+		<symbol id="platten"  viewBox="0 0 100 100" >
+		<desc>Теплозавеса</desc>
+			<rect x="4" y="13" height="36" width="92" rx="6" ry="6" fill="none" stroke-width="4" />
+			<rect x="55" y="21" height="4" width="12" rx="1" ry="1" stroke-width="0" />
+			<rect x="75" y="21" height="4" width="12" rx="1" ry="1" stroke-width="0" />
+			<path d="M21,59 C15,60 14,66 18,72 22,78 20,84 14,86" fill="none" stroke-width="4"  stroke-linecap="round" />
+			<path d="M51,59 C45,60 44,66 48,72 52,78 50,84 44,86" fill="none" stroke-width="4"  stroke-linecap="round" />
+			<path d="M81,59 C75,60 74,66 78,72 82,78 80,84 74,86" fill="none" stroke-width="4"  stroke-linecap="round" />
+		</symbol>
+		<symbol id="rd_section"  viewBox="0 0 100 100">
+			<rect rx="5%" x="15%" y="10%" width="10%" height="80%" stroke-width="0"  />
+			<line stroke-width="2%" x2="20%" y2="92%" y1="8%" x1="20%"/>
+		</symbol>
+		<symbol id="radiator" viewBox="0 0 100 100">
+			<line stroke-width="4%" x2="90%" y2="20%" y1="20%" x1="0%"/>
+			<line x1="10%" y1="20%" y2="20%" x2="90%" stroke-width="10%" />
+			<line  stroke-width="4%" x2="100%" y2="80%" y1="80%" x1="10%"/>
+			<line  stroke-width="10%" x2="90%" y2="80%" y1="80%" x1="10%"/>
+			<use xlink:href="#rd_section" x="0" y="0" />
+			<use xlink:href="#rd_section" x="15" y="0" />
+			<use xlink:href="#rd_section" x="30" y="0" />
+			<use xlink:href="#rd_section" x="45" y="0" />
+			<use xlink:href="#rd_section" x="60" y="0" />
+		</symbol>
+		<symbol id="lapka" viewBox="0 0 10 20">
+			<rect x="0" y="9" width="10" height="10" />
+			<rect x="3" y="0" width="4" height="10" />
+		</symbol>
+		<symbol id="lapka2" viewBox="0 0 10 20">
+			<rect x="0" y="0" width="10" height="10" />
+			<rect x="3" y="9" width="4" height="9" />
+		</symbol>
+		<symbol id="controller_tmp" viewBox="0 0 100 100">
+			<use xlink:href="#lapka" width="10" height="20" x="10" y="3" stroke-width="0" />
+			<use xlink:href="#lapka" width="10" height="20" x="24" y="3" stroke-width="0" />
+			<use xlink:href="#lapka" width="10" height="20" x="38" y="3" stroke-width="0" />
+			<use xlink:href="#lapka" width="10" height="20" x="52" y="3" stroke-width="0" />
+			<use xlink:href="#lapka" width="10" height="20" x="66" y="3" stroke-width="0" />
+			<use xlink:href="#lapka" width="10" height="20" x="80" y="3" stroke-width="0" />
+			<use xlink:href="#lapka2" width="10" height="20" x="10" y="80" stroke-width="0" />
+			<use xlink:href="#lapka2" width="10" height="20" x="24" y="80" stroke-width="0" />
+			<use xlink:href="#lapka2" width="10" height="20" x="38" y="80" stroke-width="0" />
+			<use xlink:href="#lapka2" width="10" height="20" x="52" y="80" stroke-width="0" />
+			<use xlink:href="#lapka2" width="10" height="20" x="66" y="80" stroke-width="0" />
+			<use xlink:href="#lapka2" width="10" height="20" x="80" y="80" stroke-width="0" />
+			<rect x="6.5" y="29" width="87" height="44" stroke-width="0"  />
+			<rect x="2.5" y="25" width="95" height="52" fill="none" stroke-width="2" />
+			<rect x="10" y="62" width="6" height="6" stroke-width="0" class="black" />
+			<rect x="16" y="56" width="6" height="6" stroke-width="0" class="black" />
+		</symbol>
+		
+		<desc>фанкойл кнопка</desc>
+		<symbol id="fancoil" >
+			<use xlink:href="#but2" x="0" y="0" />
+			<use xlink:href="#platten" width="100" height="100" x="29" y="5" class="white" />
+		</symbol>
+		<desc>радиатор кнопка</desc>
+		<symbol id="heating" >
+			<use xlink:href="#but2" x="0" y="0" />
+			<use xlink:href="#radiator" width="100" height="100" x="29" y="5" class="white" />
+		</symbol>
+		<desc>контролер кнопка</desc>
+		<symbol id="controller"  >
+			<use xlink:href="#but2" x="0" y="0" />
+			<use xlink:href="#controller_tmp" width="100" height="100" x="29" y="5" class="white" />
+		</symbol>
+	</g>
+	<g>
+		<symbol id="wrap"  viewBox="0 0 720 1280" >
+			<rect width="720" height="1280" x="0" y="0" class="black" />
+			<rect width="480" height="1" x="120" y="219" class="line" />
+			<rect width="480" height="1" x="120" y="1060" class="line" />
+			<use xlink:href="#WPterm" width="720" height="180" x="0" y="640" />
+			<use xlink:href="#c" width="100" height="100" x="540" y="360" />
+		</symbol>
+	</g>
+</g>
+
+<desc>Форма кнопки</desc>
+	<symbol id="knopka_circle"  viewBox="0 0 160 160" >
+		<circle cx="60" cy="60" r="55" fill="#212120"  stroke-width="2" />
+		<path d="M10,83 L60,150 110,83" fill="#212120" stroke-width="2" />
+	</symbol>
+	<desc>Лампочка</desc>
+	<symbol id="lampa"  viewBox="0 0 400 400" >
+		<path d="M147,265 C127,228 99,193 103,144 117,15 292,27 302,142 309,198 281,223 255,265 285,226 323,196 323,133
+		323,86 274,23 204,23 134,23 81,79 81,151 81,193 120,233 147,265 z" />
+		<path d="M176,238 L165,169 C163,155 165,152 175,148 193,143 205,145 226,147 237,150 242,155 240,166 L227,238" />
+		<rect x="142" y="272" rx="7" ry="7" height="30" width="120" />
+		<rect x="152" y="310" rx="5" ry="5" height="34" width="100" />
+		<ellipse cx="202" cy="343" rx="50" ry="25" />
+		<path d="M183,371 C197,374 209,374 222,371 221,387 186,387 183,371 z" />
+	</symbol>
+<g>
+	<desc>Кнопки этажей</desc>
+	<symbol id="et_1"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="41" y="68" class="etText" >-1</text>
+	</symbol>
+	<symbol id="et_2"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="41" y="68"  class="etText" >-2</text>
+	</symbol>
+	<symbol id="et1"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="50" y="68"  class="etText" >1</text>
+	</symbol>
+	<symbol id="et2"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="50" y="68"  class="etText" >2</text>
+	</symbol>
+	<symbol id="menu"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<rect rx="5" ry="5" x="35" y="35" height="30" width="30" stroke-width="3" fill="#41413F" />
+	</symbol>
+</g>
+	<radialGradient id="exclame">
+		<stop offset="0.25" stop-color="white"/>
+		<stop offset="0.75" stop-color="yellow"/>
+	</radialGradient>	
+	<desc>Знак аварии</desc>
+	<symbol id="atn"  viewBox="0 0 100 100" >
+		<path d="M5 95  50 5  95 95z"  style="stroke:#EF9248;stroke-width:5px;stroke-linejoin: round; fill:url(#exclame)"/>
+		<text x="50" y="80" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700; fill:black;" >!</text>
+	</symbol>
+	<symbol id="lift" viewBox="0 0 320 320" >
+		<path d="M31,27 L31,184" class="lift" fill="none"/>
+		<path d="M34,185 L34,42 50,42 50,48" class="lift" />
+		<path d="M34,185 L34,42 50,42 50,185 z"   stroke-width="0" />
+		<path d="M34,121 L44,121 44,71 39,71" class="lift" />
+		<path d="M39,178 L39,121" class="lift2"  />
+		<path d="M40,121 L40,71" class="lift2"  />
+		<path d="M6,185 L6,176 15,176 15,178 26,178 26,185" class="lift"  />
+		<path d="M6,184 L26,184" class="lift2"   />
+		<path d="M26,178 L21,178 21,121 26,121 z" class="lift"  stroke-width="0"  />
+		<path d="M20.5,121 L25.5,121 25.5,178" class="lift2" fill="none"   />
+		<path d="M26,120 L26,27 13,27 13,120" class="lift"  />
+		<path d="M16,120 L21,120 21,70 16,70 z" class="lift"  />
+		<path d="M9,58 L9,74 15,74 15,58" class="lift" />
+		<path d="M14,27 L14,74" class="lift2"  />
+		<path d="M8.5,58 L15,58" class="lift2"  />
+		<path d="M50,182 L298,182 298,47 50,47 z"  stroke-width="0"  />
+		<path d="M50,182 L298,182 298,47" class="lift"  />
+		<path d="M46,48 L46,74 51,74" class="lift"  />
+		<path d="M50,74 L50,51 295,51 295,180.5" class="lift2" fill="none" />
+		<path d="M50,180.5 L50,51 295,51 295,180.5" class="lift2"  stroke-width="0"  />
+		<path d="M295,180 L178,180 M151,180 L50,180" class="lift"  />
+		<path d="M298,48 L45.5,48"  class="lift2"  />
+		<path d="M50,185 L34,185 34,179 44,179 44,175 50,175" class="lift"  />
+		<path d="M49,185 L49,175" class="lift2" />
+		<path d="M151,182 L151,176 178,176 178,182" class="lift" />
+		<path d="M165,184 L165,192" class="lift2" fill="none"  />
+		<path d="M157,194 L172,194 172,191 157,191 z" class="lift3"  />
+		<path d="M165,48 L165,39" class="lift2"  fill="none" />
+		<path d="M157,39 L173,39 173,36 157,36 z" class="lift"  />
+		<path d="M183,31 L291,31 291,17 183,17 z" class="lift" />
+	</symbol>
+	<symbol id="lift2" viewBox="0 0 320 320" >
+		<path d="M31,27 L31,184" class="lift" fill="none"/>
+		<path d="M34,185 L34,42 50,42 50,48" class="lift" />
+		<path d="M34,185 L34,42 50,42 50,185 z" stroke-width="0" />
+		<path d="M34,121 L44,121 44,71 39,71" class="lift" />
+		<path d="M39,178 L39,121" class="lift2" />
+		<path d="M40,121 L40,71" class="lift2" />
+		<path d="M6,185 L6,176 15,176 15,178 26,178 26,185" class="lift" />
+		<path d="M6,184 L26,184" class="lift2" />
+		<path d="M26,178 L21,178 21,121 26,121 z" class="lift"  stroke-width="0" />
+		<path d="M20.5,121 L25.5,121 25.5,178" class="lift2" fill="none" />
+		<path d="M26,120 L26,27 13,27 13,120" class="lift" />
+		<path d="M16,120 L21,120 21,70 16,70 z" class="lift" />
+		<path d="M9,58 L9,74 15,74 15,58" class="lift"/>
+		<path d="M14,27 L14,74" class="lift2" />
+		<path d="M8.5,58 L15,58" class="lift2" />
+		<path d="M50,182 L183,182 183,47 50,47 z" stroke-width="0" />	
+		<path d="M50,182 L183,182 183,47" class="lift" />
+		<path d="M46,48 L46,74 51,74" class="lift" />
+		<path d="M50,74 L50,51 180,51 180,180.5" class="lift2" fill="none" />
+		<path d="M50,180.5 L50,51 180,51 180,180.5" class="lift2" stroke-width="0" />
+		<path d="M180,180 L178,180 M151,180 L50,180" class="lift" />
+		<path d="M183,48 L45.5,48" class="lift2" />
+		<path d="M50,185 L34,185 34,179 44,179 44,175 50,175" class="lift" />
+		<path d="M49,185 L49,175" class="lift2" />
+		<path d="M151,182 L151,176 178,176 178,182" class="lift" />
+		<path d="M165,184 L165,192" class="lift2" fill="none" />
+		<path d="M157,194 L172,194 172,191 157,191 z" class="lift3" />
+		<path d="M165,48 L165,39" class="lift2" fill="none" />
+		<path d="M157,39 L173,39 173,36 157,36 z" class="lift" />
+		<path d="M121,31 L173,31 173,17 121,17 z" class="lift" />
+	</symbol>
+	<symbol id="window" viewBox="0 0 130 130" >
+		<path d="M0.5,0 L0.5,130 M13.5,0 L13.5,130 M16.5,0 L16.5,130 M19.5,0 L19.5,130 M23.5,0 L23.5,130" class="border" />
+	</symbol>
+	<symbol id="window2" viewBox="0 0 130 130" >
+		<path d="M0.5,0 L0.5,130 M13.5,0 L13.5,130 M16.5,0 L16.5,130 M23.5,0 L23.5,130" class="border" />
+	</symbol>
+	<symbol id="window3" viewBox="0 0 130 130" >
+		<path d="M0.5,0 L0.5,130 M13.5,0 L13.5,130 M18.5,0 L18.5,130 M23.5,0 L23.5,130" class="border" />
+	</symbol>
+	<symbol id="door-steklo" viewBox="0 0 85 85" >
+		<rect x="0.5" y="0.5" height="83" width="7" class="border" />
+		<rect x="0.5" y="0.5" height="5" width="7" class="border" />
+		<rect x="0.5" y="78.5" height="5" width="7" class="border" />
+		<rect x="2.5" y="5.5" height="73" width="3" class="border" />
+	</symbol>
+	<symbol id="lestn-kletka" viewBox="-7 0 410 410" >
+		<path d="M15,0 V185 M30,0 V185 M45,0 V185 M60,0 V185 M75,0 V185 M90,0 V185 M105,0 V185 M120,0 V185 M135,0 V185 M150,0 V185 M165,0 V185 H155" class="border" />
+		<rect x="1" y="185" height="25" width="155" class="border" />
+		<path d="M1,210 V400 M16,210 V400 M31,210 V400 M46,210 V400 M61,210 V400 M76,210 V400 M91,210 V400 M106,210 V400 M121,210 V400 M136,210 V400 M151,210 V400" class="border" />
+		<rect x="-6" y="178" height="40" width="175" class="border2" />
+		<path d="M169,0 v178" class="border2" />
+		<path d="M169,0 v178" class="border" />
+		<path d="M1,308 L151,308 M141,313 L151,308 141,303" class="border" />
+		<path d="M16,88 L164,88 M26,83 L16,88 26,93" class="border" />
+	</symbol>
+	<symbol id="lestn-kletka-min" viewBox="0 0 200 200" >
+		<rect x="9.5" y="85.5" height="22" width="165" class="border" />
+		<path d="M9.5,0 V85.5 M19.5,0 V85.5 M35.5,0 V85.5 M51.5,0 V85.5 M66.5,0 V85.5 M82.5,0 V85.5 M97.5,0 V85.5
+		M112.5,0 V85.5 M128.5,0 V85.5 M143.5,0 V85.5 M159.5,0 V85.5 M174.5,0 V85.5" class="border" />
+		<path d="M27.5,107.5 V200 M42.5,107.5 V200 M58.5,107.5 V200 M73.5,107.5 V200 M89.5,107.5 V200 M104.5,107.5 V200
+		M120.5,107.5 V200 M135.5,107.5 V200 M151.5,107.5 V200 M166.5,107.5 V200 M182.5,107.5 V200" class="border" />
+		<path d="M182.5,107.5 H170" class="border" />
+		<path d="M9.5,79.5 H182.5 V113.5 H2.5 V0" class="border2" />
+		<path d="M9.5,41.5 H174.5 M166.5,36.5 L174.5,41.5 166.5,46.5" class="border" />
+		<path d="M27.5,149.5 H182.5 M34.5,144.5 L27.5,149.5 34.5,154.5" class="border" />
+	</symbol>
+	<symbol id="lestn-kletka-ver" viewBox="0 0 255 255" >
+		<path d="M0,2.5 H95.5 M0,18.5 H95.5 M0,34.5 H95.5 M0,50.5 H95.5 M0,66.5 H95.5 M0,82.5 H95.5
+		M0,98.5 H95.5 M0,114.5 H95.5 M0,130.5 H95.5 M0,146.5 H95.5 M0,162.5 H95.5
+		M0,178.5 H95.5 M0,194.5 H95.5 M0,210.5 H95.5 M0,226.5 H95.5 M0,242.5 H104.5" class="border" />
+		<path d="M95.5,9.5 H205 M104.5,25.5 H205 M104.5,41.5 H205 M104.5,57.5 H205 M104.5,73.5 H205 M104.5,89.5 H205
+		M104.5,105.5 H205 M104.5,121.5 H205 M104.5,137.5 H205 M104.5,153.5 H205 M104.5,169.5 H205
+		M104.5,185.5 H205 M104.5,201.5 H205 M104.5,217.5 H205 M104.5,233.5 H205 M104.5,249.5 H205" class="border" />
+		<path d="M95.5,2 V242.5 M104.5,9 V250" class="border" />
+		<path d="M110,252 V1 H89 V252 H205" class="border2" />
+		<path d="M43.5,2.5 V242.5 M38.5,235.5 L43.5,242.5 48.5,235.5" class="border" />
+		<path d="M152.5,9.5 V249.5 M147.5,16.5 L152.5,9.5 157.5,16.5" class="border" />
+	</symbol>
+	<symbol id="sink2" viewBox="0 0 50 50" >
+		<ellipse cx="18" cy="24" rx="15" ry="21" class="border" />
+		<path d="M3,24 L12,24 M15,24 L21,24" class="border2" />
+		<path d="M13.5,15 L13.5,22 M13.5,26 L13.5,33" class="border" />
+	</symbol>
+	<symbol id="tualet2" viewBox="0 0 80 80" >
+		<path d="M25,51 C-4,-20 87,-7 53,51 z" class="border" />
+		<path d="M16,78 C13,73 14,69 13,64 13,56 18,56.5 25,58 36,61 45.5,59 54,57.5 60,56 67,56 64,67 L62,78 z" class="border" />
+		<circle cx="39" cy="68" r="2" class="border" />
+		<path d="M21,39 L21,58 M58,40 L58,57" class="border" />
+	</symbol>
+	<symbol id="bide"  viewBox="0 0 40 40" >
+		<rect x="16.5" y="17"  height="5"  width="7" class="border" />
+		<ellipse cx="20" cy="20" rx="18" ry="15" class="border" />
+		<ellipse cx="20" cy="20" rx="12" ry="9" class="border" />
+		<path d="M3.5,13.5 L6,3 33,3 36.5,13.5" class="border" />
+	</symbol>
+	<symbol id="tualetIn"  viewBox="0 0 95 95" >
+		<rect x="1" y="75"  height="20"  width="6" class="border" />
+		<rect x="2.5" y="9"  height="66"  width="3" class="border" />
+		<rect x="85" y="75"  height="20"  width="6" class="border" />
+		<rect x="86.5" y="9"  height="66"  width="3" class="border" />
+		<path d="M17.5,94 L17.5,76 C17.5,64 22,64 29,64 L63,64 C71,64 76,64 76,76 L76,94 z" class="border" />
+		<path d="M46.5,57 C8,57 29.5,2 46.5,2  63.5,2 85.5,57 46.5,57 z" class="border" />
+		<path d="M31.5,64 L31.5,52 M61.5,64 L61.5,52" class="border" />
+	</symbol>
+	<symbol id="invalid_icon"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="12" r="10" fill="#A7A7A5" />
+		<path d="M41,49 L49,49 49,14 41,14 z" fill="#A7A7A5"  />
+		<path d="M42,36 L70,40 70,35 42,30 z" fill="#A7A7A5"  />
+		<path d="M41,50 L73,54 77,50 42,43 z" fill="#A7A7A5"  />
+		<path d="M71,50 L77,50  80,73 91,72 92,80 76,82 z" fill="#A7A7A5" />
+		<circle cx="42" cy="65" r="25" fill="none" stroke="#A7A7A5" stroke-width="7"  stroke-dasharray="60%" stroke-dashoffset="310%"/>
+		<circle cx="42" cy="65" r="25" fill="none" stroke="#A7A7A5" stroke-width="7"  stroke-dasharray="75% 80%" stroke-dashoffset="0%"/>
+	</symbol>
+	<symbol id="bath"  viewBox="0 0 255 255" >
+		<path d="M1,31 L1,42" class="border" />
+		<path d="M2,33 L2,40" class="border" />
+		<rect x="1" y="115"  height="4"  width="17" class="border" />
+		<rect x="1" y="33"  height="4"  width="17" class="border" />
+		<rect x="1" y="54"  height="47"  width="10" class="border" />
+		<path d="M1,75 L16,75 M1,80 L16,80 M0,110 L16,110 M0,44 L16,44 M16,56 L16,98 M7,62 L7,75 M7,80 L7,92 M8,51 L8,63 M8,91 L8,104" class="border" />
+		<path d="m 14,52 c 2,4.5 5.6,7.6 9,10 -4,8 -4.5,21 -1,29.5 -10,8 -12,20 2,19.5 28.5,-3.5 41,2 39,-12 C 57,73 60,67 63,57 67,46 63,42 52,43 35,44 8,37 14,52 Z" class="border" />
+		<path d="m 22,92 c 4,9 16,12 29,13 13,0 7.5,-3 6,-8 -3,-9.5 -7,-23 0.5,-38.5 C 65,46 56,49 49,50.5 31,57 25,59 23.5,62" class="border" />
+		<circle cx="27" cy="79" r="4" class="border" />
+		<path d="M23,79 L31,79 M27,75 L27,84" class="border" />
+	</symbol>
+	<symbol id="bathIn"  viewBox="0 0 255 255" >
+		<path d="M0,120 L80,120" class="border2" />
+		<path d="M0,34 L80,34" class="border2" />
+		<path d="M1,112 L1,123" class="border" />
+		<path d="M2,114 L2,121" class="border" />
+		<use xlink:href="#bath" width="255" height="255" x="0" y="0" />
+	</symbol>
+	<symbol id="dush"  viewBox="0 0 50 50" >
+		<rect x="0.5" y="0.5"  height="46" width="46" class="border" /> 	
+		<path d="M0.5,0.5 L46.5,46.5 M46.5,0.5 L0.5,46.5" class="border" />
+	</symbol>
+	<symbol id="bath"  viewBox="0 0 255 255" >
+		<path d="M1,31 L1,42" class="border" />
+		<path d="M2,33 L2,40" class="border" />
+		<rect x="1" y="115"  height="4"  width="17" class="border" />
+		<rect x="1" y="33"  height="4"  width="17" class="border" />
+		<rect x="1" y="54"  height="47"  width="10" class="border" />
+		<path d="M1,75 L16,75 M1,80 L16,80 M0,110 L16,110 M0,44 L16,44 M16,56 L16,98 M7,62 L7,75 M7,80 L7,92 M8,51 L8,63 M8,91 L8,104" class="border" />
+		<path d="m 14,52 c 2,4.5 5.6,7.6 9,10 -4,8 -4.5,21 -1,29.5 -10,8 -12,20 2,19.5 28.5,-3.5 41,2 39,-12 C 57,73 60,67 63,57 67,46 63,42 52,43 35,44 8,37 14,52 Z" class="border" />
+		<path d="m 22,92 c 4,9 16,12 29,13 13,0 7.5,-3 6,-8 -3,-9.5 -7,-23 0.5,-38.5 C 65,46 56,49 49,50.5 31,57 25,59 23.5,62" class="border" />
+		<circle cx="27" cy="79" r="4" class="border" />
+		<path d="M23,79 L31,79 M27,75 L27,84" class="border" />
+	</symbol>
+	<symbol id="tualet2" viewBox="0 0 80 80" >
+		<path d="M25,51 C-4,-20 87,-7 53,51 z" class="border" />
+		<path d="M16,78 C13,73 14,69 13,64 13,56 18,56.5 25,58 36,61 45.5,59 54,57.5 60,56 67,56 64,67 L62,78 z" class="border" />
+		<circle cx="39" cy="68" r="2" class="border" />
+		<path d="M21,39 L21,58 M58,40 L58,57" class="border" />
+	</symbol>
+	<symbol id="bide"  viewBox="0 0 40 40" >
+		<rect x="16.5" y="17"  height="5"  width="7" class="border" />
+		<ellipse cx="20" cy="20" rx="18" ry="15" class="border" />
+		<ellipse cx="20" cy="20" rx="12" ry="9" class="border" />
+		<path d="M3.5,13.5 L6,3 33,3 36.5,13.5" class="border" />
+	</symbol>
+	<symbol id="lift2" viewBox="0 0 320 320" >
+		<path d="M31,27 L31,184" class="lift" fill="none"/>
+		<path d="M34,185 L34,42 50,42 50,48" class="lift" />
+		<path d="M34,185 L34,42 50,42 50,185 z" stroke-width="0" />
+		<path d="M34,121 L44,121 44,71 39,71" class="lift" />
+		<path d="M39,178 L39,121" class="lift2" />
+		<path d="M40,121 L40,71" class="lift2" />
+		<path d="M6,185 L6,176 15,176 15,178 26,178 26,185" class="lift" />
+		<path d="M6,184 L26,184" class="lift2" />
+		<path d="M26,178 L21,178 21,121 26,121 z" class="lift"  stroke-width="0" />
+		<path d="M20.5,121 L25.5,121 25.5,178" class="lift2" fill="none" />
+		<path d="M26,120 L26,27 13,27 13,120" class="lift" />
+		<path d="M16,120 L21,120 21,70 16,70 z" class="lift" />
+		<path d="M9,58 L9,74 15,74 15,58" class="lift"/>
+		<path d="M14,27 L14,74" class="lift2" />
+		<path d="M8.5,58 L15,58" class="lift2" />
+		<path d="M50,182 L183,182 183,47 50,47 z" stroke-width="0" />	
+		<path d="M50,182 L183,182 183,47" class="lift" />
+		<path d="M46,48 L46,74 51,74" class="lift" />
+		<path d="M50,74 L50,51 180,51 180,180.5" class="lift2" fill="none" />
+		<path d="M50,180.5 L50,51 180,51 180,180.5" class="lift2" stroke-width="0" />
+		<path d="M180,180 L178,180 M151,180 L50,180" class="lift" />
+		<path d="M183,48 L45.5,48" class="lift2" />
+		<path d="M50,185 L34,185 34,179 44,179 44,175 50,175" class="lift" />
+		<path d="M49,185 L49,175" class="lift2" />
+		<path d="M151,182 L151,176 178,176 178,182" class="lift" />
+		<path d="M165,184 L165,192" class="lift2" fill="none" />
+		<path d="M157,194 L172,194 172,191 157,191 z" class="lift3" />
+		<path d="M165,48 L165,39" class="lift2" fill="none" />
+		<path d="M157,39 L173,39 173,36 157,36 z" class="lift" />
+		<path d="M121,31 L173,31 173,17 121,17 z" class="lift" />
+	</symbol>
+	<symbol id="lift" viewBox="0 0 320 320" >
+		<path d="M31,27 L31,184" class="lift" fill="none"/>
+		<path d="M34,185 L34,42 50,42 50,48" class="lift" />
+		<path d="M34,185 L34,42 50,42 50,185 z"   stroke-width="0" />
+		<path d="M34,121 L44,121 44,71 39,71" class="lift" />
+		<path d="M39,178 L39,121" class="lift2"  />
+		<path d="M40,121 L40,71" class="lift2"  />
+		<path d="M6,185 L6,176 15,176 15,178 26,178 26,185" class="lift"  />
+		<path d="M6,184 L26,184" class="lift2"   />
+		<path d="M26,178 L21,178 21,121 26,121 z" class="lift"  stroke-width="0"  />
+		<path d="M20.5,121 L25.5,121 25.5,178" class="lift2" fill="none"   />
+		<path d="M26,120 L26,27 13,27 13,120" class="lift"  />
+		<path d="M16,120 L21,120 21,70 16,70 z" class="lift"  />
+		<path d="M9,58 L9,74 15,74 15,58" class="lift" />
+		<path d="M14,27 L14,74" class="lift2"  />
+		<path d="M8.5,58 L15,58" class="lift2"  />
+		<path d="M50,182 L298,182 298,47 50,47 z"  stroke-width="0"  />
+		<path d="M50,182 L298,182 298,47" class="lift"  />
+		<path d="M46,48 L46,74 51,74" class="lift"  />
+		<path d="M50,74 L50,51 295,51 295,180.5" class="lift2" fill="none" />
+		<path d="M50,180.5 L50,51 295,51 295,180.5" class="lift2"  stroke-width="0"  />
+		<path d="M295,180 L178,180 M151,180 L50,180" class="lift"  />
+		<path d="M298,48 L45.5,48"  class="lift2"  />
+		<path d="M50,185 L34,185 34,179 44,179 44,175 50,175" class="lift"  />
+		<path d="M49,185 L49,175" class="lift2" />
+		<path d="M151,182 L151,176 178,176 178,182" class="lift" />
+		<path d="M165,184 L165,192" class="lift2" fill="none"  />
+		<path d="M157,194 L172,194 172,191 157,191 z" class="lift3"  />
+		<path d="M165,48 L165,39" class="lift2"  fill="none" />
+		<path d="M157,39 L173,39 173,36 157,36 z" class="lift"  />
+		<path d="M183,31 L291,31 291,17 183,17 z" class="lift" />
+	</symbol>
+</defs>
+<g transform="scale(1,1) translate(0,5456) rotate(-90)"> 
+<g id="room213">
+	<desc>Лестница 213</desc>
+	<path d="M1410,1016 H3514" class="contur-16" />
+	<path d="M1424,1016 V1454" class="contur-16" />
+	<path d="M1638,1016 V1045 M1638,1110 V1454" class="contur-16" />
+	<path d="M1410,1442 H1645" class="contur-10" />
+	<path d="M1425,1144.5 H1527.5 M1425,1160.5 H1527.5 M1425,1176.5 H1527.5 M1425,1192.5 H1527.5" class="border" />
+	<path d="M1425,1208.5 H1527.5 M1425,1224.5 H1527.5 M1425,1240.5 H1527.5 M1425,1256.5 H1466 M1527.5,1144 V1241 L1430,1266" class="border" />
+	<path d="M1476.5,1144 V1253 M1471.5,1246 L1476.5,1253 1481.5,1246" class="border" />
+	<path d="M1521,1142 V1243" class="border2" />
+	<path d="M1631,1044 L1607,1085 M1631,1090 V1114" class="border2" />
+	<desc>Тамбур 213.1</desc>
+	<path d="M1645,1160 H1675 M1740,1160 H1755" class="contur-10" />
+	<path d="M1670,1156 H1695 M1741,1155 L1700,1130" class="border2" />
+	<path d="M1755,1020 V1442 H1985" class="contur-10" />
+</g>
+<g id="room214">
+	<desc>Тамбур-шлюз 214</desc>
+	<path d="M1410,1710 H1673 M1740,1710 H3095" class="contur-10" />
+	<path d="M1642,1711 V1607 H1675 M1770,1711 V1607 H1740 M1770,1610 V1572 M1770,1440 V1480" class="contur-10" />
+	<path d="M1766,1480 L1744,1519 M1766,1575 L1744,1532" class="border2" />
+	<path d="M1670,1603 H1696 M1742,1603 L1700,1580" class="border2" />
+	<path d="M1670,1706 H1696 M1742,1706 L1700,1680" class="border2" />
+</g>
+<g id="room217">
+	<desc>Тамбур-шлюз 217</desc>
+	<path d="M3160,1710 H3512" class="contur-10" />
+	<path d="M3060,1711 V1607 H3095 M3190,1711 V1607 H3160" class="contur-10" />
+	<path d="M3090,1603 H3115 M3162,1603 L3120,1580" class="border2" />
+	<path d="M3090,1706 H3115 M3162,1706 L3120,1680" class="border2" />
+</g>
+<g id="room219">
+	<desc>Лифт 219</desc>
+	<path d="M3532,1280 H3697 M3532,1430 H3697" class="contur-16" />
+	<path d="M3692,1317 V1277 H3952 V1320" class="contur-10" />
+	<path d="M3692,1394 V1433 H3783 M3875,1433 H3952 V1380" class="contur-10" />
+	<path d="M3782,1438 L3822,1461 M3876,1438 L3835,1461" class="border2" />
+	<path d="M3956,1318 L3987,1371" class="border2" />
+	<use xlink:href="#lift2"  width="200" height="200" transform="scale(-1,1) translate(-3675,1290)" class="lift-gray" />
+</g>
+<g id="room220">
+	<desc>Склад белья и кух. инвентаря 220</desc>
+	<path d="M3517,1016 H4793" class="contur-16" />
+	<path d="M3533,1016 V1454" class="contur-16" />
+	<path d="M3985,1308 L4029,1335" class="border2" />
+	<path d="M4067,1015 V1302" class="contur-10" />
+	<desc>Комната персонала заготовочного производства и ресторана 220.1</desc>
+	<path d="M3952,1303 H3985 M4035,1303 H4100 M4150,1303 H4780" class="contur-10" />
+	<path d="M4785,1016 V2282" class="contur-16" />
+	<path d="M4100,1308 L4142,1335" class="border2" />
+</g>
+<g id="room221">
+	<desc>Лифтовый холл 221</desc>
+	<path d="M4345,1438 H4785" class="contur-16" />
+	<path d="M4648,1339 V1314 H4754 V1415 H4648 V1385" class="contur-16" />
+	<path d="M4258,1302 V1320 M4258,1380 V1475 M4258,1557 V1590" class="contur-10" />
+	<path d="M4253,1590 H4625 V1950" class="contur-10" />
+	<path d="M4356.5,1306 V1436 M4486.5,1306 V1436 M4356,1368.5 H4486 M4363,1363.5 L4356,1368.5 4363,1373.5 " class="border" />
+	<path d="M4423.5,1438 V1585 M4629.5,1438 V1585 M4423,1514.5 H4629 M4430,1519.5 L4423,1514.5 4430,1509.5"  class="border" />
+	<path d="M4254,1319 L4223,1367" class="border2" />
+	<path d="M4254,1475 L4233,1511 M4254,1558 L4233,1522" class="border2" />
+	<path d="M4254,1475 L4274,1511 M4254,1558 L4274,1522" stroke-dasharray="6 3"  class="border2" />
+	<path d="M4328,1445 H4350 M4262,1445 L4317,1469" class="border2" />
+	<path d="M4630,1585.5 H4784" class="border" />
+	<use xlink:href="#lift2"  width="140" height="140" transform="scale(1,1) translate(4658,1317)" class="lift-green" />
+</g>
+<g id="room222">
+	<desc>С/У 222</desc>
+	<path d="M4350,1588 V1635 M4350,1686 V1719 M4350,1770 V1862" class="contur-10" />
+	<path d="M4475,1588 V1635 M4475,1686 V1719 M4475,1770 V1862" class="contur-10" />
+	<path d="M4350,1702 H4630" class="contur-10" />
+	<path d="M4350,1854 H4630" class="contur-16" />
+	<path d="M4345,1687 L4321,1643 M4345,1718 L4321,1762" class="border2" />
+	<path d="M4471,1687 L4445,1643 M4471,1718 L4445,1762" class="border2" />
+	<path d="M4558,1645 H4625 M4558,1755 H4625 M4558,1800 H4625" class="border2" />
+	<path d="M4559,1590 V1604 L4540,1635 M4559,1639 V1652 L4540,1680 M4559,1688 V1714" class="border2" />
+	<path d="M4559,1800 V1794 L4540,1764 M4559,1761 V1747 L4540,1717" class="border2" />
+	<rect x="4369.5" y="1592.5" height="34" width="90" class="border" />
+	<rect x="4379.5" y="1814.5" height="32" width="90" class="border" />
+	<use xlink:href="#bide" width="20" height="20" transform="scale(1,-1) translate(4500,-1847)" />
+	<use xlink:href="#bide" width="20" height="20" transform="scale(1,-1) translate(4550,-1847)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(-1,1) translate(-4580,1600) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(-1,1) translate(-4580,1652) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(-1,1) translate(-4580,1712) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(-1,1) translate(-4580,1758) rotate(90)" />
+	<use xlink:href="#sink2" width="40" height="40" transform="scale(1,-1) translate(4422,-1845) rotate(90)" />
+	<use xlink:href="#sink2" width="40" height="40" transform="scale(1,-1) translate(4465,-1845) rotate(90)" />
+	<use xlink:href="#sink2" width="40" height="40" transform="scale(1,1) translate(4413,1595) rotate(90)" />
+	<use xlink:href="#sink2" width="40" height="40" transform="scale(1,1) translate(4455,1595) rotate(90)" />
+	<path d="M4625,2028 V2107 M4625,2184 V2282" class="contur-10" />
+	<path d="M4620.5,1940 V2190 M4623.5,1940 V2190 M4626.5,1940 V2190 M4629.5,1940 V2190" class="border" />
+</g>
+<g id="room223">
+	<desc>Коридор 223</desc>
+	<path d="M3970.5,1710 V1588.5 H4260 M3970.5,1594.5 H4260 M4177.5,1595 V1710" class="border" />
+	<path d="M3970,1651.5 H4177.5 M3977,1646.5 L3970,1651.5 3977,1656.5" class="border" />
+	<path d="M4170,1863 H4228 M4320,1863 H4355" class="contur-10" />
+	<path d="M4227,1859 L4265,1837 M4321,1859 L4282,1837" class="border2" />
+	<desc>Тамбур-шлюз 223.1</desc>
+	<path d="M3517,1710 H4173 V2040" class="contur-10" />
+	<path d="M3517,1842 H3968 V1897" class="contur-10" />
+	<path d="M3971,1910 V1894 H4085 M4140,1894 H4170 V2046 H4070 V1895 M3971,1968 V1994 H4065" class="contur-16" />
+	<path d="M3630.5,1707 V1775.5 H3973 M3972.5,1707 V1840" class="border" />
+	<path d="M3630.5,1745.5 H3973 M3637.5,1740.5 L3630.5,1745.5 3637.5,1750.5" class="border" />
+	<path d="M3957.5,1775 V1841 M3922,1807.5 H3972 M3965,1802.5 L3972,1807.5 3965,1812.5" class="border" />
+	<path d="M3613,1722 H3988 M3613,1770 H3988" class="border2" />
+	<desc>Лифт</desc>
+	<use xlink:href="#lift2"  width="140" height="140" transform="scale(1,1) translate(3979,1898)" class="lift-green" />
+	<use xlink:href="#lift"  width="140" height="140" transform="scale(1,1) translate(4167,1902) rotate(90)" class="lift-green" />
+</g>
+<g id="room224">
+	<desc>Тамбур-шлюз 224</desc>
+	<path d="M3533,1844 V2282" class="contur-16" />
+	<path d="M3533,1978 H3560 M3626,1978 H3966" class="contur-10" />
+	<path d="M3650,1975 V2040 M3650,2115 V2193 M3650,2272 V2282" class="contur-10" />
+	<path d="M3559,1982 L3587,2000 M3628,1982 L3597,2000" class="border2" />
+	<path d="M3559,1982 L3587,1964 M3628,1982 L3597,1964" stroke-dasharray="6 3"  class="border2" />
+	<path d="M3645.5,2030 V2280 M3648.5,2030 V2280 M3651.5,2030 V2280 M3654.5,2030 V2280" class="border" />
+</g>
+<g id="room215">
+	<desc>Помещение ITP Тех. помещение 215</desc>
+	<path d="M2107,1442 H2400" class="contur-10" />
+	<path d="M1984,1447 L2037,1480 M2108,1447 L2054,1480" class="border2" />
+	<path d="M2398,1447 L2453,1480 M2522,1447 L2468,1480" class="border2" />
+</g>
+<g id="room218">
+	<desc>Тамбур-шлюз 218.1</desc>
+	<path d="M3283,1016 V1045 M3283,1110 V1454" class="contur-16" />
+	<path d="M3496,1016 V1454" class="contur-16" />
+	<path d="M3166,1148 H3180 M3250,1148 H3285" class="contur-10" />
+	<path d="M3290,1043 L3313,1084" class="border2" />
+	<path d="M3180,1144 L3220,1118 M3250,1144 H3223" class="border2" />
+	<desc>Лестница 218</desc>
+	<path d="M3280,1442 H3500" class="contur-10" />
+	<path d="M3394.5,1144.5 H3493 M3394.5,1160.5 H3493 M3394.5,1176.5 H3493 M3394.5,1192.5 H3493 M3394.5,1208.5 H3493 M3394.5,1224.5 H3493" class="border" />
+	<path d="M3394.5,1240.5 H3493 M3450.5,1256.5 H3493 M3450.5,1256.5 V1144 M3445.5,1249 L3450.5,1256.5 3455.5,1249" class="border" />
+	<path d="M3394.5,1144 V1241 L3491,1267.5" class="border" />
+	<path d="M3400,1142 V1243" class="border2" />
+</g>
+<g id="room216">
+	<desc>Помещение ITP Тех. помещение 216</desc>
+	<path d="M2522,1442 H3165 V1018" class="contur-10" />
+	<path d="M2248,1013 V1443" class="contur-10" />
+</g>
+<g id="room211">
+	<desc>Помещение ITP Тех. помещение 211</desc>
+	<path d="M140,1008 V2284" class="contur-16" />
+	<path d="M132,1016 H1404" class="contur-16" />
+	<path d="M560,1442 H591" class="contur-10" />
+	<path d="M565,1442 V1858 H780" class="contur-10" />
+	<path d="M136,1850 H565" class="contur-16" />
+	<desc>Насосная Тех. помещение 211.1</desc>
+	<path d="M136,1174 H726 V1246 M726,1309 V1440" class="contur-10" />
+	<path d="M565,1018 V1050 M565,1110 V1175" class="contur-10" />
+	<path d="M560,1049 L529,1100" class="border2" />
+	<path d="M731,1309 L759,1257" class="border2" />
+	<path d="M1388,1017 V1454" class="contur-16" />
+	<path d="M714,1442 H1120 M1242,1442 H1404" class="contur-10" />
+	<path d="M590,1447 L644,1479 M714,1447 L661,1479" class="border2" />
+	<path d="M1119,1447 L1172,1479 M1242,1447 L1189,1479" class="border2" />
+</g>
+<g id="room210">
+	<desc>С/У муж. и жен. 210</desc>
+	<path d="M566,1625 H775 V1655 M775,1703 V1773 M775,1820 V1874" class="contur-10" />
+	<path d="M564,1684 H650 M564,1800 H650" class="border2" />
+	<path d="M650,1625 V1636 L670,1671" class="border2" />
+	<path d="M563,1740 H775" class="contur-10" />
+	<path d="M650,1678 V1690 M650,1736 V1730 L670,1694 M650,1736 V1751 L670,1788 M650,1792 V1807 " class="border2" />
+	<path d="M650,1857 V1848 L670,1812" class="border2" />
+	<path d="M779,1654 L798,1696 M779,1820 L798,1779" class="border2" />
+	<use xlink:href="#bath" width="90" height="90" transform="scale(1,-1) translate(726,-1736) rotate(90)" />
+	<use xlink:href="#bath" width="90" height="90" transform="scale(1,-1) translate(756,-1736) rotate(90)" />
+	<use xlink:href="#bath" width="90" height="90" transform="scale(1,1) translate(726,1746) rotate(90)" />
+	<use xlink:href="#bath" width="90" height="90" transform="scale(1,1) translate(756,1746) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(1,1) translate(610,1637) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(1,1) translate(610,1690) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(1,1) translate(610,1753) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(1,1) translate(610,1807) rotate(90)" />
+	<desc>ПУИ 210.1</desc>
+	<path d="M970,2103 V1710 H1026 M1093,1710 H1398 V1840 H966" class="contur-10" />
+	<path d="M1025.5,1710 V1780.5 H1093.5 V1711 M1059.5,1780 V1716 M1022,1714.5 H1095 M1054.5,1725 L1059.5,1716 1064.5,1725" class="border" />
+	<path d="M1023,1706 H1046 M1094,1705 L1048,1682" class="border2" />
+	<desc>Склад рекламной продукции 210</desc>
+	<path d="M1426,1835 V2282" class="contur-16" />
+	<rect x="1410" y="1835"  height="30"  width="30" class="border-full" />
+	<rect x="1410" y="2252"  height="30"  width="30" class="border-full" />
+	<path d="M970,2226 V2282" class="contur-10" />
+	<path d="M965,2227 L933,2173 M965,2103 L933,2156" class="border2" />
+</g>
+<g id="room209">
+	<desc>Электрощитовая 209</desc>
+	<path d="M970,2286 V2532 M970,2626 V2755" class="contur-10" />
+	<path d="M970,2708 H1404" class="contur-10" />
+	<path d="M1388,2295 V2708" class="contur-16" />
+	<path d="M965,2296 H1404" class="contur-16" />
+	<path d="M970,2438 H1385 M1325,2295 V2437 M1070,2435 V2650" class="contur-10" />
+	<path d="M1038,2296 V2437 M1180,2296 V2437" class="contur-16" />
+	<path d="M965,2532 L941,2573 M965,2626 L941,2586 M1067,2703 L1042,2658" class="border2" />
+	<path d="M1430,2288 V2740" class="contur-16" />
+	<desc>Лифт</desc>
+	<use xlink:href="#lift2"  width="200" height="200" transform="scale(1,-1) translate(1175,-2430) rotate(90)" class="lift-green" />
+	<use xlink:href="#lift2"  width="200" height="200" transform="scale(1,-1) translate(1320,-2430) rotate(90)" class="lift-yellow" />
+	
+</g>
+<g id="room208">
+	<desc>Склад инвентаря и хозяйственных материалов. Склад лишних строительных материалов 208</desc>
+	<path d="M140,2288 V4805" class="contur-16" />
+	<path d="M140,2268 H575" class="contur-16" />
+	<path d="M140,3133 H590" class="contur-16" />
+	<path d="M775,1998 V2993 M775,3117 V3149 M775,1998 V2993" class="contur-10" />
+	<path d="M576,3133 H775" class="contur-10" />
+	<path d="M780,1874 L814,1926 M780,1999 L814,1943" class="border2" />
+	<path d="M780,2993 L814,3044 M780,3117 L814,3064" class="border2" />
+</g>
+<g id="room207">
+	<desc>Склад мебели с участком ремонта, столярный цех 207</desc>
+	<path d="M775,3273 V3755" class="contur-10" />
+	<path d="M780,3149 L814,3200 M780,3273 L814,3221" class="border2" />
+	<path d="M136,3755 H827 M918,3755 H968" class="contur-10" />
+	<path d="M825,3759 L866,3782 M919,3759 L879,3782" class="border2" />
+</g>
+<g id="room206">
+	<desc>Комната отдыха персонала 206.4</desc>
+	<path d="M970,2800 V3170" class="contur-10" />
+	<path d="M1180,2704 V3974" class="contur-10" />
+	<path d="M965,2800 L940,2760" class="border2" />
+	<desc>Комната начальника гаража 206.3</desc>
+	<path d="M970,3132 H1177" class="contur-10" />
+	<path d="M1177,3126 H1404" class="contur-10" />
+	<path d="M970,3215 V3347" class="contur-10" />
+	<path d="M965,3216 L940,3176" class="border2" />
+	<desc>Мастер общестроит. работ 206.2</desc>
+	<path d="M970,3420 H1177" class="contur-10" />
+	<path d="M965,3395 L940,3353" class="border2" />
+	<desc>Помещение для дежурных техников 206.1</desc>
+	<path d="M970,3394 V3770" class="contur-10" />
+	<desc>Помещение для электромонтера 206</desc>
+	<path d="M970,3840 H1177" class="contur-10" />
+	<path d="M970,3816 V3867" class="contur-10" />
+	<path d="M965,3816 L940,3775 M965,3916 L940,3874" class="border2" />
+</g>
+<g id="room204">
+	<desc>Тамбур-шлюз 204</desc>
+	<path d="M136,3955 H176 M268,3955 H560" class="contur-16" />
+	<path d="M136,4110 H177 M269,4110 H320" class="contur-10" />
+	<path d="M176,3962 L216,3985 M268,3962 L229,3985" class="border2" />
+	<desc>Лифт 203</desc>
+	<path d="M173,4220 V4365" class="contur-16" />
+	<path d="M136,4225 H213 M274,4225 H320" class="contur-10" />
+	<path d="M176,4115 L216,4139 M269,4115 L229,4139" class="border2" />
+	<use xlink:href="#lift2"  width="200" height="200" transform="scale(1,1) translate(310,4236) rotate(90)" class="lift-green" />
+	<desc>Лестница 202</desc>
+	<path d="M136,4368 H560" class="contur-16" />
+	<path d="M552,3950 V4367" class="contur-16" />
+	<path d="M318,3950 V3984 M318,4050 V4370" class="contur-16" />
+	<path d="M325,4030 V4055" class="border2" />
+	<path d="M325,3983 L348,4023" class="border2" />
+	<path d="M320,4103.5 H420.5 M320,4119.5 H420.5 M320,4135.5 H420.5 M320,4151.5 H420.5 M320,4167.5 H420.5 M320,4183.5 H420.5 M320,4199.5 H420.5" class="border" />
+	<path d="M420.5,4103 V4200 M325,4226 L420.5,4200 M320,4215.5 H363.5" class="border" />
+	<path d="M370.5,4103 V4214 M365.5,4207 L370.5,4214 375.5,4207" class="border" />
+	<path d="M415,4101 V4202" class="border2" />
+</g>
+<g id="room201">
+	<desc>Склад 201</desc>
+	<path d="M550,3957 H611 M673,3957 H827" class="contur-10" />
+	<path d="M544,4375 H778" class="contur-10" />
+	<path d="M775,3960 V4444" class="contur-10" />
+	<path d="M674,3962 L618,3995" class="border2" />
+</g>
+
+<g id="room225">
+	<desc>Дисперчерская 225</desc>
+	<path d="M4347,2268 H4630" class="contur-16" />
+	<path d="M4347,2305 H4630" class="contur-16" />
+	<path d="M4347,2420 H4630" class="contur-10" />
+	<path d="M4352,2305 V2618 H4363" class="contur-10" />
+	<path d="M4625,2288 V2335 M4625,2385 V2430" class="contur-10" />
+	<path d="M4630,2386 L4657,2344" class="border2" />
+	<path d="M4785,2288 V3870" class="contur-16" />
+</g>
+<g id="room226">
+	<desc>Эл. щитовая 226</desc>
+	<path d="M4452,2417 V2615" class="contur-10" />
+	<path d="M4414,2618 H4627" class="contur-10" />
+	<path d="M4363,2614 L4406,2587" class="border2" />
+</g>
+<g id="room227">
+	<desc>С/У 227</desc>
+	<path d="M4625,2480 V2527 M4625,2578 V2687 M4625,2765 V2843 M4625,2920 V3000 M4625,3060 V3160" class="contur-10" />
+	<path d="M4453,2520 H4625" class="contur-8" />
+	<path d="M4544,2466 V2517 M4544,2564 V2618" class="contur-8" />
+	<path d="M4542,2422 L4523,2467 M4542,2519 L4523,2561" class="border2" />
+	<path d="M4630,2481 L4657,2439" class="border2" />
+	<path d="M4630,2579 L4657,2536" class="border2" />
+	<path d="M4620.5,2685 V2930 M4623.5,2685 V2930 M4626.5,2685 V2930 M4629.5,2685 V2930" class="border" />
+	<path d="M4630,3000 L4662,3050" class="border2" />
+	<path d="M4630,3160 L4662,3218" class="border2" />
+	<rect x="4560.5" y="2483.5"  height="33"  width="48" class="border" />
+	<rect x="4560.5" y="2581.5"  height="33"  width="48" class="border" />
+	<use xlink:href="#sink2" width="40" height="40" transform="scale(1,-1) translate(4603,-2612) rotate(90)" />
+	<use xlink:href="#sink2" width="40" height="40" transform="scale(1,-1) translate(4603,-2515) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(1,1) translate(4500,2455) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(1,1) translate(4500,2550) rotate(90)" />
+</g>
+<g id="room228">
+	<desc>Мойка 228</desc>
+	<path d="M3650,2770 H3860 M3910,2770 H3920" class="contur-10" />
+	<path d="M3923,2702 V3026" class="contur-10" />
+	<path d="M3645,2816 L3616,2860" class="border2" />
+	<path d="M3913,2770 L3866,2744" class="border2" />
+	<path d="M3913,2770 L3866,2797" stroke-dasharray="6 3" class="border2" />
+</g>
+<g id="room229">
+	<desc>Сервизная 229</desc>
+	<path d="M3923,3078 V3120 H4125" class="contur-10" />
+	<path d="M3650,3007 H3860 M3910,3007 H3920" class="contur-10" />
+	<path d="M3650,3136 H3928" class="contur-10" />
+	<path d="M3680,3133 H3928" class="contur-16" />
+	<path d="M3911,3003 L3865,2976" class="border2" />
+	<path d="M3928,3078 L3953,3032" class="border2" />
+</g>
+<g id="room233">
+	<desc>Холодильный цех 233</desc>
+	<path d="M4175,3120 H4378" class="contur-10" />
+	<path d="M4346,3133 H4630" class="contur-16" />
+	<path d="M4100,3120 V3173 M4100,3235 V3290 M4100,3350 V3380" class="contur-10" />
+	<path d="M4193,3122 V3358" class="contur-10" />
+	<path d="M4555,3135 V3345 H4625" class="contur-10" />
+	<path d="M4625,3220 V3360" class="contur-10" />
+	<path d="M3645,3396 L3616,3441" class="border2" />
+	<path d="M4176,3120 L4130,3098" class="border2" />
+	<path d="M4176,3120 L4130,3148" stroke-dasharray="6 3" class="border2" />
+	<path d="M4101,3380 L4122,3421" class="border2" />
+	<path d="M4101,3380 L4077,3421" stroke-dasharray="6 3" class="border2" />
+	<use xlink:href="#bath" width="90" height="90" transform="scale(1,1) translate(4616,3142) rotate(90)" />
+	<desc>Холодильная камера 230</desc>
+	<path d="M4023,3367 H3930 V3230 M3930,3184 V3152 H4092 V3184 M4092,3230 V3300 M4092,3348 V3367 H4070" class="contur-8" />
+	<path d="M3930,3258 H4090" class="contur-8" />
+	<path d="M3927,3230 L3904,3190" class="border2" />
+	<path d="M4089,3230 L4065,3190" class="border2" />
+	<path d="M4089,3349 L4065,3306" class="border2" />
+	<path d="M4070,3364 L4028,3344" class="border2" />
+	<desc>Холодильная камера 234</desc>
+	<path d="M4234,3346 H4202 V3164 H4546 V3346 H4508 M4280,3346 H4346 M4392,3346 H4462" class="contur-8" />
+	<path d="M4313,3165 V3347 M4424,3165 V3347" class="contur-8" />
+	<path d="M4234,3342 L4275,3320 M4346,3342 L4386,3320 M4462,3342 L4500,3320" class="border2" />
+</g>
+<g id="room240">
+	<desc>Кондитерский цех 240</desc>
+	<path d="M4193,3420 V3490 M4193,3535 V3662 M4193,3708 V3724 M4193,3802 V3880 M4193,3924 V3972 H4380 V4007" class="contur-10" />
+	<path d="M4627,3420 V3655 M4627,3717 V3733 M4627,3810 V4020 M4627,4100 V4306 M4627,4368 V4710 M4627,4770 V4808" class="contur-10" />
+	<path d="M4190,3435 H4350 V3583 M4350,3630 V3650" class="contur-10" />
+	<path d="M4350,3527 H4490 V3650" class="contur-10" />
+	<path d="M4190,3645 H4275 M4320,3645 H4390 M4435,3645 H4525 M4588,3645 H4625" class="contur-10" />
+	<path d="M4534,3434 H4359 V3518 H4534 M4580,3518 H4618 V3434 H4580" class="contur-8" />
+	<path d="M4534,3636 H4499 V3516 M4580,3636 H4618 V3515" class="contur-8" />
+	<path d="M4197,3422 L4230,3365" class="border2" />
+	<path d="M4198,3535 L4221,3493" class="border2" />
+	<path d="M4198,3662 L4221,3704" class="border2" />
+	<path d="M4321,3645 L4280,3619" stroke-dasharray="6 3" class="border2" />
+	<path d="M4321,3645 L4280,3669" class="border2" />
+	<path d="M4387,3645 L4430,3619" stroke-dasharray="6 3" class="border2" />
+	<path d="M4387,3645 L4430,3669" class="border2" />
+	<path d="M4350,3580 L4330,3620" class="border2" />
+	<path d="M4350,3580 L4375,3620" stroke-dasharray="6 3" class="border2" />
+	<path d="M4580,3633 L4540,3613" class="border2" />
+	<path d="M4580,3515 L4540,3490" class="border2" />
+	<path d="M4533,3431 L4573,3407" class="border2" />
+	<path d="M4632,3420 L4662,3365" class="border2" />
+	<path d="M4632,3717 L4662,3660" class="border2" />
+	<path d="M4188.5,3720 V3810 M4191.5,3720 V3810 M4194.5,3720 V3810 M4197.5,3720 V3810" class="border" />
+	<path d="M4622.5,3720 V4110 M4625.5,3720 V4110 M4628.5,3720 V4110 M4631.5,3720 V4110" class="border" />
+	<path d="M4190,3833 H4390 M4438,3833 H4530 M4576,3833 H4585 M4627,3833 H4670 M4738,3833 H4785" class="contur-10" />
+	<path d="M4785,3937 V4807" class="contur-16" />
+	<path d="M4360,3963 H4625" class="contur-16" />
+	<path d="M4360,3830 V3870 M4360,3915 V3970" class="contur-10" />
+	<path d="M4492,3830 V3960" class="contur-10" />
+	<path d="M4630,3960 H4670 M4740,3960 H4790" class="contur-10" />
+	<path d="M4100,3428 V3725 M4100,3802 V3856 M4100,3910 V3972 H3945 V4005" class="contur-10" />
+	<path d="M4095.5,3723 V3805 M4098.5,3723 V3805 M4101.5,3723 V3805 M4104.5,3723 V3805" class="border" />
+	<path d="M4100,3910 L4077,3860" stroke-dasharray="6 3" class="border2" />
+	<path d="M4100,3910 L4128,3860" class="border2" />
+	<path d="M4198,3880 L4220,3919" class="border2" />
+	<path d="M4360,3868 L4338,3910" class="border2" />
+	<path d="M4360,3868 L4383,3910" stroke-dasharray="6 3" class="border2" />
+	<path d="M4390,3833 L4430,3810" class="border2" />
+	<path d="M4390,3833 L4430,3855" stroke-dasharray="6 3" class="border2" />
+	<path d="M4530,3833 L4572,3810" class="border2" />
+	<path d="M4530,3833 L4572,3855" stroke-dasharray="6 3" class="border2" />
+	<path d="M4792,3938 L4824,3880" class="border2" />
+	<path d="M4717,3837 H4740 M4670,3838 L4710,3860" class="border2" />
+	<path d="M4717,3964 H4740 M4670,3965 L4710,3988" class="border2" />
+	<path d="M4580,3828.5 H4625 M4580,3831.5 H4625 M4580,3834.5 H4625 M4580,3837.5 H4625" class="border" />
+</g>
+<g id="room231">
+	<desc>Мойка 231</desc>
+	<path d="M3650,3457 H3707 M3753,3457 H3760 M3795,3457 H3853 M3899,3457 H3917" class="contur-10" />
+	<path d="M3650,3627 H3707 M3753,3627 H3760 M3795,3627 H3917" class="contur-10" />
+	<path d="M3800,3455 V3625 M3912,3455 V3625" class="contur-10" />
+	<path d="M3645,3635 L3616,3680" class="border2" />
+	<path d="M3900,3461 L3858,3486" class="border2" />
+	<path d="M3705,3627 L3747,3600" stroke-dasharray="6 3" class="border2" />
+	<path d="M3705,3627 L3747,3650" class="border2" />
+	<path d="M3705,3458 L3747,3480" stroke-dasharray="6 3" class="border2" />
+	<path d="M3705,3458 L3747,3430" class="border2" />
+	<path d="M3756,3452.5 H3800 M3756,3455.5 H3800 M3756,3458.5 H3800 M3756,3461.5 H3800" class="border" />
+	<path d="M3756,3622.5 H3800 M3756,3625.5 H3800 M3756,3628.5 H3800 M3756,3631.5 H3800" class="border" />
+</g>
+<g id="room239">
+	<desc>Горячий цех 239</desc>
+	<path d="M3680,3963 H3950" class="contur-16" />
+	<path d="M3650,3966 H3685" class="contur-10" />
+</g>
+<g id="room243">
+	<desc>Мясной цех 243</desc>
+	<path d="M3945,4067 V4115 M3945,4177 V4282 H3755 M3648,4282 H3710" class="contur-10" />
+	<path d="M3645,4307 L3616,4360" class="border2" />
+	<path d="M3756,4286 L3714,4312" class="border2" />
+	<path d="M4325,4282 H4383 M4430,4282 H4525 M4570,4282 H4625" class="contur-10" />
+	<path d="M4330,4140 V4105 H4480 V4285 M4330,4200 V4285" class="contur-10" />
+	<path d="M4380,4070 V4105" class="contur-10" />
+	<path d="M4520,4135 H4525 M4570,4135 H4630" class="contur-10" />
+	<path d="M3954,3975 V4012 M3954,4060 V4123 M3954,4167 V4278" class="contur-8" />
+	<path d="M4101,3975 V4012 M4101,4060 V4123 M4101,4167 V4278" class="contur-8" />
+	<path d="M3955,3981 H4102 M3955,4093 H4102 M3955,4274 H4102" class="contur-8" />
+	<path d="M4188,4274 H4327 M4188,4106 H4327 M4188,3981 H4378" class="contur-8" />
+	<path d="M4192,3975 V4012 M4192,4060 V4147 M4192,4193 V4275" class="contur-8" />
+	<path d="M4371,3980 V4012 M4371,4060 V4096 H4322 V4146 M4322,4193 V4272" class="contur-8" />
+	<path d="M4480,4130.5 H4524 M4480,4133.5 H4524 M4480,4136.5 H4524 M4480,4139.5 H4524" class="border" />
+	<path d="M4430,4287 L4390,4312 M4570,4287 L4530,4312" class="border2" />
+	<path d="M4632,4368 L4663,4316" class="border2" />
+	<path d="M3950,4012 L3927,4050 M3950,4123 L3927,4165" class="border2" />
+	<path d="M4368,4012 L4343,4050" class="border2" />
+	<path d="M4097,4060 L4078,4018 M4097,4167 L4078,4128" class="border2" />
+	<path d="M4188,4060 L4164,4018" class="border2" />
+	<path d="M4188,4193 L4164,4153" class="border2" />
+	<path d="M4319,4146 L4298,4188" class="border2" />
+	<path d="M4524,4135 L4570,4110" class="border2" />
+	<path d="M4524,4135 L4570,4160" stroke-dasharray="6 3" class="border2" />
+</g>
+<g id="room246">
+	<desc>Морозильные камеры 246</desc>
+	<path d="M3653,4388 H3687 M3748,4388 H3806 M3868,4388 H4024 M4085,4388 H4117 M4178,4388 H4211 M4272,4388 H4292
+	M4347,4388 H4432 M4495,4388 H4550 M4613,4388 H4630" class="contur-10" />
+	<path d="M3650,4790 H3980" class="contur-10" />
+	<path d="M3678,4793 H3980 M4346,4793 H4625 M4346,4828 H4625" class="contur-16" />
+	<path d="M3917,4780 H4111 M4215,4780 H4380" class="contur-10" />
+	<path d="M3653,4397 H3694 M3740,4397 H3815 M3860,4397 H4030 M4077,4397 H4115 M4180,4397 H4217 M4263,4397 H4300
+	M4347,4397 H4441 M4487,4397 H4558 M4604,4397 H4624" class="contur-8" />
+	<path d="M3772,4693 H3824 M3885,4693 H4030 M4077,4693 H4115 M4180,4693 H4217 M4263,4693 H4328
+	M4375,4693 H4441 M4487,4693 H4558 M4604,4693 H4624" class="contur-8" />
+	<path d="M3773,4395 V4718 M3773,4764 V4790" class="contur-8" />
+	<path d="M3999,4395 V4693 M4111,4395 V4693 M4184,4395 V4693 M4296,4395 V4693 M4408,4395 V4693 M4518,4395 V4693 M4618,4395 V4693" class="contur-8" />
+	<path d="M3659,4395 V4781 H3775" class="contur-8" />
+	<path d="M3740,4401 L3700,4420 M3860,4401 L3820,4420 M4077,4401 L4036,4420" class="border2" />
+	<path d="M4180,4392 L4125,4420" class="border2" />
+	<path d="M4263,4401 L4223,4420 M4347,4401 L4307,4420 M4487,4401 L4444,4420 M4604,4401 L4564,4420" class="border2" />
+	<path d="M3769,4764 L3748,4725" class="border2" />
+	<path d="M3824,4689 L3878,4660 M4030,4689 L4074,4660 M4263,4689 L4222,4660 M4376,4689 L4336,4660 M4487,4689 L4444,4660 M4604,4689 L4564,4660" class="border2" />
+	<path d="M4632,4770 L4663,4717" class="border2" />
+	<path d="M4111,4785 L4155,4812 M4215,4785 L4170,4812" class="border2" />
+</g>
+<g id="room248">
+	<desc>Кладовые помещения 248</desc>
+	<path d="M3528,5015 H3550 M3630,5015 H3958 V4975 M3958,4913 V4813" class="contur-10" />
+	<path d="M3524,5250 H3960" class="contur-16" />
+	<path d="M3524,5253 H4073 M4253,5253 H4654 M4745,5253 H4780" class="contur-10" />
+	<path d="M3815,5015 V5030 M3815,5107 V5252 M3814,5118 H3958 V5143 M3958,5204 V5250" class="contur-10" />
+	<path d="M3560,5024 H3538 V5238 H3806 V5100 M3806,5040 V5024 H3620" class="contur-8" />
+	<path d="M4351,4820 V4915 M4351,4976 V5053 M4351,5130 V5145 M4351,5193 V5253" class="contur-10" />
+	<path d="M4627,4813 V4913 M4627,4975 V5255" class="contur-10" />
+	<path d="M4350,5030 H4520 V5250" class="contur-10" />
+	<path d="M4346.5,5050 V5135 M4349.5,5050 V5135 M4352.5,5050 V5135 M4355.5,5050 V5135" class="border" />
+	<path d="M3560,5021 L3613,4987" class="border2" />
+	<path d="M3803,5040 L3772,5094" class="border2" />
+	<path d="M3962,4913 L3995,4968" class="border2" />
+	<path d="M3963,5204 L3995,5149" class="border2" />
+	<path d="M4072,5258 L4148,5302 M4253,5258 L4178,5302" class="border2" />
+	<path d="M4348,4912 L4316,4967 M4348,5195 L4316,5152" class="border2" />
+	<path d="M4632,4913 L4662,4968" class="border2" />
+	<path d="M4652,5249 L4692,5224 M4746,5249 L4705,5224" class="border2" />
+</g>
+<g id="room241">
+	<desc>Лестница 241</desc>
+	<path d="M4806,3870 V3548 H5050" class="contur-16" />
+	<path d="M4806,3937 V3963 H5050" class="contur-16" />
+	<path d="M5035,3545 V3960" class="border2" />
+	<path d="M5049,3545 V3830" class="border2" />
+	<rect x="5036" y="3844"  height="52"  width="26" class="border2" />
+	<rect x="5063" y="3834"  height="133"  width="133" class="contur-4" />
+	<path d="M5050,3844 V3822 H5209 V3979 H5052 V3897" class="contur-4" />
+	<rect x="5075.5" y="3910.5"  height="50"  width="65" class="border" />
+	<rect x="5140.5" y="3920.5"  height="40"  width="45" class="border" />
+	<path d="M5035,3696 L4929.5,3724.5 V3787.5 H5036 M4929.5,3772.5 H5036 M4929.5,3756.5 H5036 M4929.5,3740.5 H5036 M4929,3724.5 H5036
+	M4985,3709.5 H5036 M4985.5,3709 V3787 M4980.5,3716 L4985.5,3709 4990.5,3716" class="border" />
+	<path d="M4936,3723 V3789" class="border2" />
+	<desc>Жироуловитель</desc>
+	<rect x="4791" y="4193"  height="10"  width="279" class="border2" />
+	<rect x="4791" y="4203"  height="16"  width="260" class="border2" />
+	<rect x="5051" y="4203"  height="20"  width="10" class="border2" />
+	<rect x="5060" y="4203"  height="20"  width="10" class="border2" />
+	<rect x="5051" y="4223"  height="10"  width="155" class="border2" />
+	<rect x="5051" y="4083"  height="10"  width="155" class="border2" />
+	<rect x="5051" y="4093"  height="100"  width="10" class="border2" />
+	<rect x="5196" y="4093"  height="130"  width="10" class="border2" />
+	<rect x="5145" y="4173"  height="35"  width="46" class="border2" />
+	<path d="M5070,4208 H5145 V4222 M5191,4208 V4222 M5070,4193 V4185 H5145" class="border2" />
+</g>
+<g id="room249">
+	<desc>Тамбур-шлюз 249</desc>
+	<path d="M4506,5298 V5266 H4386 V5368 H4506 V5343" class="contur-16" />
+	<path d="M4505,5371 H4695 M4745,5371 H4790" class="contur-10" />
+	<path d="M4747,5367 L4702,5340" class="border2" />
+	<use xlink:href="#lift2"  width="150" height="150" transform="scale(-1,1) translate(-4495,5268)" class="lift-green" />
+</g>
+<g id="room251">
+	<desc>Склад бара 251</desc>
+	<path d="M4383,5355 V5435 M4383,5485 V5652" class="contur-10" />
+	<desc>Тех. помещение 255</desc>
+	<path d="M3940,6077 V5790 H3953 M4077,5790 H4093 V5650 H4785" class="contur-10" />
+	<path d="M3952,5786 L4006,5755 M4078,5786 L4022,5755" class="border2" />
+	<path d="M3532,5647 V6078" class="contur-16" />
+	<path d="M3518,5648 H3964" class="contur-16" />
+	<path d="M3498,5640 V6088" class="contur-16" />
+	<path d="M3533,5988 H3788" class="contur-10" />
+	<path d="M3793,5647 V5864 M3793,5932 V6080" class="contur-10" />
+	<path d="M3790,5945 H3845 M3910,5945 H3940" class="contur-10" />
+	<path d="M3693,5777 V5874 M3693,5932 V5987" class="contur-10" />
+	<path d="M3719,5788 H3696 V5680 H3790 V5788 H3762" class="contur-16" />
+	<use xlink:href="#lift2"  width="135" height="135" transform="scale(1,-1) translate(3788,-5777) rotate(90)" class="lift-green" />
+	<path d="M3688,5875 L3665,5917" class="border2" />
+	<path d="M3798,5864 L3820,5905 M3797,5937 V5910" class="border2" />
+	<path d="M3840,5949 H3865 M3912,5949 L3870,5975" class="border2" />
+	<path d="M3840,6087 H3865 M3912,6087 L3870,6112" class="border2" />
+	<rect x="3964.5" y="5640.5"  height="40"  width="123" class="border" />
+	<path d="M4024.5,5640 V5680 M4019.5,5673 L4024.5,5680 4029.5,5673" class="border" />
+	<path d="M3940,5865.5 H4097.5 V5788 M3940,5848.5 H4097.5 M4021.5,5875 V5848 M4016.5,5855 L4021.5,5849 4026.5,5855" class="border" />
+</g>
+<g id="room256">
+	<desc>Лестница 256</desc>
+	<path d="M3526,6080 V6288 H3956 V6075" class="contur-16" />
+	<path d="M1170.5,6084 V6172.5 M1185.5,6084 V6172.5 M1200.5,6084 
+	V6172.5 M1215.5,6084 V6172.5 M1230.5,6084 V6172.5 M1170,6172.5 H1231 L1260,6085 M1245.5,6080 V6128 M1170,6126.5 H1246 M1239,6121.5 L1246,6126.5 1239,6131.5" 
+	transform="scale(-1,1) translate(-4918,0)" class="border" />
+	<path d="M3685,6166 H3753" class="border2" />
+</g>
+<g id="room291">
+	<desc>Помещение 291</desc>
+	<path d="M919,3957 H967" class="contur-10" />
+	<path d="M970,3915 V4065 M970,4273 V4805" class="contur-10" />
+	<path d="M775,4387 H827 M919,4387 H968" class="contur-10" />
+	<path d="M825,3953 L866,3935 M919,3953 L878,3935" class="border2" />
+	<path d="M825,4384 L866,4360 M919,4383 L878,4360" class="border2" />
+	<path d="M975,4065 L1024,4155 M975,4273 L1024,4183" class="border2" />
+</g>
+<g id="room289">
+	<desc>Кладовая 289</desc>
+	<path d="M2647,2312 H3105" class="contur-16" />
+	<path d="M2653,2268 H3082 V1838" class="contur-16" />
+	<path d="M2663,2090 H3085" class="contur-10" />
+	<path d="M3082,1710 V1845" class="contur-10" />
+	<path d="M3496,1837 V2282" class="contur-16" />
+	<path d="M3487,1710 V1728 M3487,1796 V1842 H3512" class="contur-10" />
+	<path d="M3483,1774 V1800 M3483,1728 L3457,1767" class="border2" />
+	<desc>Помещение для зарядки электрокаров 289.1</desc>
+	<path d="M2663,1710 V1912 M2663,2042 V2102 M2663,2225 V2265" class="contur-10" />
+	<path d="M2662,1911 L2628,1970 M2662,2043 L2628,1987" class="border2" />
+	<path d="M2658,2102 L2626,2155 M2658,2226 L2626,2172" class="border2" />
+</g>
+<g id="room288">
+	<desc>Помещение швейцара-парковщика 288</desc>
+	<path d="M1917,2090 V1858 H1938 M2050,2090 V1858 H1990" class="contur-10" />
+	<path d="M1938,1853 L1982,1826" class="border2" />
+</g>
+<g id="room287">
+	<desc>CCF 1.1 287</desc>
+	<path d="M1832,1835 V2282 M1832,2268 H2270" class="contur-16" />
+	<path d="M1830,2092 H1845 M1905,2092 H2050 V2270" class="contur-10" />
+	<path d="M1845,2087 L1894,2056" class="border2" />
+	<path d="M1818,2312 H2276" class="contur-16" />
+</g>
+<g id="room286">
+	<desc>Зона загрузки 286</desc>
+	<path d="M970,3972 H1400 V4066 M1400,4272 V4394" class="contur-10" />
+	<path d="M965,4797 H1404 M1388,4360 V4800" class="contur-16" />
+	<path d="M970,4655 H1385" class="contur-10" />
+	<path d="M1036,4798 V4657 M1180,4798 V4657 M1326,4798 V4657" class="contur-16" />
+	<path d="M1430,4355 V4805" class="contur-16" />
+	<desc>Лифт</desc>
+	<use xlink:href="#lift2"  width="200" height="200" transform="scale(1,-1) translate(1173,-4783) rotate(90)" class="lift-green" />
+	<use xlink:href="#lift2"  width="200" height="200" transform="scale(1,-1) translate(1320,-4783) rotate(90)" class="lift-green" />
+</g>
+<g id="room285">
+	<desc>Малярный цех 285</desc>
+	<path d="M775,4570 V4890" class="contur-10" />
+	<path d="M136,4828 H575" class="contur-16" />
+	<path d="M545,4817 H775" class="contur-10" />
+	<path d="M780,4444 L811,4496 M780,4570 L811,4516" class="border2" />
+</g>
+<g id="room284">
+	<desc>Механическая мастерская 284</desc>
+	<path d="M140,4812 V6088" class="contur-16" />
+	<path d="M140,5242 H775" class="contur-10" />
+	<path d="M775,5015 V5260" class="contur-10" />
+	<path d="M780,4890 L812,4942 M780,5015 L812,4962" class="border2" />
+</g>
+<g id="room283">
+	<desc>Склад запчастей, оборудования вентиляции и кондиционирования с участком ремонта починка кондиционеров и вентиляции 283</desc>
+	<path d="M140,5519 H552 V5649 H778" class="contur-16" />
+	<path d="M775,5382 V5668" class="contur-10" />
+	<path d="M780,5259 L812,5309 M780,5383 L812,5330" class="border2" />
+</g>
+<g id="room282">
+	<desc>Тех. помещение вентиляции 282</desc>
+	<path d="M140,5647 H397" class="contur-16" />
+	<path d="M780,5667 L811,5707 M780,5766 L811,5725" class="border2" />
+</g>
+<g id="room281">
+	<desc>Тех. помещение 281</desc>
+	<path d="M558,6077 V5775 H775" class="contur-10" />
+	<path d="M775,5766 V5988 M775,6045 V6078" class="contur-10" />
+	<path d="M780,6046 L811,5994" class="border2" />
+	<path d="M136,6080 H1010" class="contur-16" />
+</g>
+<g id="room275">
+	<desc>Лестничный узел 275</desc>
+	<path d="M970,4812 V5025" class="contur-10" />
+	<path d="M970,4817 H1404" class="contur-10" />
+	<path d="M970,5005 H1165 M1227,5005 H1253" class="contur-10" />
+	<path d="M1053,5005 V5025 L1025,5067 M1053,5072 V5090 M965,5025 L936,5070" class="border2" />
+	<path d="M1227,5008 L1173,5039" class="border2" />
+	<desc>Тамбур-шлюз 274</desc>
+	<path d="M1252,4817 V5133 H1280 M1341,5133 H1404" class="contur-10" />
+	<path d="M1280,5138 L1333,5172" class="border2" />
+	<path d="M1287,5012 H1256 V4862 H1366 V5012 H1335" class="contur-16" />
+	<desc>Лифт</desc>
+	<use xlink:href="#lift2"  width="150" height="150" transform="scale(1,-1) translate(1361,-4990) rotate(90)" class="lift-green" />
+	<desc>Комната охранника 276</desc>
+	<path d="M970,5077 V5280" class="contur-10" />
+	<path d="M970,5230 H1404" class="contur-10" />
+	<path d="M970,5090 H1145 V5135 M1145,5185 V5233" class="contur-10" />
+	<path d="M1150,5186 L1176,5139" class="border2" />
+</g>
+<g id="room272">
+	<desc>Блок для передачи ценностей 271.1</desc>
+	<path d="M1415,4818 V5138" class="contur-10" />
+	<path d="M1415,4983 H1724 M1780,4983 H1826" class="contur-10" />
+	<path d="M1680,4926 L1705,4876" class="border2" />
+	<desc>Помещение для пересчёта ценностей 272</desc>
+	<path d="M1410,4817 H1722 M1778,4817 H1830 V5143 M1830,5196 V5231" class="contur-10" />
+	<path d="M1412,5133 H1508 M1565,5133 H1675 V4925 M1675,4875 V4815" class="contur-10" />
+	<path d="M1566,5137 L1515,5167" class="border2" />
+	<desc>Тамбур-шлюз 272.1</desc>
+	<path d="M1721,4814 L1768,4785 M1780,4978 L1730,4949" class="border2" />
+	<desc>Кладовая ценностей  268</desc>
+	<path d="M1830,4828 H2246 V6080" class="contur-16" />
+	<path d="M1830,4880 H2190 V5045 H2045 M1830,5045 H1988" class="contur-10" />
+	<path d="M2045,5050 L1994,5080" class="border2" />
+	<desc>Предкладовая  267.1</desc>
+	<path d="M1410,5230 H2243" class="contur-10" />
+</g>
+<g id="room266">
+	<desc>Склад игрового оборудования 266</desc>
+	<path d="M970,5403 V5655" class="contur-10" />
+	<path d="M970,5650 H1404 M1410,5650 H1530 M1654,5650 H2040 V6076" class="contur-10" />
+	<path d="M965,5280 L934,5330 M965,5404 L934,5352" class="border2" />
+	<path d="M1530,5645 L1583,5616 M1655,5645 L1600,5616" class="border2" />
+	<path d="M1410,6080 H2684" class="contur-16" />
+</g>
+<g id="room277">
+	<desc>Венткамера 277</desc>
+	<path d="M1183,5650 V5693 M1183,5819 V6077" class="contur-10" />
+	<path d="M1388,5650 V6077" class="contur-16" />
+	<path d="M1183,5950 H1388 M1285,5952 V6078" class="contur-10" />
+	<path d="M1188,5820 L1219,5764 M1188,5693 L1219,5746" class="border2" />
+	<desc>Тамбур-шлюз 279</desc>
+	<path d="M970,6080 V5860 H1015 M1138,5860 H1187" class="contur-10" />
+	<path d="M1077,6080 H1404" class="contur-16" />
+	<path d="M1014,5865 L1066,5898 M1138,5865 L1085,5898" class="border2" />
+	<path d="M1008,6087 L1050,6106 M1055,6087 H1080" class="border2" />
+</g>
+<g id="room278">
+	<desc>Лестница 278</desc>
+	<path d="M967,6080 V6288 H1396 V6080" class="contur-16" />
+	<path d="M1140.5,6084 V6172.5 M1155.5,6084 V6172.5 M1170.5,6084 V6172.5 M1185.5,6084 V6172.5 M1200.5,6084 V6172.5 M1215.5,6084 V6172.5 M1230.5,6084 V6172.5" class="border" />
+	<path d="M1140,6172.5 H1231 L1260,6085" class="border" />
+	<path d="M1245.5,6080 V6128 M1140,6126.5 H1246 M1239,6121.5 L1246,6126.5 1239,6131.5" class="border" />
+	<path d="M1138,6167 H1233" class="border2" />
+</g>
+<g id="room290">
+	<desc>Служебная стоянка легковых автомобилей 290</desc>
+	<path d="M1823,3132 H2270" class="contur-16" />
+	<path d="M2653,3132 H3100" class="contur-16" />
+	<path d="M2875,3135 V3310 H3022 M3095,3135 V3310 H3083" class="contur-10" />
+	<path d="M3083,3306 L3031,3276" class="border2" />
+	<path d="M1823,3963 H2270" class="contur-16" />
+	<path d="M2653,3963 H3100" class="contur-16" />
+	<path d="M2454,4367 V4807" class="contur-16" />
+	<path d="M3290,4367 V4807" class="contur-16" />
+	<path d="M3490,4367 V4807" class="contur-16" />
+	<path d="M3492,2288 V2740" class="contur-16" />
+	<path d="M3526,2288 V2740" class="contur-16" />
+	<path d="M3495,2697 V4372 H3288" class="contur-10" />
+	<path d="M3529,2697 V4377" class="contur-10" />
+	<path d="M3532,4360 V4807" class="contur-16" />
+	<path d="M3529,4812 V5252" class="contur-10" />
+</g>
+<g>
+	<desc>Обеденный зал на 165 посадочных мест</desc>
+	<path d="M3645.5,2322 V2780 M3648.5,2322 V2780 M3651.5,2322 V2780 M3654.5,2322 V2780" class="border" />
+	<path d="M3650,2288 V2348 M3650,2426 V2505 M3650,2583 V2660 M3650,2740 V2816" class="contur-10" />
+	<path d="M3650,2867 V3235 M3650,3313 V3396" class="contur-10" />
+	<path d="M3645.5,3228 V3320 M3648.5,3228 V3320 M3651.5,3228 V3320 M3654.5,3228 V3320" class="border" />
+	<path d="M3650,3446 V3635 M3650,3688 V3980" class="contur-10" />
+	<path d="M3650,4060 V4307 M3650,4370 V5020" class="contur-10" />
+	<path d="M3645.5,3970 V4060 M3648.5,3970 V4060 M3651.5,3970 V4060 M3654.5,3970 V4060" class="border" />
+	<path d="M3678,2305 H3980" class="contur-16" />
+	<path d="M3647,2308 H3700" class="contur-10" />
+</g>
+<g id="room260">
+	<desc>Лестничная клетка 260</desc>
+	<path d="M2660,4360 V4786 H3090 V4360" class="contur-16" />
+	<path d="M2652,4828 H3100" class="contur-16" />
+	<path d="M2665,4370 H2900 M2970,4370 H2996 M3057,4370 H3095" class="contur-10" />
+	<path d="M2885,4370 V4388 M2885,4455 V4785 M2885,4495 H2980 V4372" class="contur-10" />
+	<path d="M3015,4787 V4760 H3095" class="contur-10" />
+	<path d="M2881,4460 V4435 M2881,4388 L2858,4428" class="border2" />
+	<path d="M2900,4374 H2923 M2971,4374 L2928,4355" class="border2" />
+	<path d="M3057,4375 L3004,4405" class="border2" />
+	<path d="M2668,4591 L2709,4603 2714,4600 2714,4609 2717,4604 2773.5,4619 V4497.5 H2660" class="border" />
+	<path d="M2668,4513.5 H2774 M2668,4528.5 H2774 M2668,4545.5 H2774 M2668,4559.5 H2774 M2668,4574.5 H2774 M2668,4591.5 H2774" class="border" />
+	<path d="M2727,4606.5 H2774 M2717.5,4498 V4604 M2712.5,4597 L2717.5,4604 2722.5,4597" class="border" />
+	<path d="M2768,4495 V4617" class="border2" />
+	<path d="M2252,5060.5 H2660 M2252,4387.5 H2660" class="border" />
+	<path d="M2357.5,4387 V5060 M2352.5,4394 L2357.5,4387 2362.5,4394" class="border" />
+	<path d="M2554.5,4387 V5060 M2549.5,4394 L2554.5,4387 2559.5,4394" class="border" />
+	<path d="M2446.5,4802 V5060 M2461.5,4802 V5060" class="border" />
+</g>
+<g id="room262">
+	<desc>Пункт охраны по загрузке/разгрузке 262</desc>
+	<path d="M2663,4827 V5240 H3077 V6088" class="contur-10" />
+	<path d="M2663,4995 H2721 M2767,4995 H2803 V4960 M2803,4867 V4830" class="contur-10" />
+	<path d="M2720,5000 L2761,5025" class="border2" />
+	<path d="M2798.5,4860 V4965 M2801.5,4860 V4965 M2804.5,4860 V4965 M2807.5,4860 V4965" class="border" />
+	<path d="M2885,5240 V5253 M2885,5300 V5309 L2916,5338 M2981,5404 L3012,5435 H3078" class="contur-10" />
+	<path d="M2911.5,5340 L2978.5,5408" class="border" />
+	<path d="M2914.5,5340 L2979.5,5406" class="border" />
+	<path d="M2916.5,5338 L2982,5404" class="border" />
+	<path d="M2918.5,5334.5 L2985.5,5402" class="border" />
+	<path d="M2882,5251 L2857,5292" class="border2" />
+</g>
+<g id="room270">
+	<desc>Тамбур (комната отдыха для инкассаторов) 270</desc>
+	<path d="M1825,4786 H2260 V4360" class="contur-16" />
+	<path d="M1830,4360 V4692 M1830,4743 V4806" class="contur-10" />
+	<path d="M1830,4625 H2262" class="contur-10" />
+	<path d="M2115,4620 V4640 M2115,4685 V4785" class="contur-10" />
+	<path d="M2200,4620 V4640 L2177,4675 M2200,4680 V4785" class="border2" />
+	<path d="M2112,4638 L2091,4673" class="border2" />
+	<path d="M1834,4692 L1860,4738" class="border2" />
+	<path d="M1830,4743.5 H2265 M2135.5,4784 V4743 M2183.5,4784 V4743" class="border" />
+	<use xlink:href="#sink2" width="40" height="40" transform="scale(1,-1) translate(2179,-4775) rotate(90)" />
+	<use xlink:href="#tualet2" width="40" height="40" transform="scale(1,1) translate(2208,4703)" />
+</g>
+<g id="room265">
+	<desc>Помещение для уборочного инвентаря по территории 265</desc>
+	<path d="M2245,5650 H2360 M2422,5650 H2525" class="contur-10" />
+	<path d="M2473,5650 V6078" class="contur-10" />
+	<path d="M2359,5646 L2410,5616" class="border2" />
+</g>
+<g id="room264">
+	<desc>CCF 1.1 264</desc>
+	<path d="M2588,5650 H2675 V5700" class="contur-10" />
+	<path d="M2675,5828 V5930" class="contur-10" />
+	<path d="M2525,5646 L2576,5616" class="border2" />
+	<path d="M2670.5,5700 V5830 M2673.5,5700 V5830 M2676.5,5700 V5830 M2679.5,5700 V5830" class="border" />
+</g>
+<g id="room263">
+	<desc>Комната для отдыха дворников 263</desc>
+	<path d="M2675,5994 V6075" class="contur-10" />
+	<path d="M2473,5863 H2675" class="contur-10" />
+	<path d="M2679,5995 L2707,5942" class="border2" />
+</g>
+<g>
+	<desc>заезд на стоянку</desc>
+	<path d="M2660,6093 V6450" class="contur-16" />
+	<path d="M2875,6093 V6155" class="contur-20" />
+	<path d="M3090,6093 V6360" class="contur-16" />
+	<path d="M3107,6093 V6360" class="contur-10" />
+	<path d="M3497,6093 V6270" class="contur-10" />
+	<path d="M2667,6449 L3083,6360 M3109,6355 L3493,6270" class="border" />
+	<path d="M2656,6093.5 H3497" class="border" />
+	<path d="M2715.5,6093 V6439 M2865.5,6093 V6407" class="border" />
+	<path d="M2885.5,6093 V6403 M3035.5,6093 V6371" class="border" />
+	<path d="M2789.5,6093 V6423 M2784.5,6100 L2789.5,6093 2794.5,6100" class="border" />
+	<path d="M2960.5,6093 V6387 M2955.5,6100 L2960.5,6093 2965.5,6100" class="border" />
+	<path d="M2753,6310 L2789.5,6346 2825,6310 2818,6300 2789.5,6331 2760,6300 z" class="border" />
+	<path d="M2924,6212 L2960.5,6176 2995,6212 2988,6220 2960.5,6191 2931,6220 z" class="border" />
+	<path d="M3250,6080 H3330" class="contur-16" />
+	<path d="M3518,6080 H3845 M3910,6080 H4785 V4812" class="contur-16" />
+</g>
+</g>
+<desc>Кнопки темпиратуры</desc>
+<g class="lampa_gray"   transform="scale(1,1) translate(1000,1000)" cursor="pointer" >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="141" />
+	<use xlink:href="#lampa"  width="80" height="80" x="111" y="170" />
+</g>
+<g class="lampa_yellow"  transform="scale(1,1) translate(2800,2000)" cursor="pointer" >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="141" />
+	<use xlink:href="#lampa"  width="80" height="80" x="111" y="170" />
+</g>
+<g class="lampa_green"   transform="scale(1,1) translate(2740,1200)" cursor="pointer"  >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="141" />
+	<use xlink:href="#lampa"  width="80" height="80" x="111" y="170" />
+</g>
+<g class="lampa_green"  transform="scale(1,1) translate(3100,810)" cursor="pointer" >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="41" />
+	<use xlink:href="#lampa"  width="55" height="55" x="124" y="115" />
+	<text x="150" y="106" style="font-size:50px;  font-family:'CRYSTAL'; font-weight:normal" >75</text>
+</g> 
+<g class="lampa_yellow"  transform="scale(1,1) translate(2800,830)"  cursor="pointer" >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="41" />
+	<use xlink:href="#lampa"  width="55" height="55" x="124" y="115" />
+	<text x="150" y="106" style="font-size:50px;  font-family:'CRYSTAL'; font-weight:normal" >75</text>
+</g> 
+<g class="lampa_gray"  transform="scale(1,1) translate(1050,1650)"  cursor="pointer" >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="41" />
+	<use xlink:href="#lampa"  width="55" height="55" x="124" y="115" />
+	<text x="150" y="106" style="font-size:50px;  font-family:'CRYSTAL'; font-weight:normal" >75</text>
+</g>
+<g class="gray_term" id="button2" transform="scale(1,1) translate(2400,1200)"  cursor="pointer" >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="91" />
+	<text x="150" y="165" style="font-size:47px; font-family:'CRYSTAL'; font-weight:normal" >23.6</text>
+	<text x="150" y="210" style="font-size:40px;  font-family:'CRYSTAL'; font-weight:normal" >C</text>
+	<text x="135" y="191" style="font-size:20px;  font-family:'CRYSTAL'; font-weight:normal" >o</text>
+</g>
+<g class="yellow_term" id="button2" transform="scale(1,1) translate(2070,630)"  cursor="pointer" >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="91" />
+	<text x="150" y="165" style="font-size:47px; font-family:'CRYSTAL'; font-weight:normal" >23.6</text>
+	<text x="150" y="210" style="font-size:40px;  font-family:'CRYSTAL'; font-weight:normal" >C</text>
+	<text x="135" y="191" style="font-size:20px;  font-family:'CRYSTAL'; font-weight:normal" >o</text>
+</g>
+<g class="green_term" id="button1" cursor="pointer" transform="scale(1,1) translate(2000,1430)" >
+	<use xlink:href="#knopka_circle"  width="160" height="160" x="91" y="91" />
+	<text x="150" y="165" style="font-size:47px; font-family:'CRYSTAL'; font-weight:normal" >23.6</text>
+	<text x="150" y="210" style="font-size:40px;  font-family:'CRYSTAL'; font-weight:normal" >C</text>
+	<text x="135" y="191" style="font-size:20px;  font-family:'CRYSTAL'; font-weight:normal" >o</text>
+</g>
+
+<use xlink:href="#atn" x="1305" y="1744" width="130" height="130" />
+<g id="navigation">
+	<use xlink:href="#et2"  onclick="go:et2.svg" width="300" height="300" x="6748" y="1050" class="number_et" />
+	<use xlink:href="#et1"  onclick="go:et1.svg" width="300" height="300" x="6748" y="1400" class="number_et" />
+	<use xlink:href="#et_1" onclick="go:et-1.svg" width="300" height="300" x="6748" y="1750" class="number_et" />
+	<use xlink:href="#et_2" onclick="go:et-2.svg" width="300" height="300" x="6748" y="2100" class="number_active" />
+	<use xlink:href="#menu" onclick="go:admin.svg" width="300" height="300" x="6748" y="2450" class="number_et" />
+</g>
+<g id="pult" transform="scale(1,1) translate(1300,1380)" display="none" >	
+		<use xlink:href="#wrap" width="720" height="1280" x="0" y="0" />	
+		<text id="t1" x="177" y="590" class="TXt1" >23.6</text>	
+		<text id="t2" x="294" y="762" class="TXt2" >23.5</text>
+		<g id="speed">
+			<use id="on1" xlink:href="#speed_1" width="100" height="100" x="210" y="118" class="ONactive" display="block" />
+			<use id="on2" xlink:href="#speed_2" width="100" height="100" x="210" y="118" class="ONactive" display="block" />
+			<use id="on3" xlink:href="#speed_3" width="100" height="100" x="210" y="118" class="ONactive" display="block" />
+			<use id="ona" xlink:href="#speed_a" width="100" height="100" x="210" y="118" class="ONactive" display="block" />
+		</g>
+		<use xlink:href="#cold" width="100" height="100" x="312.5" y="118" />
+		<g id="regum_active">
+			<use id="on_auto" xlink:href="#auto" width="100" height="100" x="415" y="118" class="ONactive" display="block" />
+			<use id="on_off" xlink:href="#off" width="100" height="100" x="415" y="118" class="ONactive" display="block" />
+			<use id="on_on" xlink:href="#on" width="100" height="100" x="415" y="118" class="ONactive" display="block" />
+		</g>
+		<g id="speed_view" display="none">
+			<use id="sp3" xlink:href="#speed_3" width="100" height="100" x="130" y="222" class="ONactive" />	
+			<use id="sp2" xlink:href="#speed_2" width="100" height="100" x="250" y="222" class="ONactive" />
+			<use id="sp1" xlink:href="#speed_1" width="100" height="100" x="370" y="222" class="ONactive" />
+			<use id="spa" xlink:href="#speed_a" width="100" height="100" x="490" y="222" class="ONactive" />
+		</g>
+		<g id="regum_view" display="none">
+			<use id="off_click" xlink:href="#off" width="100" height="100" x="205" y="222" class="ONactive" />	
+			<use id="on_click" xlink:href="#on" width="100" height="100" x="310" y="222" class="ONactive" />
+			<use id="auto_click" xlink:href="#auto" width="100" height="100" x="415" y="222" class="ONactive" />
+		</g>
+		<use xlink:href="#lower" width="100" height="100" x="160" y="860" />
+		<use xlink:href="#up" width="100" height="100" x="460" y="860" />
+		<use xlink:href="#fancoil" x="121" y="1064" class="keyActive" />
+		<use xlink:href="#heating" x="281" y="1064" class="key" />
+		<use xlink:href="#controller" x="441" y="1064" class="key" />
+		<text id="close"  x="650" y="70" >x</text>
+</g>
+<animate 
+    xlink:href="#pult"
+    attributeName="display" 
+    to="block" 
+    dur="0.5s"
+    begin="button1.click"
+    fill="freeze" 
+    id="rect-anim" />
+	<animate 
+    xlink:href="#pult"
+    attributeName="display" 
+    to="none" 
+    dur="0.5s"
+    begin="close.click"
+    fill="freeze" 
+    id="close2" />
+<animate 
+    xlink:href="#speed_view"
+    attributeName="display" 
+    to="none" 
+    dur="0.5s"
+    begin="speed_view.click"
+    fill="freeze" />
+	
+<animate 
+    xlink:href="#regum_view"
+    attributeName="display" 
+    to="none" 
+    dur="0.5s"
+    begin="regum_view.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#regum_view"
+    attributeName="display" 
+    to="none" 
+    dur="0.5s"
+    begin="speed.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#speed_view"
+    attributeName="display" 
+    to="block" 
+    dur="0.5s"
+    begin="speed.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#speed_view"
+    attributeName="display" 
+    to="none" 
+    dur="0.5s"
+    begin="regum_active.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#regum_view"
+    attributeName="display" 
+    to="block" 
+    dur="0.5s"
+    begin="regum_active.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on3"
+    attributeName="display" 
+    to="block" 
+    dur="0.2s"
+    begin="sp3.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on2"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp3.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on1"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp3.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#ona"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp3.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on2"
+    attributeName="display" 
+    to="block" 
+    dur="0.2s"
+    begin="sp2.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on3"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp2.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on1"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp2.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#ona"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp2.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on1"
+    attributeName="display" 
+    to="block" 
+    dur="0.2s"
+    begin="sp1.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on3"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp1.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on2"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp1.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#ona"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="sp1.click"
+    fill="freeze"  />	
+<animate 
+    xlink:href="#ona"
+    attributeName="display" 
+    to="block" 
+    dur="0.2s"
+    begin="spa.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on3"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="spa.click"
+    fill="freeze" />
+<animate 
+    xlink:href="#on2"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="spa.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on1"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="spa.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_on"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="off_click.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_auto"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="off_click.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_off"
+    attributeName="display" 
+    to="block" 
+    dur="0.1s"
+    begin="off_click.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_off"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="on_click.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_auto"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="on_click.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_on"
+    attributeName="display" 
+    to="block" 
+    dur="0.1s"
+    begin="on_click.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_off"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="auto_click.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_on"
+    attributeName="display" 
+    to="none" 
+    dur="0.1s"
+    begin="auto_click.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#on_auto"
+    attributeName="display" 
+    to="block" 
+    dur="0.1s"
+    begin="auto_click.click"
+    fill="freeze"  />
+	
+<g>
+    <animate
+        xlink:href="#atn"
+       attributeName="opacity"
+       from="0"
+       to="1"
+       dur="1s"
+       repeatCount="indefinite"
+       restart="whenNotActive" />
+</g>
+
+
+</svg>

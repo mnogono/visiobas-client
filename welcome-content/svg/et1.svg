@@ -1,0 +1,1736 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="3840" height="2160"  viewBox="2500 1400 10000 7500">
+<defs>
+
+	<style>
+	 <![CDATA[
+    @font-face {
+        font-family:'CRYSTAL';
+        src: url('CRYSTAL.ttf');
+    }
+		svg{background:#41413F;}
+		.room{fill:#56A5FF;}
+		.partition{fill:none; stroke-width:12; stroke:#A7A7A5}
+		.partition10{fill:none; stroke-width:10; stroke:#A7A7A5}
+		.partition14{fill:none; stroke-width:14; stroke:#A7A7A5}
+		.contur-150{fill:none; stroke-width:20; stroke:#A7A7A5}
+		.contur{fill:none; stroke-width:8; stroke:#A7A7A5}
+		.contur-fat{fill:none; stroke-width:12; stroke:#A7A7A5}
+		.contur-door{fill:none; stroke-width:18; stroke:#A7A7A5}
+		.contur-200{fill:none; stroke-width:24; stroke:#A7A7A5}
+		.contur-60{fill:none; stroke-width:60; stroke:#A7A7A5}
+		.contur-70{fill:none; stroke-width:70; stroke:#A7A7A5}
+		.contur-70fill{fill:#A7A7A5; stroke-width:0;}
+		.contur-fat2{fill:none; stroke-width:50; stroke:#A7A7A5}
+		.contur-fat30{fill:none; stroke-width:30; stroke:#A7A7A5}
+		.border{fill:none; stroke-width:1; stroke:#A7A7A5}
+		.border2{fill:none; stroke-width:2; stroke:#A7A7A5}
+		.border-fill{fill:#41413F; stroke-width:1; stroke:#A7A7A5}
+		.border-full{fill:#A7A7A5; stroke-width:1; stroke:#A7A7A5}
+		.lift{stroke-width:1; }
+		.lift2{stroke-width:2;}
+		.lift3{ stroke-width:2;}
+		.number_et{fill:#A7A7A5; stroke-width:0; stroke:#A7A7A5; cursor:pointer;}
+		.number_active{fill:#93F630; stroke-width:0; stroke:#93F630;  cursor:pointer;}
+		
+		.gray_term{font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; fill:#A7A7A5; stroke-width:0; stroke:#545452;}
+		.green_term{font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; fill:#80ff00; stroke-width:0; stroke:#80ff00;}
+		.yellow_term{font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; fill:#ffff00; stroke-width:0; stroke:#ffff00;}
+		.lampa_gray{fill:#A7A7A5; stroke-width:0; font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; stroke:#545452;}
+		.lampa_green{fill:#80ff00; stroke-width:0; font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; stroke:#80ff00;}
+		.lampa_yellow{fill:#ffff00; stroke-width:0; font-family:arial;text-anchor: middle;font-size:40px; font-weight:700; stroke:#ffff00;}
+		
+		.num{fill:none; stroke:#ffffff; stroke-width:18; stroke-linecap:round;}
+		.nolighted{fill:none; stroke:#ffffff; stroke-width:10; stroke-linecap:round;}
+		.skala-circle{ fill:none; stroke:#ffffff; stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:1.7,1.7;}
+		.sun{ fill:none; stroke:#ffffff; stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:2,8;}
+		.icon{fill:#ffffff; stroke:#ffffff; stroke-width:0;}
+		.rama{ fill:#000000; fill-opacity:0.5;}
+		.rama2{ fill:#ffffff; fill-opacity:0;}
+		.bg{ fill:#000000; stroke-width:0;}
+		.bg-w{ fill:#ffffff; stroke-width:0;}
+		.logoText{stroke:#7E6B48; fill:#8F6E3D; stroke-width:1;}
+		.lift3{ stroke-width:2;}
+		.str{fill:#000000; stroke:#ffffff; stroke-width:3;  stroke-linecap:round;}
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#000000;font-family:Eras Bold ITC;font-size:4.99999em}
+		.st3 {font-size:1em}
+		.st4 {fill:#ff0000;font-family:Brush Script MT;font-size:1.5em}
+		.st5 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+		 ]]>
+	</style>
+	
+	<desc>Термостат</desc>
+<symbol id="bas"  width="400" height="400"  viewBox="0 0 400 400" >
+	<rect
+     y="0.88731968"
+     x="1.7985159"
+     height="141.02242"
+     width="447.74619"
+     id="rect7312"
+     style="fill:#000000" /><g
+     id="shape1-1"
+     transform="translate(53.8583,-53.0079)"><title
+       id="title11">Лист.1</title><desc
+       id="desc13">VISIOBAS</desc><path
+       id="rect15"
+       d="m 0,104.697 354.33099,0 0,35.1761 -354.33099,0 z"
+       style="fill:none;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round" /><g
+       id="text17"
+       style="font-size:59.99987793px;font-family:'Eras Bold ITC';fill:#000000"><path
+         id="path7296"
+         style="font-size:59.99987793px;font-family:'Eras Bold ITC';fill:#ffffff"
+         d="M 17.564426,148.16 16.480443,144.58579 9.3320204,123.99013 3.7070318,108.16985 q 3.9843669,0.0586 7.0898292,0.0586 1.904293,0 5.976551,-0.0586 0.673826,2.60742 1.054685,3.95507 0.527343,1.75781 1.992183,6.35741 l 4.306632,13.85739 q 0.64453,2.16797 1.582028,5.65429 l 1.347654,-3.36914 10.224588,-22.38276 q 0.263672,-0.61524 0.585937,-1.40625 0.351561,-0.79101 1.083982,-2.66601 4.248038,0.0586 6.826158,0.0586 1.611325,0 6.386706,-0.0586 -2.988276,5.5664 -6.767565,13.00779 l -10.107401,20.03902 q -1.464841,2.92968 -3.281243,6.94334 -4.921865,-0.0586 -7.031236,-0.0586 -1.962887,0 -7.412094,0.0586 z" /><path
+         id="path7298"
+         style="font-size:59.99987793px;font-family:'Eras Bold ITC';fill:#ffffff"
+         d="m 52.281152,148.16 q 1.699216,-23.52534 1.699216,-36.21086 l -0.0293,-3.77929 q 5.126942,0.0586 6.855455,0.0586 0.791014,0 6.298815,-0.0586 -0.527343,6.59178 -0.849608,12.48044 -0.410155,8.20311 -0.585936,15.35154 -0.175781,7.11912 -0.175781,12.15817 l -6.005847,-0.0586 q -1.757809,0 -7.207017,0.0586 z" /><path
+         id="path7300"
+         style="font-size:59.99987793px;font-family:'Eras Bold ITC';fill:#ffffff"
+         d="m 72.32017,147.54477 q -0.380859,-6.24022 -0.878905,-9.99021 3.281244,1.46484 5.830067,2.05077 2.578119,0.55664 4.511709,0.55664 2.548823,0 4.042961,-0.73242 1.523434,-0.76171 1.523434,-2.22656 0,-0.49804 -0.146484,-0.93749 -0.146484,-0.46875 -0.556639,-1.02539 -0.410156,-0.58594 -1.171873,-1.25976 l -5.507801,-4.80468 q -1.93359,-1.64062 -2.695307,-2.37304 -1.552731,-1.49414 -2.431636,-2.7832 -0.849608,-1.28906 -1.259763,-2.60742 -0.380859,-1.34765 -0.380859,-2.84179 0,-1.78711 0.615234,-3.48632 0.644529,-1.72851 1.904293,-3.22265 1.259763,-1.49414 3.339836,-2.57812 2.080074,-1.08398 4.453116,-1.46484 2.373042,-0.41016 4.892569,-0.41016 4.951161,0 10.781228,1.14258 0.08789,2.02148 0.205077,3.72069 0.117188,1.66992 0.55664,5.88866 -2.695307,-1.08398 -4.921865,-1.49413 -2.226558,-0.43946 -3.837883,-0.43946 -2.285152,0 -3.808586,0.84961 -1.494138,0.84961 -1.494138,2.10937 0,0.58594 0.234375,1.14258 0.234375,0.55664 0.878904,1.31836 0.64453,0.73242 1.699216,1.64062 1.054685,0.8789 3.31054,2.63671 l 2.109371,1.66992 q 0.937498,0.76172 2.02148,1.8457 1.083982,1.08398 1.874996,2.13867 0.791014,1.05468 1.201169,1.93359 0.439453,0.8789 0.64453,1.7871 0.205074,0.87891 0.205074,1.90429 0,2.63672 -1.259759,5.03906 -1.259763,2.37304 -3.574211,3.92577 -2.314449,1.52343 -5.097646,2.13867 -2.753901,0.61523 -5.830067,0.61523 -4.746084,0 -11.982397,-1.37695 z" /><path
+         id="path7302"
+         style="font-size:59.99987793px;fill:#ffffff"
+         d="m 105.95292,148.16 q 1.69922,-23.52534 1.69922,-36.21086 l -0.0293,-3.77929 q 5.12694,0.0586 6.85545,0.0586 0.79102,0 6.29882,-0.0586 -0.52734,6.59178 -0.84961,12.48044 -0.41015,8.20311 -0.58593,15.35154 -0.17579,7.11912 -0.17579,12.15817 l -6.00584,-0.0586 q -1.75781,0 -7.20702,0.0586 z" /><path
+         id="path7304"
+         style="font-size:59.99987793px;fill:#ffffff"
+         d="m 150.54267,107.40813 q 4.68749,0 9.02342,1.25977 4.33593,1.25976 7.58787,4.04296 3.25195,2.7539 4.86328,6.35741 1.61132,3.6035 1.61132,8.29099 0,4.92187 -1.78711,9.05272 -1.7578,4.10155 -5.09764,6.97264 -3.33984,2.87109 -7.96874,4.21874 -4.62889,1.31836 -9.63865,1.31836 -4.95116,0 -9.49217,-1.28906 -4.541,-1.31836 -7.91014,-4.21874 -3.33983,-2.92968 -4.74608,-6.50389 -1.40625,-3.57421 -1.40625,-7.93944 0,-6.416 2.95898,-11.24998 2.98828,-4.86327 8.81834,-7.58787 5.85937,-2.72461 13.18357,-2.72461 z m -0.52734,8.81834 q -3.36914,0 -6.09374,1.66992 -2.7246,1.64063 -4.18945,4.5996 -1.46484,2.92968 -1.46484,6.29882 0,3.10546 1.31836,5.68358 1.34765,2.57812 4.07226,4.04296 2.7246,1.43555 5.77147,1.43555 3.25195,0 5.94725,-1.61133 2.72461,-1.64062 4.13085,-4.5703 1.43555,-2.95898 1.43555,-6.18163 0,-3.13476 -1.31836,-5.77147 -1.31835,-2.66601 -3.86718,-4.13085 -2.54882,-1.46485 -5.74217,-1.46485 z" /><path
+         id="path7306"
+         style="font-size:89.99981689px;font-family:'Brush Script MT';fill:#ff0000"
+         d="m 200.18612,118.45303 -2.2412,2.63672 q 3.91112,0.35156 6.98729,0.96679 3.07616,0.57129 5.66893,1.31836 2.63671,0.70312 4.61425,1.49414 6.94334,2.90038 6.94334,8.08592 0,3.16405 -2.90038,6.19627 -2.90039,3.03222 -7.55858,5.40527 -4.61425,2.37304 -9.53611,3.69139 -4.87792,1.36231 -8.87694,1.36231 -6.67967,0 -10.41502,-2.46094 -3.73534,-2.50487 -3.73534,-6.81151 0,-2.98827 2.28515,-7.03123 2.28515,-4.04296 7.07518,-10.06346 -3.60351,-0.17578 -5.09764,-1.05468 -1.49414,-0.92285 -1.49414,-2.54883 0,-1.01074 0.57129,-1.53808 0.57129,-0.52734 1.53808,-0.74707 0.96679,-0.26367 3.6914,-0.61523 2.76855,-0.35156 7.07518,-0.87891 4.79003,-5.88866 8.56932,-8.83299 3.82323,-2.98827 8.17381,-3.42772 0.35156,-0.0439 0.74707,-0.0439 0.43945,0 0.43945,0.21973 0,0.26367 -1.01074,1.40625 -0.96679,1.14257 -3.208,3.64745 -2.19726,2.50488 -5.22948,5.9326 8.2617,-1.09863 13.49118,-2.50487 5.27343,-1.4502 7.95409,-3.42773 2.68066,-1.97754 2.68066,-4.39452 0,-2.94433 -2.85644,-4.26269 -2.85644,-1.318357 -8.7451,-1.318357 -3.25195,0 -7.47069,0.659179 -4.1748,0.659178 -7.60253,1.494138 -3.38378,0.83496 -6.06444,1.80175 -2.63671,0.92285 -2.63671,1.36231 0,0.13183 0.26367,0.26367 2.15332,0.79101 2.15332,1.31835 0,0.70313 -6.59179,2.72461 -6.59178,1.97753 -8.87693,1.97753 -1.62597,0 -1.62597,-1.62597 0,-1.93359 3.51561,-6.94335 3.55957,-5.053697 6.45995,-6.459944 1.01074,-0.483398 4.70214,-1.538083 3.6914,-1.054685 8.08592,-2.02148 4.43847,-0.966795 9.00877,-1.625973 4.57031,-0.659179 8.08592,-0.659179 8.30565,0 12.48045,2.988275 4.17479,2.94433 4.17479,7.426743 0,3.032221 -1.93359,5.844711 -1.88964,2.8125 -5.9326,5.31738 -4.04296,2.50487 -10.54686,4.39452 -6.45994,1.88964 -15.24899,2.90038 z m -4.65819,5.66894 q -2.28515,2.7246 -4.08691,4.83397 -1.75781,2.06543 -2.54882,3.38378 -0.74707,1.27441 -0.74707,2.59277 0,2.10937 2.15332,3.77929 2.19726,1.62597 6.28416,1.62597 3.77929,0 8.04198,-1.31835 4.30663,-1.3623 7.20702,-3.51562 2.94433,-2.15332 2.94433,-4.35058 0,-1.88964 -2.15332,-3.12011 -2.15332,-1.23046 -6.54784,-2.15331 -4.39452,-0.9668 -10.54685,-1.75781 z" /><path
+         id="path7308"
+         style="font-size:89.99981689px;font-family:'Brush Script MT';fill:#ff0000"
+         d="m 264.34614,130.05457 q -5.27342,0.17578 -7.73436,0.17578 -3.77929,0 -10.45896,-0.17578 -1.40625,1.53808 -3.42773,3.64746 -2.02148,2.06542 -3.82323,3.86717 -1.80176,1.75781 -3.12011,3.03223 -1.27441,1.23046 -2.10937,2.06542 -4.87792,4.74608 -6.37206,6.19628 -1.45019,1.45019 -3.07617,2.59277 -1.62597,1.18652 -2.98827,1.18652 -1.53808,0 -1.53808,-1.40625 0,-1.53808 2.19726,-4.74608 2.19726,-3.20801 4.96581,-5.66894 2.76855,-2.46093 4.52635,-2.46093 0.4834,0 1.36231,0.43945 l 8.34959,-8.92088 q -1.58203,-0.21973 -4.13085,-0.26367 -2.54882,-0.0879 -3.42773,-0.39551 -0.8789,-0.30761 -0.8789,-1.49414 0,-1.88964 4.04296,-5.9326 2.19726,-2.24121 4.13085,-2.85644 1.93359,-0.61523 7.3828,-0.65918 -3.20801,0.43945 -4.57031,1.05469 -1.31835,0.57129 -1.45019,1.75781 1.27441,0 2.3291,0 1.09863,0 2.81249,0 1.75781,-0.0439 2.59277,-0.0879 7.20702,-7.03124 13.09568,-12.21678 5.88866,-5.22948 12.39255,-9.887671 6.54784,-4.702139 13.93063,-8.613264 1.4502,1.889644 1.4502,3.95507 0,1.713864 -1.14258,3.95507 -1.09863,2.241205 -4.74608,8.437485 -3.60351,6.15233 -7.33886,13.09567 1.23047,0 2.02148,0.0439 0.83496,0 1.75781,0.0439 2.50488,0 3.03222,0.0879 0.57129,0.0879 0.57129,0.8789 0,0.35156 -0.70312,1.27441 -0.65918,0.87891 -2.37304,2.98828 -1.71387,2.06542 -3.33984,4.21874 l -6.45995,0.52734 q -5.14159,9.66795 -5.14159,10.89842 0,1.80175 1.88965,1.80175 0.92284,0 7.64646,-3.86718 l -0.35156,2.3291 q -3.60351,2.7246 -5.62499,4.30663 -1.97753,1.53808 -3.47167,2.59277 -1.45019,1.01074 -2.68066,1.49413 -1.18652,0.52735 -2.41699,0.52735 -1.45019,0 -2.85643,-1.3623 -1.40625,-1.31836 -1.40625,-3.77929 0,-1.01074 0.74707,-2.85644 0.74707,-1.88965 1.58203,-3.60351 0.8789,-1.71387 4.35057,-8.21776 z m -8.30564,-9.97556 14.23825,-0.26368 q 2.50488,-4.26268 4.04296,-6.8994 1.58203,-2.63671 3.42773,-5.71287 1.88964,-3.12012 3.208,-5.27343 1.3623,-2.153317 2.98827,-4.877921 -3.16405,1.977535 -6.45995,4.394521 -3.29589,2.41699 -7.42674,5.84472 -4.13085,3.38378 -7.33885,6.32811 -3.208,2.90038 -6.67967,6.45995 z" /><path
+         id="path7310"
+         style="font-size:89.99981689px;font-family:'Brush Script MT';fill:#ff0000"
+         d="m 328.50616,135.45983 q -1.09863,-2.02148 -3.29589,-3.64745 -2.19726,-1.62597 -4.96581,-2.59277 -2.7246,-1.01074 -5.71288,-1.49414 -8.87693,-1.31835 -16.56735,-5.75682 -0.65918,-0.35156 -1.40625,-1.49414 -0.74706,-1.14257 -0.74706,-2.19726 0,-3.86718 1.27441,-7.73436 1.31835,-3.91112 3.33983,-6.10838 3.25195,-3.64746 11.68943,-6.372061 8.48143,-2.724603 19.07223,-2.724603 6.32811,0 9.75584,0.966794 3.47167,0.966795 3.47167,2.988276 0,3.295894 -0.92285,5.097644 -0.8789,1.80176 -1.93359,2.41699 -1.01074,0.57129 -3.6035,1.58203 -2.76855,0.96679 -4.83398,2.02148 -2.02148,1.05468 -3.47167,2.02148 -1.45019,0.96679 -1.80176,0.96679 -0.43945,0 -0.43945,-0.35156 0,-0.74707 1.53808,-2.24121 1.58203,-1.53808 3.86718,-2.68065 2.41699,-1.27442 2.41699,-1.62598 0,-0.57129 -2.68066,-0.57129 -8.12986,0 -15.02926,1.4502 -6.8994,1.45019 -10.89842,3.82323 -3.95507,2.37304 -3.95507,4.83398 0,1.53808 1.62597,2.19726 1.66992,0.61523 7.29491,2.10937 5.62499,1.49414 10.06346,3.42772 6.37205,2.72461 9.44822,5.66894 3.07617,2.94433 3.07617,6.59178 0,2.50488 -1.23047,5.0537 -1.18652,2.50488 -3.51562,4.61425 -2.3291,2.10937 -5.36132,3.47167 -2.59276,1.09863 -6.54783,2.06543 -3.91113,0.96679 -8.52538,1.49414 -4.5703,0.57128 -8.7451,0.57128 -7.69041,0 -12.39255,-1.45019 -4.65819,-1.45019 -4.65819,-4.39452 0,-1.31836 1.58203,-4.08691 1.58202,-2.81249 3.73534,-3.77928 1.88964,-0.74707 3.64745,-0.83496 1.75781,-0.13184 1.75781,0.3955 0,0.13184 -0.13183,0.26367 -0.13184,0.13184 -0.30762,0.21973 -0.17578,0.0879 -0.35156,0.17578 -0.87891,0.35156 -1.45019,0.57129 -0.52735,0.17578 -0.87891,0.39551 -0.30762,0.17578 -0.30762,0.52734 0,0.92285 9.09667,0.92285 7.91014,0 12.96384,-0.57129 5.0537,-0.57129 8.92088,-2.06542 3.86718,-1.49414 7.03123,-4.13086 z" /></g></g>
+		 
+</symbol>	
+<symbol id="str_b"  width="100" height="100" viewBox="0 0 100 100" >
+	<rect width="45" height="45" x="8" y="30" stroke="#000000" />
+	<path d="M15,45 L30,60 M30,60  45,45"  />
+</symbol>
+<symbol id="str_top"  width="100" height="100" viewBox="0 0 100 100" >
+<rect width="45" height="45" x="8" y="18"  stroke="#000000" />
+	<path d="M15,45 L30,30 M30,30  45,45"  />
+</symbol>
+
+<symbol id="button"  width="100" height="100" viewBox="0 0 100 100" >
+	  <rect width="30" height="30" x="40" y="40" rx="5" ry="5" />
+</symbol>
+<symbol id="shkala"  width="440" height="440" viewBox="0 0 440 440">
+	<circle cx="255" cy="365" r="25" class="skala-circle"  />
+	<circle cx="219" cy="365" r="4.6" stroke-width="1" class="icon" />
+	<circle cx="205" cy="365" r="4.4" stroke-width="1" class="icon" />
+	<circle cx="191.5" cy="365" r="4.2" stroke-width="1" class="icon" />
+	<circle cx="178.5" cy="365" r="4" stroke-width="1" class="icon" />
+	<circle cx="166" cy="365" r="3.8" stroke-width="1" class="icon" />
+	<circle cx="154" cy="365" r="3.6" stroke-width="1" class="icon" />
+	<circle cx="142.5" cy="365" r="3.4" stroke-width="1" class="icon" />
+	<circle cx="131.5" cy="365" r="3.2" stroke-width="1" class="icon" />
+	<circle cx="121" cy="365" r="3" stroke-width="1" class="icon" />
+	<circle cx="111" cy="365" r="2.8" stroke-width="1" class="icon" />
+	<circle cx="101.5" cy="365" r="2.6" stroke-width="1" class="icon" />
+	<circle cx="291" cy="365" r="4.6" stroke-width="1" class="icon" />
+	<circle cx="305" cy="365" r="4.4" stroke-width="1" class="icon" />
+	<circle cx="318.5" cy="365" r="4.2" stroke-width="1" class="icon" />
+	<circle cx="331.5" cy="365" r="4" stroke-width="1" class="icon" />
+	<circle cx="344" cy="365" r="3.8" stroke-width="1" class="icon" />
+	<circle cx="356" cy="365" r="3.6" stroke-width="1" class="icon" />
+	<circle cx="367.5" cy="365" r="3.4" stroke-width="1" class="icon" />
+	<circle cx="378.5" cy="365" r="3.2" stroke-width="1" class="icon" />
+	<circle cx="389" cy="365" r="3" stroke-width="1" class="icon" />
+	<circle cx="399" cy="365" r="2.8" stroke-width="1" class="icon" />
+	<circle cx="408.5" cy="365" r="2.6" stroke-width="1" class="icon" />
+</symbol>
+
+<symbol id="sun"  width="400" height="400" viewBox="0 0 400 400">
+	<circle cx="255" cy="365" r="16" class="sun"  />
+	<circle cx="255" cy="365" r="10"  class="icon"  />
+</symbol>
+
+
+<symbol id="rama-black"  width="496.062" height="496.062" viewBox="0 0 496.062 496.062">
+<rect x="0" y="0" width="496.062" height="496.062" fill="#000000"  />
+</symbol>
+
+<desc>Форма кнопки</desc>
+	<symbol id="knopka_circle"  viewBox="0 0 160 160" >
+		<circle cx="60" cy="60" r="55" fill="#212120"  stroke-width="2" />
+		<path d="M10,83 L60,150 110,83" fill="#212120" stroke-width="2" />
+	</symbol>
+	<desc>Лампочка</desc>
+	<symbol id="lampa"  viewBox="0 0 400 400" >
+		<path d="M147,265 C127,228 99,193 103,144 117,15 292,27 302,142 309,198 281,223 255,265 285,226 323,196 323,133
+		323,86 274,23 204,23 134,23 81,79 81,151 81,193 120,233 147,265 z" />
+		<path d="M176,238 L165,169 C163,155 165,152 175,148 193,143 205,145 226,147 237,150 242,155 240,166 L227,238" />
+		<rect x="142" y="272" rx="7" ry="7" height="30" width="120" />
+		<rect x="152" y="310" rx="5" ry="5" height="34" width="100" />
+		<ellipse cx="202" cy="343" rx="50" ry="25" />
+		<path d="M183,371 C197,374 209,374 222,371 221,387 186,387 183,371 z" />
+	</symbol>
+	
+		<desc>Кнопки этажей</desc>
+	<symbol id="et_1"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="41" y="68" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700;" >-1</text>
+	</symbol>
+	<symbol id="et_0"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="50" y="68" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700;" >0</text>
+	</symbol>
+	<symbol id="et1"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="50" y="68" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700;" >1</text>
+	</symbol>
+	<symbol id="et2"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="50" y="68" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700;" >2</text>
+	</symbol>
+	<symbol id="et3"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="50" y="68" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700;" >3</text>
+	</symbol>
+	<symbol id="et4"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="50" r="45" fill="#41413F"  stroke-width="5" />
+		<text x="50" y="68" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700;" >4</text>
+	</symbol>
+	<symbol id="atn_trgl"  viewBox="0 0 8766 8766" >
+		<path d="M1226.4,4672  C1953.2,5478.8 2213.2,6358.8 2266.4,7105.6 2333.2,7852 2193.2,8478.8 2053.2,8765.6 L7920,8765.6
+		8028,8486 6854,8486 6854,8056 4916,8056 4916,8692 2864,8692 2864,8056 2776,8056 C2890,7242 2760,6462 2464,5688 
+		L2100,5884 C1932,5440 1668,5012 1336,4624 z" 
+		fill="#A7A7A5" stroke="#A7A7A5" stroke-width="5" />
+		<path d="M2801,8052 C2915,7242 2785,6462 2491,5688" class="contur-fat2" />
+		<path d="M2538,5620 L2090,5862 " class="contur-fat2" />
+		<path d="M2117,5859 C1948,5415 1680,4987 1348,4599 " class="contur-fat2" />
+	</symbol>
+	<symbol id="bath"  viewBox="0 0 110 110" >
+		<rect x="2" y="2" height="105"  width="105" class="border" />
+		<rect x="7" y="7" height="95"  width="95" rx="6" class="border" />
+		<path d="M53,79 L53,105 M56,79 L56,105" class="border"  />
+		<circle cx="41" cy="104" r="2.5" class="border"/>
+		<circle cx="67" cy="104" r="2.5" class="border" />
+	</symbol>
+	<symbol id="sink"  viewBox="0 0 60 60" >
+		<rect x="1" y="1"  height="52"  width="59" rx="6" class="border" />
+		<rect x="5" y="5"  height="44"  width="51" rx="6" class="border" />
+		<circle cx="24" cy="51" r="2.5" class="border" />
+		<circle cx="36" cy="51" r="2.5" class="border" />
+		<circle cx="30" cy="31" r="4" class="border" />
+		<rect x="28.5" y="34"  height="16"  width="3" class="border-fill" />
+	</symbol>
+	<symbol id="sink2"  viewBox="0 0 50 50" >
+		<ellipse cx="18" cy="24" rx="15" ry="21" class="border" />
+		<path d="M3,24 L12,24 M15,24 L21,24" class="border2" />
+		<path d="M13.5,15 L13.5,22 M13.5,26 L13.5,33" class="border" />
+	</symbol>
+	<symbol id="toilet"  viewBox="0 0 80 80" >
+		<rect x="-72" y="2"  height="50"  width="144" ry="37" rx="37" class="border" />
+		<path d="M 0.5,2 L0.5,52" class="border" />
+		<path d="M 4.5,2 L4.5,52" class="border" />
+		<path d="M 22.5,2 L22.5,52" class="border" />
+		<path d="M 24.5,2 L24.5,52" class="border" />
+	</symbol>
+	<symbol id="bide"  viewBox="0 0 40 40" >
+		<rect x="16.5" y="17"  height="5"  width="7" class="border" />
+		<ellipse cx="20" cy="20" rx="18" ry="15" class="border" />
+		<ellipse cx="20" cy="20" rx="12" ry="9" class="border" />
+		<path d="M3.5,13.5 L6,3 33,3 36.5,13.5" class="border" />
+	</symbol>
+	<symbol id="bathroom"  viewBox="0 0 255 255" >
+		<rect x="0" y="120"  height="135"  width="47" class="border" />
+		<rect x="28" y="237"  height="8"  width="8" class="border" />
+		<circle cx="32" cy="232" r="9" class="border-fill" />
+		<rect x="47" y="249"  height="6"  width="6" class="border" />
+		<circle cx="50" cy="244" r="5" class="border-fill" />
+		<rect x="49" y="243"  height="2"  width="2" class="border-full" />
+		<path d="M50,233 L50,255" class="border" />
+		<path d="M39,244 L62,244" class="border" />
+		<circle cx="62.5" cy="171" r="5" class="border" />
+		<rect x="60" y="171"  height="83"  width="5" class="border-fill" />
+		<path d="m 86,253 33,0 c 1,-14 2.5,-32 3.5,-44 0,-47 -39,-45.5 -39.5,1 1,11.5 2,29 3,43 z" class="border" />
+		<path d="m103,179.5 c 14,0 21,34 -0.5,35 -16,1 -16,-31 0.5,-35 z" class="border" />
+		<path d="m99.5,205 7,0 0,-6 c 0,-5 -7,-4 -7,0 z" class="border" />
+		<path d="M93,222 L96,222 M94.5,220.5 L94.5,223.5" class="border" />
+		<path d="M110,222 L113,222 M111.5,220.5 L111.5,223.5" class="border" />
+		<path d="M136,254 L150,254" class="border" />
+		<rect x="142" y="241"  height="13"  width="4" class="border" />
+		<rect x="143" y="164"  height="78"  width="2" class="border" />
+		<circle cx="140" cy="251" r="2" class="border-full" />
+		<circle cx="148" cy="251" r="2" class="border-full" />
+		<path d="m0.5,147 0,-11 10,0 c 11,-0 11.5,10.5 0.5,11 z" class="border" />
+		<circle cx="13" cy="141" r="3" class="border" />
+		<path d="M5,141 L21,141" class="border" />
+		<rect x="11.3" y="144"  height="14"  width="3" class="border" />
+		<path d="M0,120 L117,120" class="border2" />
+		<path d="M1,112 L1,123" class="border" />
+		<path d="M2,114 L2,121" class="border" />
+		<path d="M1,31 L1,42" class="border" />
+		<path d="M2,33 L2,40" class="border" />
+		<rect x="1" y="115"  height="4"  width="17" class="border" />
+		<rect x="1" y="33"  height="4"  width="17" class="border" />
+		<rect x="1" y="54"  height="47"  width="10" class="border" />
+		<path d="M1,75 L16,75 M1,80 L16,80 M0,110 L16,110 M0,44 L16,44 M16,56 L16,98 M7,62 L7,75 M7,80 L7,92 M8,51 L8,63 M8,91 L8,104" class="border" />
+		<path d="m 14,52 c 2,4.5 5.6,7.6 9,10 -4,8 -4.5,21 -1,29.5 -10,8 -12,20 2,19.5 28.5,-3.5 41,2 39,-12 C 57,73 60,67 63,57 67,46 63,42 52,43 35,44 8,37 14,52 Z" class="border" />
+		<path d="m 22,92 c 4,9 16,12 29,13 13,0 7.5,-3 6,-8 -3,-9.5 -7,-23 0.5,-38.5 C 65,46 56,49 49,50.5 31,57 25,59 23.5,62" class="border" />
+		<circle cx="27" cy="79" r="4" class="border" />
+		<path d="M23,79 L31,79 M27,75 L27,84" class="border" />
+	</symbol>
+	<symbol id="auto"  viewBox="0 0 700 700" >
+		<path d="m 45,55 c -17,33 -29,72 -5,164 34,19 467,60 605,8 C 660,142 656,87 638,52 456,6 249,34 45,55 Z" class="border" />
+		<path d="m 206,53 c -42,69 -22,124 0,179 148,-76 328,-1 426,-22 20,-39 2,-135 2,-135 C 597,47 350,132 206,53 Z" class="border" />
+		<path d="M 276,206 C 259,119 270,104 276,77" class="border" />
+		<path d="m 489,81 c 17,44 8,84 0,124" class="border" />
+		<path d="m 570,70 c 15,21 38,83 -2,144" class="border" />
+		<path d="M 302,52 C 388,40 454,46 514,52 533,69 304,94 286,31" class="border" />
+		<path d="m 290,249 c 8,-54 207,-37 226,-24 -23,7 -61,12 -216,8" class="border" />
+		<path d="m 290,41 c 101,4 79,-18 338,19" class="border" />
+		<path d="m 295,240 c 27,2 225,13 335,-19" class="border" />
+		<path d="m 45,55 c -17,33 -29,72 -5,164 34,11 70,15 153,14 -49,-118 3,-182 3,-182 -2,-7 -76,-3 -151,4 z" class="border" />
+		<path d="m 10,116 0,5.5 C 64,109 119,101 176,95 l 1.5,-4.5 C 117,96 61,104 10,116.5 Z" class="border" />
+		<path d="m 8,160 1.5,6 c 45,10 109,16 168,23 l -2,-5.5 C 140,179 69,175 8.5,160 Z" class="border" />
+		<path d="M 42.5,47 C -10,121 2,180 41.5,232.5" class="border" />
+		<path d="M 40.5,183.5 C 34,199 62,234 77,218 87,184 50,172 40.5,183.5 Z" class="border" />
+		<path d="M 40,99 C 64,116 88,79 74,61 61,47 30,82 40,99 Z" class="border" />
+	</symbol>
+	<symbol id="window"  viewBox="0 0 120 120" >
+		<rect x="2" y="2"  height="8"  width="116" class="border2" />
+	</symbol>
+	<radialGradient id="exclame">
+		<stop offset="0.25" stop-color="white"/>
+		<stop offset="0.75" stop-color="yellow"/>
+	</radialGradient>	
+	<desc>Знак аварии</desc>
+	<symbol id="atn"  viewBox="0 0 100 100" >
+		<path d="M5 95  50 5  95 95z"  style="stroke:#EF9248;stroke-width:5px;stroke-linejoin: round; fill:url(#exclame)"/>
+		<text x="50" y="80" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700; fill:black;" >!</text>
+	</symbol>
+	<symbol id="prohod"  viewBox="0 0 120 120" >
+		<rect x="1" y="1"  height="5"  width="116"  fill="none" stroke="#A7A7A5" stroke-width="1" />
+		<path d="M0,7 C4,46 27,112.4 116,117" fill="none" stroke="#A7A7A5" stroke-width="1" />
+	</symbol>
+	<symbol id="rect"  viewBox="0 0 100 100" >
+		<rect x="0" y="0"  height="100"  width="100"  fill="#A7A7A5" />
+	</symbol>
+	<symbol id="prohod_h"  viewBox="0 0 120 120" >
+		<rect x="1" y="1"  height="116"  width="5"  fill="none" stroke="#A7A7A5" stroke-width="1" />
+		<path d="M7,0 C46,4 112.4,27 117,116" fill="none" stroke="#A7A7A5" stroke-width="1" />
+	</symbol>
+	<symbol id="lift_icon"  viewBox="0 0 100 100" >
+		<circle cx="50" cy="12" r="10" fill="#A7A7A5" />
+		<path d="M41,49 L49,49 49,14 41,14 z" fill="#A7A7A5"  />
+		<path d="M42,36 L70,40 70,35 42,30 z" fill="#A7A7A5"  />
+		<path d="M41,50 L73,54 77,50 42,43 z" fill="#A7A7A5"  />
+		<path d="M71,50 L77,50  80,73 91,72 92,80 76,82 z" fill="#A7A7A5" />
+		<circle cx="42" cy="65" r="25" fill="none" stroke="#A7A7A5" stroke-width="7"  stroke-dasharray="60%" stroke-dashoffset="310%"/>
+		<circle cx="42" cy="65" r="25" fill="none" stroke="#A7A7A5" stroke-width="7"  stroke-dasharray="75% 80%" stroke-dashoffset="0%"/>
+	</symbol>
+	<symbol id="lift" viewBox="0 0 320 320" >
+		<path d="M31,27 L31,184" class="lift" fill="none"/>
+		<path d="M34,185 L34,42 50,42 50,48" class="lift" />
+		<path d="M34,185 L34,42 50,42 50,185 z"   stroke-width="0" />
+		<path d="M34,121 L44,121 44,71 39,71" class="lift" />
+		<path d="M39,178 L39,121" class="lift2"  />
+		<path d="M40,121 L40,71" class="lift2"  />
+		<path d="M6,185 L6,176 15,176 15,178 26,178 26,185" class="lift"  />
+		<path d="M6,184 L26,184" class="lift2"   />
+		<path d="M26,178 L21,178 21,121 26,121 z" class="lift"  stroke-width="0"  />
+		<path d="M20.5,121 L25.5,121 25.5,178" class="lift2" fill="none"   />
+		<path d="M26,120 L26,27 13,27 13,120" class="lift"  />
+		<path d="M16,120 L21,120 21,70 16,70 z" class="lift"  />
+		<path d="M9,58 L9,74 15,74 15,58" class="lift" />
+		<path d="M14,27 L14,74" class="lift2"  />
+		<path d="M8.5,58 L15,58" class="lift2"  />
+		<path d="M50,182 L298,182 298,47 50,47 z"  stroke-width="0"  />
+		<path d="M50,182 L298,182 298,47" class="lift"  />
+		<path d="M46,48 L46,74 51,74" class="lift"  />
+		<path d="M50,74 L50,51 295,51 295,180.5" class="lift2" fill="none" />
+		<path d="M50,180.5 L50,51 295,51 295,180.5" class="lift2"  stroke-width="0"  />
+		<path d="M295,180 L178,180 M151,180 L50,180" class="lift"  />
+		<path d="M298,48 L45.5,48"  class="lift2"  />
+		<path d="M50,185 L34,185 34,179 44,179 44,175 50,175" class="lift"  />
+		<path d="M49,185 L49,175" class="lift2" />
+		<path d="M151,182 L151,176 178,176 178,182" class="lift" />
+		<path d="M165,184 L165,192" class="lift2" fill="none"  />
+		<path d="M157,194 L172,194 172,191 157,191 z" class="lift3"  />
+		<path d="M165,48 L165,39" class="lift2"  fill="none" />
+		<path d="M157,39 L173,39 173,36 157,36 z" class="lift"  />
+		<path d="M183,31 L291,31 291,17 183,17 z" class="lift" />
+	</symbol>
+	<symbol id="lift2" viewBox="0 0 320 320" >
+	<path d="M31,27 L31,184" class="lift" fill="none"/>
+		<path d="M34,185 L34,42 50,42 50,48" class="lift" />
+		<path d="M34,185 L34,42 50,42 50,185 z"   stroke-width="0" />
+		<path d="M34,121 L44,121 44,71 39,71" class="lift" />
+		<path d="M39,178 L39,121" class="lift2"  />
+		<path d="M40,121 L40,71" class="lift2"  />
+		<path d="M6,185 L6,176 15,176 15,178 26,178 26,185" class="lift"  />
+		<path d="M6,184 L26,184" class="lift2"   />
+		<path d="M26,178 L21,178 21,121 26,121 z" class="lift"  stroke-width="0"  />
+		<path d="M20.5,121 L25.5,121 25.5,178" class="lift2" fill="none"   />
+		<path d="M26,120 L26,27 13,27 13,120" class="lift"  />
+		<path d="M16,120 L21,120 21,70 16,70 z" class="lift"  />
+		<path d="M9,58 L9,74 15,74 15,58" class="lift" />
+		<path d="M14,27 L14,74" class="lift2"  />
+		<path d="M8.5,58 L15,58" class="lift2"  />
+		<path d="M50,182 L183,182 183,47 50,47 z"  stroke-width="0"  />	
+		<path d="M50,182 L183,182 183,47" class="lift"  />
+		<path d="M46,48 L46,74 51,74" class="lift"  />
+		<path d="M50,74 L50,51 180,51 180,180.5" class="lift2" fill="none" />
+		<path d="M50,180.5 L50,51 180,51 180,180.5" class="lift2"  stroke-width="0"  />
+		<path d="M180,180 L178,180 M151,180 L50,180" class="lift"  />
+		<path d="M183,48 L45.5,48"  class="lift2"  />
+		<path d="M50,185 L34,185 34,179 44,179 44,175 50,175" class="lift"  />
+		<path d="M49,185 L49,175" class="lift2" />
+		<path d="M151,182 L151,176 178,176 178,182" class="lift" />
+		<path d="M165,184 L165,192" class="lift2" fill="none"  />
+		<path d="M157,194 L172,194 172,191 157,191 z" class="lift3"  />
+		<path d="M165,48 L165,39" class="lift2"  fill="none" />
+		<path d="M157,39 L173,39 173,36 157,36 z" class="lift"  />
+		<path d="M121,31 L173,31 173,17 121,17 z" class="lift" />
+	</symbol>
+</defs>	
+<g>	
+	<desc>Главный контур</desc>
+	<path d="M2638,6039.5 L3431,6039.5" class="contur" />
+	<path d="M3605,6039.5 L4198,6039.5 L4303,5854 L4342,5854" class="contur" />
+	<path d="M4872,5854 L5068,5854 5131,5962 5350,5962 5350,6046 6162,6046 6162,5964 6208,5964 6208,2895 6208,2090" class="contur" />
+	<path d="M1490,4490.5 L1656,4394.5" class="contur" />
+	<path d="M2041,4172 L2504,3904" class="contur" />
+	<path d="M2813,3726 L3302,3443" class="contur" />
+	<path d="M3611,3265 L4101,2982.5" class="contur" />
+	<path d="M4410,2804 L4901,2521" class="contur" />
+	<path d="M5210,2342.5 L5407,2229" class="contur" />
+	<path d="M5736,2076 L6246,2076" class="contur" />
+	<path d="M3553,3385 L3893,3972" class="contur" />	
+	<path d="M3972,3960 L5683,2968" class="contur" />
+	<path d="M4193,3832 L4216,3872 4288,3830 4258,3780" class="border-full" />
+	<path d="M5158,3331 L5130,3285 5330,3168 5357,3213" class="border-full" />
+	<path d="M5678,2970 L5959,2970" class="contur" />
+	<path d="M5955,2966 L5955,2733" class="contur" />
+	<path d="M5955,2575 L5955,2312.5" class="contur" />
+	<path d="M5788,2316.5 L5959,2316.5" class="contur" />
+	<path d="M5792,2320 L5792,2301" class="contur" />
+	<path d="M5792,2126 L5792,2100" class="contur" />
+	 <path d="M6245,2074 L6511,2074" class="contur-fat" />
+	 <path d="M6631,2074 L6684,2074" class="contur-fat" />
+	 <path d="M6928,2074 L6981,2074" class="contur-fat" />
+	 <path d="M7101,2074 L7562,2074" class="contur-fat" />
+	 <path d="M7682,2074 L7734,2074" class="contur-fat" />
+	 <path d="M7979,2074 L8032,2074" class="contur-fat" />
+	 <path d="M8152,2074 L8612,2074" class="contur-fat" />
+	 <path d="M8732,2074 L8785,2074" class="contur-fat" />
+	 <path d="M9029,2074 L9082,2074" class="contur-fat" />
+	 <path d="M9203,2074 L9392,2074 9392,1979" class="contur-fat" />
+	 <path d="M9392,1773 L9392,1594" class="contur-fat" />	
+	 <path d="M9386,1594 L11048,1594 11048,1824" class="contur-fat" />
+	 <path d="M11048,1928 L11048,2160" class="contur-fat" />
+	 <path d="M11048,2805 L11048,2893 12460,2893 12460,4288" class="contur-fat" />
+	 <path d="M12460,4499 L12460,5094" class="contur-fat" />
+	 <path d="M12460,5305 L12460,6305" class="contur-fat" />
+	 <path d="M12460,6514 L12460,6817" class="contur-fat" />
+	 <path d="M12154,6982 C12249,6917 12350,6862 12452,6820" class="contur-fat" />
+	 <path d="M11909,7223 L11962,7181 11925,7135 11970,7101" class="contur-fat" />
+	 <path d="M11494,7564 L11538,7508" class="contur-fat" />
+	 <path d="M11538,7516 L11595,7559" class="contur-fat" />
+	 <path d="M11589,7562 L11623,7522" class="contur-fat" />		 
+	 <path d="M11219,8059 C11265,7948 11320,7846 11382,7751" class="contur-fat" />
+	 <path d="M10815,8062 L11219,8062" class="contur-fat" />
+	 <path d="M10430,8062 L10604,8062" class="contur-fat" />
+	 <path d="M10027,8062 L10220,8062" class="contur-fat" />
+	 <path d="M9220,8062 L9817,8062" class="contur-fat" />
+	 <path d="M8818,8062 L9013,8062" class="contur-fat" />
+	 <path d="M8609,8062 L8138,8062 8138,8208" class="contur-fat" />
+	 <path d="M8138,8343 L8138,8458" class="contur-fat" />	 
+	  <path d="M11061,3074 L11150,3074" class="contur-fat" />
+	  <path d="M11061,3316 L11150,3316" class="contur-fat" />
+	  <path d="M11144,3080 L11144,3107" class="contur-fat" />
+	  <path d="M11144,3322 L11144,3283" class="contur-fat" />
+	  <path d="M11061,3889 L11202,3889" class="contur-fat" />
+	  <path d="M11061,4030 L11202,4030" class="contur-fat" />
+	  <path d="M11061,4123 L11150,4123" class="contur-fat" />
+	  <path d="M11061,4366 L11150,4366" class="contur-fat" />
+	  <path d="M11144,4372 L11144,4333" class="contur-fat" />
+	  <path d="M11144,4158 L11144,4117" class="contur-fat" />  
+	  <path d="M12286,3889 L12426,3889" class="contur-fat" />
+	  <path d="M12286,4030 L12426,4030" class="contur-fat" />
+	  <path d="M11061,4746 L11238,4746" class="contur-fat" />
+	  <path d="M11354,4746 L12430,4746" class="contur-fat" />
+	  <path d="M11061,4994 L11880,4994" class="contur-fat" />
+	  <path d="M11880,5007 L12431,5007" class="contur-fat" />
+	  <path d="M11874,4988 L11874,5483" class="contur-fat" />
+	  <path d="M7728,2092 L7728,2230" class="contur-fat" />
+	  <path d="M7722,2224 L7743,2224" class="contur-fat" />  
+	  <path d="M7985,2092 L7985,2230" class="contur-fat" />
+	  <path d="M7979,2224 L7970,2224" class="contur-fat" />  
+	  <path d="M8779,2092 L8779,2230" class="contur-fat" />
+	  <path d="M9035,2092 L9035,2230" class="contur-fat" />
+	  <path d="M8773,2224 L8797,2224" class="contur-fat" />
+	  <path d="M9035,2224 L9017,2224" class="contur-fat" />
+	  <path d="M12377,3391 L12426,3391" class="contur-fat" />
+	  <path d="M12377,3452 L12426,3452" class="contur-fat" />
+	  <path d="M12382,3385 L12382,3457" class="contur-fat" />  
+	  <path d="M12048,4934 L12106,4934" class="contur-fat" />
+	  <path d="M12054,4934 L12054,5003" class="contur-fat" />
+	  <path d="M12100,4934 L12100,5003" class="contur-fat" />
+	  <path d="M9463,7525 L9463,8032" class="contur-fat" />
+	  <path d="M8931,7525 L8931,8032" class="contur-fat" />
+	  <path d="M7846,7525 L7846,8042" class="contur-fat" />
+	  <path d="M5138,7746 L5138,7703" class="contur-fat" />
+	  <path d="M5132,7697 L5237,7697" class="contur-fat" /> 
+	  <path d="M8416,7192 L8446,7192" class="contur-fat" />
+	  <path d="M8527,7192 L9495,7192" class="contur-fat" />
+	  <path d="M9526,7192 L9552,7192" class="contur-fat" />
+	  <path d="M9609,7192 L9969,7192" class="contur-fat" />
+</g>
+<g>	
+	<desc>Перегородки стены 10</desc>
+	<path d="M4375,6629 L4467,6629" class="partition10" />
+	<path d="M4463,6624 L4463,6644" class="partition10" />
+	<path d="M4463,6813 L4463,6802" class="partition10" />
+	<path d="M5166,6589 L5236,6589" class="partition10" />
+	<path d="M12087,5483 L12087,5426" class="partition10" />
+	<path d="M12134,5483 L12134,5426" class="partition10" />
+	<path d="M12082,5431 L12139,5431" class="partition10" />
+	<path d="M4869,8072 L3655,8072" class="partition10" />
+	<path d="M3660,8054 L3660,8077" class="partition10" />
+	<path d="M3193,8643 L3193,8598" class="partition10" />
+	<path d="M3252,8643 L3252,8598" class="partition10" />
+	<path d="M3188,8597 L3257,8597" class="partition10" />
+	<path d="M3301,7434 L3301,7330" class="partition10" />
+	<path d="M3296,7435 L3364,7435" class="partition10" />
+	<path d="M3296,7384 L3364,7384" class="partition10" />
+	<path d="M3296,7335 L3364,7335" class="partition10" />
+	<path d="M8417,6247 L8621,6247" class="partition10" />
+	<path d="M8773,6247 L8979,6247" class="partition10" />
+	<path d="M8769,6242 L8769,6260" class="partition10" />
+	<path d="M8769,6352 L8769,6372" class="partition10" />
+	<path d="M8617,6352 L8617,6372" class="partition10" />
+	<path d="M8617,6260 L8617,6157" class="partition10" />
+	<path d="M8617,6064 L8617,6031" class="partition10" />
+	<path d="M8417,5281 L8621,5281" class="partition10" />
+	<path d="M8417,5154 L8621,5154" class="partition10" />
+	<path d="M8773,5281 L8979,5281" class="partition10" />
+	<path d="M8773,5154 L8979,5154" class="partition10" />
+	<path d="M8617,5286 L8617,5262" class="partition10" />
+	<path d="M8617,5169 L8617,5134" class="partition10" />
+	<path d="M8617,5039 L8617,5024" class="partition10" />
+	<path d="M8777,5286 L8777,5262" class="partition10" />
+	<path d="M8777,5169 L8777,5134" class="partition10" />
+	<path d="M8777,5039 L8777,5024" class="partition10" />
+	<path d="M4341,6109 L4493,6109" class="contur-door" />
+	<path d="M4341,5866 L4493,5866" class="contur-door" />
+	<path d="M4720,6109 L4873,6109" class="contur-door" />
+	<path d="M4720,5866 L4873,5866" class="contur-door" />
+	<path d="M 10885,7137 C10927,6697 11297,6498 11533,6490" class="contur-door" />
+	<path d="M11524,6492 L11524,6563" class="contur-door" />
+	<path d="M10894,7129 L10965,7129" class="contur-door" />
+</g>
+<g>	
+	<desc>Проход линия</desc>
+	<path d="M4468,6643 L4480,6725" class="border" />
+	<path d="M4468,6802 L4472,6732" class="border" />
+</g>
+<g>	
+	<desc>Перегородки стены</desc>
+	<path d="M3367,7852 L3367,7767 z" class="partition" />
+	<path d="M3367,7651 L3367,7604" class="partition" />
+	<path d="M2858,7629 L3373,7629" class="partition" />
+	<path d="M3367,7487 L3367,7076" class="partition" />
+	<path d="M2856,7217 L3366,7217" class="partition" />
+	<path d="M3180,6960 L3180,6538" class="partition" />
+	<path d="M3180,6954 L3373,6954" class="partition" />
+	<path d="M3367,6954 L3367,6879" class="partition" />
+	<path d="M3339,6879 L3434,6879 L3434,6690 L3339,6690 z" class="partition" />
+	<path d="M3180,6812 L3227,6812" class="partition" />
+	<path d="M3307,6812 L3339,6812" class="partition" />
+	<path d="M2778,6594 L3180,6594" class="partition" />
+	<path d="M3367,6690 L3367,6672" class="partition" />
+	<path d="M3174,6538 L3367,6538" class="partition" />
+	<path d="M3367,6556 L3367,6491" class="partition" />
+	<path d="M3367,6375 L3367,6300" class="partition" />
+	<path d="M3186,6181 L3367,6181" class="partition" />
+	<path d="M3192,6181 L3192,6055" class="partition" />	
+	<path d="M7972,5712 L8167,5712" class="partition14" />	
+	<path d="M2865,8073 L3434,8073" class="partition" />
+	<path d="M9000,6383 L9223,6383" class="partition14" />
+	<path d="M9427,6383 L10518,6383" class="partition14" />
+	<path d="M9460,6383 L9460,6647" class="partition14" />
+	<path d="M10511,6377 L10511,6425" class="partition14" />
+	<path d="M10511,6541 L10511,6573" class="partition14" />
+</g>
+<g>	
+	<desc>Главный контур 2 толстый2</desc>
+	<path d="M2889,8692 L2889,8067" class="contur-fat2" />
+	<path d="M2864.5,8667 L4916,8667" class="contur-fat2" />
+	<path d="M4891,8692 L4891,8067" class="contur-fat2" />
+</g>
+<g>	
+	<desc>Перегородки стены толстые</desc>
+	<path d="M3441,8642 L3441,8237" class="contur-150" />
+	<path d="M3441,8123 L3441,8067" class="contur-150" />
+	<path d="M3441,8263 L3739,8263" class="contur-150" />
+	<path d="M3845,8263 L3935,8263" class="contur-150" />
+	<path d="M4041,8263 L4385,8263" class="contur-150" />
+	<path d="M3890,8642 L3890,8255" class="contur-150" />
+	<path d="M4376,8642 L4376,8198" class="contur-150" />
+	<path d="M4376,8094 L4376,8076" class="contur-150" />
+	<path d="M2760,8046 L3514,8046" class="contur-150" />
+	<path d="M3629,8046 L8609,8046" class="contur-150" />	
+	<path d="M5950,7540 L5950,7468 6071,7468" class="contur-150" />
+	<path d="M6220,7802 L6220,7443 M6189,7468 L6218,7468" class="contur-150" />
+	<path d="M6255,7802 L6255,7443 M6286,7468 L6246,7468" class="contur-150" />
+	<path d="M6220,7259 L6220,6377 M6220,6335 L6220,6118" class="contur-150" />
+	<path d="M6255,7259 L6255,6377 M6255,6335 L6255,6119 M6255,5967 L6255,2080" class="contur-150" />	
+	<path d="M6534,7802 L6534,7468 6404,7468" class="contur-150" />
+	<path d="M6534,7516 L6568,7516" class="contur-150" />
+	<path d="M6684,7516 L7145,7516" class="contur-150" />	
+	<path d="M6726,8056 L6726,7699" class="contur-150" />
+	<path d="M6853,8056 L6853,7699" class="contur-150" />
+	<path d="M6716,7690 L6863,7690" class="contur-150" />
+	<path d="M6806,7699 L6806,7343" class="contur-150" />
+	<path d="M6796,7353 L8773,7353" class="contur-150" />	
+	<path d="M7306,8056 L7306,7526" class="contur-150" />
+	<path d="M7261,7516 L7349,7516" class="contur-150" />
+	<path d="M7467,7516 L8773,7516" class="contur-150" />
+	<path d="M8293,7580 L8471,7580" class="contur-150" />
+	<path d="M8302,7590 L8302,7521" class="contur-150" />
+	<path d="M8462,7590 L8462,7521" class="contur-150" />
+	<path d="M8891,7516 L8974,7516" class="contur-150" />
+	<path d="M9091,7516 L9469,7516" class="contur-150" />
+	<path d="M9609,7516 L9969,7516" class="contur-150" />
+	<path d="M6255,7188 L7944,7188" class="contur-150" />
+	<path d="M8048,7188 L8173,7188" class="contur-150" />
+	<path d="M8335,7188 L8416,7188" class="contur-150" />	
+	<path d="M6780,7188 L6780,6890 6814,6890" class="contur-150" />
+	<path d="M6917,6890 L7072,6890" class="contur-150" />
+	<path d="M7072,7188 L7072,6867" class="contur-150" />
+	<path d="M7072,6848 L7072,6622" class="contur-150" />
+	<path d="M7072,6517 L7072,6416" class="contur-150" />
+	<path d="M7062,6634 L7367,6634" class="contur-150" />
+	<path d="M7357,7197 L7357,6415" class="contur-150" />
+	<path d="M7046,6425 L7357,6425" class="contur-150" />
+	<path d="M6474,6425 L6941,6425" class="contur-150" />
+	<path d="M6245,6425 L6369,6425" class="contur-150" />
+	<path d="M6380,6425 L6439,6425" class="contur-150" />
+	<path d="M6245,6184 L6439,6184" class="contur-150" />
+	<path d="M6485,6184 L6694,6184" class="contur-150" />
+	<path d="M6729,6184 L6834,6184" class="contur-150" />
+	<path d="M6859,6184 L7368,6184" class="contur-150" />
+	<path d="M7358,6194 L7358,5560" class="contur-150" />
+	<path d="M6918,6194 L6918,5956" class="contur-150" />
+	<path d="M6918,5852 L6918,4998" class="contur-150" />
+	<path d="M6635,6184 L6635,5816" class="contur-150" />
+	<path d="M6245,5826 L6645,5826" class="contur-150" />
+	<path d="M6245,5455 L6645,5455" class="contur-150" />
+	<path d="M6635,5445 L6635,5226" class="contur-150" />
+	<path d="M6635,5120 L6635,4998" class="contur-150" />
+	<path d="M6625,5328 L6841,5328" class="contur-150" />
+	<path d="M6892,5328 L7368,5328" class="contur-150" />
+	<path d="M6579,5028 L6579,4988" class="contur-150" />
+	<path d="M6579,4882 L6579,4200" class="contur-150" />
+	<path d="M7698,7198 L7698,6699" class="contur-150" />
+	<path d="M7366,6753 L7385,6753" class="contur-150" />
+	<path d="M7520,6753 L7570,6753" class="contur-150" />
+	<path d="M7600,6753 L7629,6753" class="contur-150" />
+	<path d="M7676,6753 L7705,6753" class="contur-150" />
+	<path d="M7698,6593 L7698,6555" class="contur-150" />
+	<path d="M7588,6539 L7588,6564 8166,6564" class="contur-150" />
+	<path d="M8156,7198 L8156,6556" class="contur-150" />
+	<path d="M8603,7187 L8603,6390" class="contur-150" />
+	<path d="M8397,6990 L8434,6990" class="contur-150" />
+	<path d="M8527,6990 L8611,6990" class="contur-150" />
+	<path d="M8397,6584 L8434,6584" class="contur-150" />
+	<path d="M8527,6584 L8611,6584" class="contur-150" />
+	<path d="M7575,6343 L7605,6343" class="contur-150" />
+	<path d="M7675,6343 L8008,6343" class="contur-150" />
+	<path d="M8038,6343 L8073,6343" class="contur-150" />
+	<path d="M8113,6343 L8167,6343" class="contur-150" />
+	<path d="M7585,6353 L7585,5210" class="contur-150" />
+	<path d="M7872,6353 L7872,5850" class="contur-150" />
+	<path d="M8157,6353 L8157,5838" class="contur-150" />
+	<path d="M7778,5868 L7778,5838" class="contur-150" />
+	<path d="M7577,5858 L8167,5858" class="contur-150" />
+	<path d="M7778,5734 L7778,5069" class="contur-150" />
+	<path d="M7585,5104 L7585,5069" class="contur-150" />
+	<path d="M7575,5079 L7788,5079" class="contur-150" />
+	<path d="M8157,5733 L8157,5079" class="contur-150" />
+	<path d="M7552,4883 L7682,4883" class="contur-150" />
+	<path d="M7799,4883 L8105,4883" class="contur-150" />
+	<path d="M8095,4893 L8095,4810" class="contur-150" />
+	<path d="M8085,4820 L8190,4820" class="contur-150" />
+	<path d="M7562,4893 L7562,4350" class="contur-150" />
+	<path d="M7562,4234 L7562,4197" class="contur-150" />
+	<path d="M7552,4435 L8186,4435" class="contur-150" />
+	<path d="M8176,4444 L8176,4408" class="contur-150" />
+	<path d="M8176,4291 L8176,4197" class="contur-150" />
+	<path d="M7552,4207 L8210,4207" class="contur-150" />
+	<path d="M8394,6380 L9002,6380" class="contur-150" />	
+	<path d="M8408,4997 L8408,4974" class="contur-150" />
+	<path d="M8408,4812 L8407,4018" class="contur-150" />
+	<path d="M8374,4207 L8417,4207" class="contur-150" />
+	<path d="M7358,5338 L7358,5225" class="contur-150" />
+	<path d="M7358,5121 L7358,4892" class="contur-150" />
+	<path d="M7358,4869 L7358,4140" class="contur-150" />
+	<path d="M7358,4036 L7358,3949" class="contur-150" />
+	<path d="M7330,3949 L7330,3930" class="contur-150" />
+	<path d="M7330,3754 L7330,3712" class="contur-150" />	
+	<path d="M11567,7477 L11418,7366 11443,7338" class="contur-150" />
+	<path d="M11877,7168 L11747,7021 11722,7052" class="contur-150" />
+	<path d="M10839,2877 L11042,2877" class="contur-150" />
+	<path d="M10839,2909 L11042,2909" class="contur-150" />	
+	<path d="M10448,2877 L10652,2877" class="contur-150" />
+	<path d="M10448,2909 L10652,2909" class="contur-150" />	
+	<path d="M10458,2887 L10458,2150" class="contur-150" />
+	<path d="M10426,2887 L10426,2150" class="contur-150" />	
+	<path d="M10067,2121 L10067,2085" class="contur-150" />
+	<path d="M10067,1858 L10067,1895" class="contur-150" />	
+	<path d="M11052,2926 L11052,3080" class="contur-150" />
+	<path d="M11052,3310 L11052,4129" class="contur-150" />
+	<path d="M11052,4360 L11052,4618" class="contur-150" />
+	<path d="M11052,4617 L11052,4782" class="contur-150" />
+	<path d="M11052,4899 L11052,5016" class="contur-150" />
+	<path d="M10972,5006 L11062,5006" class="contur-150" />
+	<path d="M10982,4997 L10982,5134" class="contur-150" />
+	<path d="M10982,5203 L10982,5484" class="contur-150" />	
+	<path d="M12152,5493 L12190,5493" class="contur-150" />
+	<path d="M12348,5493 L12455,5493" class="contur-150" />	
+	<path d="M9618,7765 L9618,7343" class="contur-150" />
+	<path d="M8891,7351 L9628,7351" class="contur-150" />	
+	<path d="M9608,7765 L9632,7765" class="contur-150" />
+	<path d="M9736,7765 L10617,7765" class="contur-150" />
+	<path d="M9770,7591 L9969,7591" class="contur-150" />
+	<path d="M9780,7601 L9780,7525" class="contur-150" />
+	<path d="M10607,7490 L10607,7775" class="contur-150" />
+	<path d="M10607,6573 L10607,7314" class="contur-150" />
+	<path d="M10516,7500 L10617,7500" class="contur-150" />
+	<path d="M10516,6583 L10617,6583" class="contur-150" />
+	<path d="M10516,7305 L10617,7305" class="contur-150" />	
+	<path d="M3372,7089 L3459,7089" class="contur-150" />
+	<path d="M3576,7089 L3655,7089" class="contur-150" />
+	<path d="M3372,7286 L3459,7286" class="contur-150" />
+	<path d="M3576,7286 L3655,7286" class="contur-150" />	
+	<path d="M3664,7295 L3664,7309" class="contur-150" />
+	<path d="M3664,7508 L3664,7495" class="contur-150" />	
+	<path d="M4367,7508 L4367,7495" class="contur-150" />
+	<path d="M4375,7755 L4397,7755" class="contur-150" />
+	<path d="M4571,7755 L4807,7755" class="contur-150" />
+	<path d="M4924,7755 L5236,7755" class="contur-150" />
+	<path d="M4598,8043 L4598,7764" class="contur-150" />	
+	<path d="M4375,7275 L4710,7275" class="contur-150" />
+	<path d="M4898,7275 L5237,7275" class="contur-150" />	
+	<path d="M5205,7266 L5205,7198" class="contur-150" />
+	<path d="M4598,7266 L4598,7222" class="contur-150" />
+	<path d="M4598,7105 L4598,7041" class="contur-150" />
+	<path d="M4375,7050 L4608,7050" class="contur-150" />
+	<path d="M4458,7041 L4458,6814" class="contur-150" />
+	<path d="M4375,6821 L4468,6821" class="contur-150" />
+	<path d="M3371,6067 L3371,6301" class="contur-150" />
+	<path d="M3373,6302 L3430,6302" class="contur-150" />
+	<path d="M3664,6302 L3605,6302" class="contur-150" />
+	<path d="M3664,6443 L3664,6626" class="contur-150" />
+	<path d="M3664,6067 L3664,6327" class="contur-150" />	
+	<path d="M3903,6500 L3903,6626" class="contur-150" />
+	<path d="M4154,6500 L4154,6626" class="contur-150" />
+	<path d="M3893,6499 L4164,6499" class="contur-150" />	
+	<path d="M4912,5874 L5046,6106" class="contur-150" />
+	<path d="M5158,6118 L5158,6644" class="contur-150" />
+	<path d="M5148,6634 L5237,6634" class="contur-150" />	
+	<path d="M5957,6071 L5957,7298" class="contur-150" />
+	<path d="M5715,7288 L5967,7288" class="contur-150" />
+	<path d="M5265,7288 L5528,7288" class="contur-150" />
+	<path d="M10508,8055 L10508,7944" class="contur-150" />
+	<path d="M10508,7810 L10508,7773" class="contur-150" />
+	<path d="M7366,4361 L7379,4361" class="contur-150" />
+	<path d="M7542,4361 L7560,4361" class="contur-150" />
+</g>
+<g>	
+	<desc>Ресторан лестница</desc>
+	<use xlink:href="#rect"  width="85" height="85" x="9390" y="4993" />
+	<path d="M9180,5023 L9402,5023" class="contur-60" />
+	<use xlink:href="#rect"  width="85" height="85" x="9390" y="5960" />
+	<use xlink:href="#rect"  width="85" height="85" x="9390" y="6041" />
+	<use xlink:href="#rect"  width="85" height="85" x="10359" y="5960" />
+	<use xlink:href="#rect"  width="85" height="85" x="10441" y="5960" />
+	<use xlink:href="#rect"  width="85" height="85" x="10441" y="6041" />
+	<use xlink:href="#rect"  width="85" height="85" x="10441" y="5476" />
+	<use xlink:href="#rect"  width="85" height="85" x="10441" y="4990" />
+	<use xlink:href="#rect"  width="85" height="85" x="10360" y="4990" />
+	<rect x="9473" y="4998"  height="18"  width="71" class="border" />
+	<rect x="9544" y="4992"  height="14"  width="110" class="border" />
+	<rect x="9644" y="4992"  height="14"  width="110" class="border" />
+	<rect x="9754" y="4998"  height="18"  width="71" class="border" />
+	<rect x="9825" y="4992"  height="14"  width="110" class="border" />
+	<rect x="9925" y="4992"  height="14"  width="110" class="border" />
+	<rect x="10035" y="4998"  height="18"  width="71" class="border" />
+	<rect x="10106" y="4992"  height="14"  width="110" class="border" />
+	<rect x="10206" y="4992"  height="14"  width="110" class="border" />
+	<rect x="10316" y="4998"  height="18"  width="71" class="border" />
+	<rect x="9473" y="5967"  height="18"  width="71" class="border" />
+	<rect x="9544" y="5973"  height="14"  width="110" class="border" />
+	<rect x="9644" y="5973"  height="14"  width="110" class="border" />
+	<rect x="9754" y="5967"  height="18"  width="71" class="border" />
+	<rect x="9825" y="5973"  height="14"  width="110" class="border" />
+	<rect x="9925" y="5973"  height="14"  width="110" class="border" />
+	<rect x="10035" y="5967"  height="18"  width="71" class="border" />
+	<rect x="10106" y="5973"  height="14"  width="110" class="border" />
+	<rect x="10206" y="5973"  height="14"  width="110" class="border" />
+	<rect x="10316" y="5967"  height="18"  width="71" class="border" />
+	<rect x="9397" y="5055"  height="71"  width="18" class="border" />
+	<rect x="9391" y="5126"  height="110"  width="14" class="border" />
+	<rect x="9391" y="5226"  height="110"  width="14" class="border" />
+	<rect x="9397" y="5336"  height="71"  width="18" class="border" />
+	<rect x="9391" y="5407"  height="110"  width="14" class="border" />
+	<rect x="9391" y="5507"  height="110"  width="14" class="border" />
+	<rect x="9397" y="5617"  height="71"  width="18" class="border" />
+	<rect x="9391" y="5688"  height="110"  width="14" class="border" />
+	<rect x="9391" y="5788"  height="110"  width="14" class="border" />
+	<rect x="9397" y="5898"  height="71"  width="18" class="border" />
+	<rect x="10471" y="5075"  height="104"  width="18" class="border" />
+	<rect x="10480" y="5179"  height="110"  width="14" class="border" />
+	<rect x="10480" y="5279"  height="110"  width="14" class="border" />
+	<rect x="10471" y="5389"  height="104"  width="18" class="border" />
+	<rect x="10471" y="5562"  height="104"  width="18" class="border" />
+	<rect x="10480" y="5666"  height="110"  width="14" class="border" />
+	<rect x="10480" y="5766"  height="110"  width="14" class="border" />
+	<rect x="10471" y="5876"  height="104"  width="18" class="border" />
+	<use xlink:href="#prohod_h"   width="109" height="109" transform="scale(1,1) translate(9543,4884)" />
+	<use xlink:href="#prohod_h"   width="109" height="109" transform="scale(-1,1) translate(-9755,4884)" />
+	<use xlink:href="#prohod_h"   width="109" height="109" transform="scale(1,-1) translate(9543,-6094)" />
+	<use xlink:href="#prohod_h"   width="109" height="109" transform="scale(-1,-1) translate(-9755,-6094)" />
+	<path d="M9835,5091 L10366,5091" class="border" />
+	<path d="M9835,5235 L10366,5235" class="border" />
+	<path d="M9957,5412 L10366,5412" class="border" />
+	<path d="M9894,5616 L10366,5616" class="border" />
+	<path d="M9835,5790 L10366,5790" class="border" />
+	<path d="M9835,5937 L10366,5937" class="border" />
+	<path d="M10366,5091 L10366,5937" class="border" />
+	<path d="M10220,5235 L10220,5412" class="border" />
+	<path d="M10220,5616 L10220,5790" class="border" />
+	<path d="M10220,5270 L10366,5270" class="border" />
+	<path d="M10220,5305 L10366,5305" class="border" />
+	<path d="M10220,5340 L10366,5340" class="border" />
+	<path d="M10220,5375 L10366,5375" class="border" />
+	<path d="M10220,5650 L10366,5650" class="border" />
+	<path d="M10220,5685 L10366,5685" class="border" />
+	<path d="M10220,5720 L10366,5720" class="border" />
+	<path d="M10220,5755 L10366,5755" class="border" />
+	<path d="M10017,5412 L10017,5616" class="border" />
+	<path d="M9982,5412 L9982,5616" class="border" />
+	<path d="M9947,5447 L9947,5616" class="border" />
+	<path d="M9912,5562 L9912,5616" class="border" />
+	<path d="M9957,5412 L9894,5616" class="border" />
+	<path d="M9835,5091 L9835,5235" class="border" />	
+	<path d="M9870,5091 L9870,5235" class="border" />
+	<path d="M9905,5091 L9905,5235" class="border" />
+	<path d="M9940,5091 L9940,5235" class="border" />
+	<path d="M9975,5091 L9975,5235" class="border" />
+	<path d="M10010,5091 L10010,5235" class="border" />
+	<path d="M10045,5091 L10045,5235" class="border" />
+	<path d="M10080,5091 L10080,5235" class="border" />
+	<path d="M10115,5091 L10115,5235" class="border" />
+	<path d="M10150,5091 L10150,5235" class="border" />
+	<path d="M10185,5091 L10185,5235" class="border" />
+	<path d="M9835,5937 L9835,5790" class="border" />	
+	<path d="M9870,5937 L9870,5790" class="border" />
+	<path d="M9905,5937 L9905,5790" class="border" />
+	<path d="M9940,5937 L9940,5790" class="border" />
+	<path d="M9975,5937 L9975,5790" class="border" />
+	<path d="M10010,5937 L10010,5790" class="border" />
+	<path d="M10045,5937 L10045,5790" class="border" />
+	<path d="M10080,5937 L10080,5790" class="border" />
+	<path d="M10115,5937 L10115,5790" class="border" />
+	<path d="M10150,5937 L10150,5790" class="border" />
+	<path d="M10185,5937 L10185,5790" class="border" />
+	<path d="M9835,5162 L10292,5162 10292,5864 9835,5864" class="border" />
+	<path d="M9946,5513 L10292,5513" class="border" />
+	<path d="M9927,5513 L9466,5513" class="border" />
+	<path d="M9484,5506 L9466,5513 9484,5520" class="border" />
+</g>
+	<desc>Перегородка</desc>
+	<rect x="7321" y="2152"  height="18"  width="18" class="border" />
+	<rect x="7324" y="2170"  height="117"  width="12" class="border" />
+	<rect x="7324" y="2288"  height="117"  width="12" class="border" />
+	<rect x="7324" y="2406"  height="117"  width="12" class="border" />
+	<rect x="7324" y="2524"  height="117"  width="12" class="border" />
+	<rect x="7324" y="2642"  height="117"  width="12" class="border" />
+	<rect x="7324" y="2760"  height="117"  width="12" class="border" />
+	<rect x="7321" y="2878"  height="18"  width="18" class="border" />
+	<use xlink:href="#rect"  width="70" height="70" x="7296" y="2080" />
+	<use xlink:href="#rect"  width="70" height="70" x="7296" y="2897" />
+	<rect x="7321" y="2968"  height="18"  width="18" class="border" />
+	<rect x="7324" y="2986"  height="117"  width="12" class="border" />
+	<rect x="7324" y="3104"  height="117"  width="12" class="border" />
+	<rect x="7324" y="3222"  height="117"  width="12" class="border" />
+	<rect x="7324" y="3340"  height="117"  width="12" class="border" />
+	<rect x="7324" y="3458"  height="117"  width="12" class="border" />
+	<rect x="7324" y="3576"  height="117"  width="12" class="border" />
+	<rect x="7321" y="3693"  height="18"  width="18" class="border" />
+<g>	
+	<desc>Главный контур 2 толстый</desc>
+	<path d="M2640,6055 L3431,6055" class="contur-200" />
+	<path d="M3605,6055 L4207,6055 L4312,5869 L4342,5869" class="contur-200" />
+	<path d="M4998,5869 L5060,5869 5122,5978  M5266,6061 L6177,6061 M6177,5980 L6223,5980 6223,2090" class="contur-200" />
+	<path d="M4872,5869 L4971,5869" class="contur-200" />		
+	<path d="M6245,3961 L6721,3961" class="contur-200" />
+	<path d="M6895,3961 L7297,3961" class="contur-200" />	
+	<path d="M6245,2092 L6511,2092" class="contur-200" />
+	<path d="M6631,2092 L6684,2092" class="contur-200" />
+	<path d="M6928,2092 L6981,2092" class="contur-200" />
+	<path d="M7101,2092 L7562,2092" class="contur-200" />
+	<path d="M7682,2092 L7734,2092" class="contur-200" />
+	<path d="M7979,2092 L8032,2092" class="contur-200" />
+	<path d="M8152,2092 L8612,2092" class="contur-200" />
+	<path d="M8732,2092 L8785,2092" class="contur-200" />
+	<path d="M9029,2092 L9082,2092" class="contur-200" />
+	<path d="M9203,2092 L9398,2092" class="contur-200" />	
+	<path d="M8397,6785 L8593,6785" class="contur-200" />
+	<path d="M8406,6594 L8406,6501" class="contur-200" />
+	<path d="M8406,6409 L8406,6048" class="contur-200" />
+	<path d="M8406,6037 L8406,4997" class="contur-200" />	
+	<path d="M8990,6389 L8990,5812" class="contur-200" />
+	<path d="M8418,5824 L8812,5824" class="contur-200" />
+	<path d="M8928,5824 L9002,5824" class="contur-200" />	
+	<path d="M8418,5516 L8812,5516" class="contur-200" />
+	<path d="M8928,5516 L9002,5516" class="contur-200" />	
+	<path d="M8735,5836 L8735,5700" class="contur-200" />
+	<path d="M8735,5567 L8735,5506" class="contur-200" />
+	<path d="M8990,5528 L8990,4997" class="contur-200" />	
+	<path d="M8120,8458 L8120,8343" class="contur-200" />
+	<path d="M8120,8208 L8120,8068" class="contur-200" />
+	<path d="M11205,8049 C11251,7938 11306,7836 11368,7742" class="contur-200" />	
+	<path d="M11481,7554 L11525,7498" class="contur-200" />
+	<path d="M11909.5,7125 L11959.5,7087" class="contur-200" />
+	<path d="M12144,6968 C12241,6903 12342,6848 12445,6805" class="contur-200" />	
+	<path d="M4330,5879 L4330,6131" class="contur-200" />
+	<path d="M4133,6119 L4342,6119" class="contur-200" />
+	<path d="M4145,6131 L4145,6039" class="contur-200" />	
+	<path d="M4884,5879 L4884,6131" class="contur-200" />
+	<path d="M4872,6119 L5148,6119" class="contur-200" />	
+	<path d="M1063,4756 L3517,3337" class="contur-200" />	
+	<path d="M3588,3297 L5674,2090.5" class="contur-200" />
+	<path d="M3567,3377 L3907,3964" class="contur-200" />	
+	<path d="M3964,3947 L5678.5,2952.7" class="contur-200" />	
+	<path d="M5672.5,2954 L5952,2954" class="contur-200" />
+	<path d="M5940,2966 L5940,2733" class="contur-200" />
+	<path d="M5940,2575 L5940,2320" class="contur-200" />
+	<path d="M5662,2332 L5952,2332" class="contur-200" />
+	<path d="M5055.5,2683 L5668,2330.5" class="contur-200" />
+	<path d="M5071,2686 L4968,2510" class="contur-200" />
+	<path d="M5668,2092 L6235,2092" class="contur-200" />
+	<path d="M2947,4521 L3883,3976" class="contur-200" />
+	<path d="M2950,4506 L3339,5110" class="contur-200" />
+	<path d="M3868,3973 L4254,4642" class="contur-200" />
+	<path d="M8418,6042 L8622,6042" class="contur-200" />
+	<path d="M8773,6042 L8979,6042" class="contur-200" />	
+	<path d="M1770,5213 L2196,4963" class="contur-200" />
+	<path d="M2221,5027 L2399,5385" class="contur-200" />
+	<path d="M2475,5539 L2487,5565" class="contur-200" />	
+	<path d="M2106,4990 L2152,5071 2232,5024 2187,4944 z" class="border-full" />
+	<path d="M2412,5598 L2499,5550 2544,5632 2457,5676 z" class="border-full" />	
+	<path d="M8439,6372 L8439,6054" class="border2" />
+	<path d="M8957,6372 L8957,6252" class="border2" />
+	<path d="M8436,6034 L8436,5833" class="border2" />
+	<path d="M8433,5281 L8433,5786" class="border2" />
+	<path d="M8437,5285 L8437,5022" class="border2" />
+	<path d="M8432,5786 L8726,5786" class="border2" />
+	<path d="M8958,5278 L8958,5022" class="border2" />	
+	<path d="M10225,7653 L10296,7653 10296,7745" class="border2" />
+	<path d="M10225,7663 L10286,7663 10286,7745" class="border2" />	
+	<rect x="10617" y="7675"  height="83"  width="35"  class="border" />
+	<rect x="10617" y="7679"  height="75"  width="31"  class="border" />
+	<rect x="10617" y="6588"  height="83"  width="35"  class="border" />
+	<rect x="10617" y="6592"  height="75"  width="31"  class="border" />	
+	<rect x="10444" y="6340"  height="33"  width="76"  class="border" />
+	<rect x="10448" y="6344"  height="25"  width="68"  class="border" />
+</g>
+<g>	
+	<desc>Сантехника</desc>
+	<use xlink:href="#bath"  width="110" height="110" x="10380" y="7638" />
+	<use xlink:href="#sink"  width="60" height="60" x="10308" y="7691" />
+	<use xlink:href="#sink"  width="60" height="60" transform="translate(8538,6513) rotate(-90)" />
+	<use xlink:href="#toilet"  width="80" height="80" x="8425" y="6301" />
+	<use xlink:href="#toilet"  width="80" height="80" x="8425" y="6111" />
+	<use xlink:href="#toilet"  width="80" height="80" x="8425" y="5191" />
+	<use xlink:href="#toilet"  width="80" height="80" x="8425" y="5064" />
+	<use xlink:href="#toilet"   width="80" height="80" transform="scale(-1,1) translate(-8970,6301)" />
+	<use xlink:href="#toilet"   width="80" height="80" transform="scale(-1,1) translate(-8970,5191)" />
+	<use xlink:href="#toilet"   width="80" height="80" transform="scale(-1,1) translate(-8970,5064)" />
+	<path d="M8801,6052 L8801,6096 M8876,6052 L8876,6096" class="border2" />
+	<use xlink:href="#bide"  width="40" height="40" x="8817" y="6053" />
+	<use xlink:href="#bide"  width="40" height="40" x="8892" y="6053" />
+	<path d="M8506,6031 L8506,5832" class="border" />
+	<path d="M8506,5507 L8506,5280" class="border" />
+	<use xlink:href="#sink2"  width="50" height="50" x="8460" y="5976" />
+	<use xlink:href="#sink2"  width="50" height="50" x="8460" y="5915" />
+	<use xlink:href="#sink2"  width="50" height="50" x="8460" y="5851" />
+	<use xlink:href="#sink2"  width="50" height="50" x="8460" y="5438" />
+	<use xlink:href="#sink2"  width="50" height="50" x="8460" y="5370" />
+	<use xlink:href="#sink2"  width="50" height="50" x="8460" y="5305" />
+	<use xlink:href="#bathroom"  width="255" height="255" x="8433" y="5531" />
+</g>
+<g>	
+	<desc>контур 70</desc>
+	<path d="M5041,6084 L5266,6084" class="contur-70" />
+	<path d="M5089,6000 L5346,6000" class="contur-70" />
+	<path d="M4940,5943 L5001,5908 5083,6049 5041,6118 z" class="contur-70fill" />
+	<path d="M5012,5903 L5072,5868 5128,5966 5089,6035 z" class="contur-70fill" />
+</g>	
+<g>	
+	<desc>Главный контур толстый 30</desc>
+	<path d="M4362,7996 L4362,8041 3669,8041 3669,7522 4362,7522 4362,7810" class="contur-fat30" />
+	<path d="M3859,7850 L4175,7850 4175,7712 3859,7712 z" class="contur-200" />
+	<path d="M3669,7249 L3669,7281 4362,7281 4362,7249" class="contur-fat30" />
+	<path d="M3669,7131 L3669,7054 4362,7054 4362,7131" class="contur-fat30" />
+	<path d="M4016,7281 L4016,7054" class="contur-fat30" />
+	<path d="M3669,6922 L3669,6639 4362,6639 4362,7131" class="contur-fat30" />
+	<path d="M3373,8041 L3208,8041" class="contur-fat30" />
+	<path d="M3194,8056 L3194,7852" class="contur-fat30" />
+	<path d="M3373,7867 L3208,7867" class="contur-fat30" />	
+	<path d="M4866,8041 L6230,8041" class="contur-fat30" />
+	<path d="M6245,8041 L6900,8041" class="contur-fat30" />
+	<path d="M5251,8041 L5251,7484" class="contur-fat30" />
+	<path d="M5251,7298 L5251,6049" class="contur-fat30" />
+	<path d="M5251,7523 L5722,7523" class="contur-fat30" />
+	<path d="M5897,7523 L5945,7523 5945,8041" class="contur-fat30" />
+	<path d="M5945,7802 L6018,7802" class="contur-fat30" />
+	<path d="M6140,7802 L6230,7802" class="contur-fat30" />
+	<path d="M6245,7802 L6330,7802" class="contur-fat30" />
+	<path d="M6452,7802 L6544,7802" class="contur-fat30" />
+	<path d="M6175,8041 L6175,7802" class="contur-fat30" />
+	<path d="M6175,8041 L6175,7802" class="contur-fat30" />
+	<path d="M6301,8041 L6301,7802" class="contur-fat30" />
+	<path d="M6529,8041 L6529,7802" class="contur-fat30" />
+	<path d="M7850,8041 L8609,8041" class="contur-fat30" />
+	<path d="M8818,8041 L9013,8041" class="contur-fat30" />
+	<path d="M9220,8041 L9817,8041" class="contur-fat30" />
+	<path d="M10027,8041 L10220,8041" class="contur-fat30" />
+	<path d="M10430,8041 L10604,8041" class="contur-fat30" />
+	<path d="M10815,8041 L11219,8041" class="contur-fat30" />
+	<path d="M8383,7198 L8383,6574" class="contur-fat30" />
+	<path d="M8394,5012 L9002,5012" class="contur-fat30" />	
+	<path d="M6245,5013 L6832,5013" class="contur-fat30" />
+	<path d="M6885,5013 L7368,5013" class="contur-fat30" />	
+	<path d="M6869,8067 L6869,8487" class="contur-fat30" />
+	<path d="M6854,8472 L8169,8472" class="contur-fat30" />	
+	<path d="M12440,6514 L12440,6817" class="contur-fat30" />
+	<path d="M12440,5305 L12440,6305" class="contur-fat30" />
+	<path d="M12440,4499 L12440,5094" class="contur-fat30" />
+	<path d="M12440,4288 L12440,2899" class="contur-fat30" />
+	<path d="M11042,2914 L12455,2914" class="contur-fat30" />
+	<path d="M11027,2805 L11027,2887" class="contur-fat30" />	
+	<path d="M9413,1979 L9413,2151" class="contur-fat30" />
+	<path d="M9398,2136 L10667,2136" class="contur-fat30" />
+	<path d="M10871,2136 L11042,2136" class="contur-fat30" />
+	<path d="M11027,1928 L11027,2160" class="contur-fat30" />
+	<path d="M11027,1600 L11027,1824" class="contur-fat30" />
+	<path d="M9413,1600 L9413,1773" class="contur-fat30" />
+	<path d="M9398,1614 L11042,1614" class="contur-fat30" />
+	<path d="M10057,1843 L10413,1843" class="contur-fat30" />
+	<path d="M10398,1858 L10398,1809" class="contur-fat30" />
+	<path d="M10398,1602 L10398,1693" class="contur-fat30" />
+	<path d="M10072,1858 L10072,1602" class="contur-fat30" />	
+	<path d="M10987,5484 L10987,6118" class="contur-fat30" />
+	<path d="M10972,5498 L12152,5498" class="contur-fat30" />
+	<path d="M11683,5484 L11683,6031" class="contur-fat30" />
+	<path d="M11176,6017 L11697,6017" class="contur-fat30" />
+	<path d="M11176,6063 L11697,6063" class="contur-fat30" />
+	<path d="M11910,5512 L11910,5840" class="contur-fat30" />
+	<path d="M12137,5512 L12137,5840" class="contur-fat30" />
+	<path d="M11668,5825 L11779,5825" class="contur-fat30" />
+	<path d="M12041,5825 L12152,5825" class="contur-fat30" />
+	<path d="M9968,7760 L10518,7760" class="contur-fat30" />
+	<path d="M9983,7775 L9983,7373" class="contur-fat30" />
+	<path d="M10503,7775 L10503,7373" class="contur-fat30" />
+	<path d="M10212,7775 L10212,7507" class="contur-fat30" />
+	<path d="M9969,7521 L10062,7521" class="contur-fat30" />
+	<path d="M10178,7521 L10299,7521" class="contur-fat30" />
+	<path d="M10404,7521 L10518,7521" class="contur-fat30" />
+	<path d="M9983,6573 L9983,7315" class="contur-fat30" />
+	<path d="M10503,6573 L10503,7315" class="contur-fat30" />
+	<path d="M9969,6588 L10518,6588" class="contur-fat30" />	
+	<path d="M9969,7283 L10174,7283" class="contur-fat30" />
+	<path d="M10350,7283 L10518,7283" class="contur-fat30" />
+	<path d="M5774,2126 L5774,2100" class="contur-fat30" />
+	<path d="M5774,2322 L5774,2301" class="contur-fat30" />
+	<path d="M9452,7187 L9452,6573" class="contur-fat30" />
+	<path d="M3910,3962 L4367,4753" class="contur-fat30" />
+	<path d="M4137,4601 L4218,4555 4263,4635 4185,4683 z" class="border-full" />
+	<path d="M4212,4680 L4270,4644 4342,4766 4282,4801 z" class="border-full" />
+	<path d="M4308,4625 L4342,4604 4413,4725 4378,4746 z" class="border-full" />
+</g>
+<g>	
+	<desc>Левый серый прямоугольник</desc>
+	<use height="8766" width="8766" y="0" x="0" xlink:href="#atn_trgl"/>
+</g>
+<g>	
+	<desc>Двери</desc>
+	<use xlink:href="#prohod" x="3245" y="6556" width="120" height="120" />
+	<use xlink:href="#prohod" width="120" height="120" transform="scale(1,-1) translate(3245,-6491)"/>
+	<use xlink:href="#prohod" width="120" height="120" transform="scale(1,-1) translate(3317,-8239)"/>
+	<use xlink:href="#prohod_h"   width="110" height="110" transform="scale(-1,-1) translate(-3846,-8380)" />
+	<use xlink:href="#prohod_h"   width="110" height="110" transform="scale(1,-1) translate(3934,-8380)" />
+	<use xlink:href="#prohod" width="110" height="110" transform="scale(-1,-1) translate(-4493,-8200)"/>
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(1,-1) translate(3513,-8172)" />
+	<use xlink:href="#prohod"   width="120" height="120" transform="scale(1,-1) translate(3245,-7606)" />
+	<use xlink:href="#prohod" x="3245" y="7651"  width="120" height="120" />
+	<use xlink:href="#prohod" x="3245" y="6960"  width="120" height="120" />
+	<use xlink:href="#prohod_h"   width="83" height="83" transform="scale(-1,-1) translate(-3308,-6898)" />
+	<use xlink:href="#prohod"   width="120" height="120" transform="scale(-1,-1) translate(-3791,-6443)"  />
+	<use xlink:href="#prohod_h"   width="71" height="71" transform="scale(1,-1) translate(3430,-6136)" />
+	<use xlink:href="#prohod_h"   width="109" height="109" transform="scale(-1,-1) translate(-3606,-6173)" />
+	<use xlink:href="#prohod_h"   width="71" height="71" transform="scale(1,-1) translate(3430,-6382)" />
+	<use xlink:href="#prohod_h"   width="109" height="109" transform="scale(-1,-1) translate(-3606,-6419)" />
+	<use xlink:href="#prohod"   width="120" height="120" transform="scale(1,-1) translate(3568,-7039)"  />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(1,1) translate(3459,6982)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(-1,-1) translate(-3576,-7413)" />
+	<use xlink:href="#prohod"   width="120" height="120" transform="scale(-1,1) translate(-3791,7308)"  />
+	<use xlink:href="#prohod"   width="71" height="71" transform="scale(-1,-1) translate(-3743,-7495)"  />
+	<use xlink:href="#prohod_h"   width="71" height="71" transform="scale(1,-1) translate(4396,-7834)" />
+	<use xlink:href="#prohod_h"   width="109" height="109" transform="scale(-1,-1) translate(-4572,-7871)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(-1,-1) translate(-4925,-7882)" />
+	<use xlink:href="#prohod"   width="120" height="120" transform="scale(-1,1) translate(-4725,7104)" />
+	<use xlink:href="#prohod_h"   width="96" height="96" transform="scale(-1,1) translate(-4899,7171)" />
+	<use xlink:href="#prohod_h"   width="96" height="96" transform="scale(1,1) translate(4710,7171)" />
+	<use xlink:href="#prohod_h"   width="115" height="115" transform="scale(1,1) translate(4494,5985)" />
+	<use xlink:href="#prohod_h"   width="115" height="115" transform="scale(-1,1) translate(-4720,5985)" />
+	<use xlink:href="#prohod_h"   width="115" height="115" transform="scale(1,1) translate(4494,5744)" />
+	<use xlink:href="#prohod_h"   width="115" height="115" transform="scale(-1,1) translate(-4720,5744)" />
+	<use xlink:href="#prohod"   width="110" height="110" transform="scale(-1,1) translate(-5904,2126)" />
+	<use xlink:href="#prohod"   width="70" height="70" transform="scale(-1,-1) translate(-5864,-2301)" />
+	<use xlink:href="#prohod"   width="95" height="95" transform="scale(1,-1) translate(5835,-2734)" />
+	<use xlink:href="#prohod"   width="70" height="70" transform="scale(1,1) translate(5860,2574)" />
+	<use xlink:href="#prohod_h"   width="125" height="125" transform="scale(1,1) translate(6684,1947)" />
+	<use xlink:href="#prohod_h"   width="125" height="125" transform="scale(-1,1) translate(-6929,1947)" />
+	<use xlink:href="#prohod_h"   width="125" height="125" transform="scale(1,1) translate(7734,1947)" />
+	<use xlink:href="#prohod_h"   width="125" height="125" transform="scale(-1,1) translate(-7979,1947)" />
+	<use xlink:href="#prohod_h"   width="115" height="115" transform="scale(1,1) translate(7744,2103)" />
+	<use xlink:href="#prohod_h"   width="115" height="115" transform="scale(-1,1) translate(-7969,2103)" />
+	<use xlink:href="#prohod_h"   width="125" height="125" transform="scale(1,1) translate(8785,1947)" />
+	<use xlink:href="#prohod_h"   width="125" height="125" transform="scale(-1,1) translate(-9030,1947)" />
+	<use xlink:href="#prohod_h"   width="115" height="115" transform="scale(1,1) translate(8795,2103)" />
+	<use xlink:href="#prohod_h" width="115" height="115" transform="scale(-1,1) translate(-9020,2103)" />
+	<use xlink:href="#prohod" width="100" height="100" transform="scale(1,1) translate(9959,1895)" />
+	<use xlink:href="#prohod" width="93" height="93" transform="scale(1,-1) translate(9966,-2084)" />
+	<use xlink:href="#prohod_h" width="100" height="100" transform="scale(1,1) translate(10666,2023)" />
+	<use xlink:href="#prohod_h" width="110" height="110" transform="scale(-1,1) translate(-10872,2014)" />
+	<use xlink:href="#prohod_h" width="95" height="95" transform="scale(1,1) translate(10652,2774)" />
+	<use xlink:href="#prohod_h" width="95" height="95" transform="scale(-1,1) translate(-10839,2774)" />
+	<use xlink:href="#prohod"   width="90" height="90" transform="scale(1,1) translate(11050,3108)" />
+	<use xlink:href="#prohod"   width="90" height="90" transform="scale(1,-1) translate(11050,-3284)" />
+	<use xlink:href="#prohod"   width="90" height="90" transform="scale(1,1) translate(11050,4159)" />
+	<use xlink:href="#prohod"   width="90" height="90" transform="scale(1,-1) translate(11050,-4335)" />
+	<use xlink:href="#prohod"   width="107" height="107" transform="scale(-1,1) translate(-12570,4289)" />
+	<use xlink:href="#prohod"   width="107" height="107" transform="scale(-1,-1) translate(-12570,-4499)" />
+	<use xlink:href="#prohod"   width="107" height="107" transform="scale(1,1) translate(12320,5095)" />
+	<use xlink:href="#prohod"   width="107" height="107" transform="scale(1,-1) translate(12320,-5305)" />
+	<use xlink:href="#prohod_h" width="52" height="52" transform="scale(1,-1) translate(12190,-5553)" />
+	<use xlink:href="#prohod_h" width="110" height="110" transform="scale(-1,-1) translate(-12348,-5610)" />
+	<use xlink:href="#prohod_h" width="120" height="120" transform="scale(1,-1) translate(11237,-4869)" />
+	<use xlink:href="#prohod"   width="120" height="120" transform="scale(-1,-1) translate(-11179,-4899)" />
+	<use xlink:href="#prohod_h"   width="80" height="80" transform="scale(1,-1) translate(11002,-6196)" />
+	<use xlink:href="#prohod_h"   width="97" height="97" transform="scale(-1,-1) translate(-11176,-6213)" />
+	<use xlink:href="#prohod"   width="97" height="97" transform="scale(-1,-1) translate(-10712,-7490)" />
+	<use xlink:href="#prohod"   width="80" height="80" transform="scale(-1,1) translate(-10695,7316)" />
+	<use xlink:href="#prohod"   width="80" height="80" transform="scale(-1,1) translate(-10077,7315)" />
+	<use xlink:href="#prohod_h"   width="106" height="106" transform="scale(1,-1) translate(10300,-7640)" />
+	<use xlink:href="#prohod_h"   width="106" height="106" transform="scale(-1,-1) translate(-10350,-7402)" />
+	<use xlink:href="#prohod_h"   width="75" height="75" transform="scale(1,-1) translate(10174,-7372)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(-1,-1) translate(-6188,-7595)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(1,-1) translate(6286,-7595)" />
+	<use xlink:href="#prohod"   width="95" height="95" transform="scale(-1,1) translate(-6358,7258)" />
+	<use xlink:href="#prohod"   width="95" height="95" transform="scale(-1,-1) translate(-6358,-7443)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(-1,-1) translate(-5897,-7645)" />
+	<use xlink:href="#prohod_h"   width="70" height="70" transform="scale(1,-1) translate(5722,-7608)" />
+	<use xlink:href="#prohod_h"   width="96" height="96" transform="scale(1,-1) translate(5528,-7392)" />
+	<use xlink:href="#prohod_h"   width="96" height="96" transform="scale(-1,-1) translate(-5715,-7392)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(1,1) translate(5143,7298)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(1,-1) translate(5143,-7485)" />
+	<use xlink:href="#prohod_h"   width="110" height="110" transform="scale(1,1) translate(6380,6067)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(1,1) translate(6370,6318)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(-1,-1) translate(-6360,-6378)" />
+	<use xlink:href="#prohod_h"   width="85" height="85" transform="scale(1,1) translate(6694,6103)" />
+	<use xlink:href="#prohod_h"   width="85" height="85" transform="scale(-1,1) translate(-6859,6103)" />
+	<use xlink:href="#prohod"   width="106" height="106" transform="scale(-1,-1) translate(-7032,-5957)" />
+	<use xlink:href="#prohod_h"   width="106" height="106" transform="scale(1,1) translate(6941,6319)" />
+	<use xlink:href="#prohod"   width="108" height="108" transform="scale(-1,-1) translate(-7187,-6622)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(1,-1) translate(6812,-7006)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(-1,-1) translate(-7676,-6868)" />
+	<use xlink:href="#prohod"   width="108" height="108" transform="scale(-1,1) translate(-7813,6593)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(-1,1) translate(-8049,7084)" />
+	<use xlink:href="#prohod_h"   width="83" height="83" transform="scale(1,1) translate(8173,7098)" />
+	<use xlink:href="#prohod_h"   width="83" height="83" transform="scale(-1,1) translate(-8335,7098)" />
+	<use xlink:href="#prohod_h"   width="96" height="96" transform="scale(1,1) translate(8434,7092)" />
+	<use xlink:href="#prohod_h"   width="96" height="96" transform="scale(1,1) translate(8434,6886)" />
+	<use xlink:href="#prohod_h"   width="96" height="96" transform="scale(1,-1) translate(8434,-6688)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(-1,1) translate(-8512,6407)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(1,1) translate(8518,6260)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(1,1) translate(8518,6062)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(-1,1) translate(-8868,6260)" />
+	<use xlink:href="#prohod_h"   width="117" height="117" transform="scale(-1,-1) translate(-8928,-5951)" />
+	<use xlink:href="#prohod_h"   width="117" height="117" transform="scale(-1,1) translate(-8928,5389)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(1,-1) translate(8518,-5262)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(1,-1) translate(8518,-5134)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(-1,-1) translate(-8876,-5262)" />
+	<use xlink:href="#prohod"   width="96" height="96" transform="scale(-1,-1) translate(-8876,-5134)" />
+	<use xlink:href="#prohod"   width="83" height="83" transform="scale(-1,-1) translate(-8500,-4974)" />
+	<use xlink:href="#prohod"   width="83" height="83" transform="scale(-1,1) translate(-8500,4811)" />
+	<use xlink:href="#prohod"   width="118" height="118" transform="scale(1,-1) translate(8052,-4407)" />
+	<use xlink:href="#prohod_h"   width="83" height="83" transform="scale(1,1) translate(8211,4120)" />
+	<use xlink:href="#prohod_h"   width="83" height="83" transform="scale(-1,1) translate(-8374,4120)" />
+	<use xlink:href="#prohod"   width="136" height="136" transform="scale(1,1) translate(7975,8209)" />
+	<use xlink:href="#prohod"   width="138" height="138" transform="scale(-1,-1) translate(-10654,-7946)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(1,-1) translate(10605,-8161)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(-1,-1) translate(-10816,-8161)" />
+	<use xlink:href="#prohod"   width="108" height="108" transform="scale(-1,-1) translate(-12572,-6516)" />
+	<use xlink:href="#prohod"   width="108" height="108" transform="scale(-1,1) translate(-12572,6305)" />
+	<use xlink:href="#prohod"   width="108" height="108" transform="scale(1,-1) translate(6529,-5226)" />
+	<use xlink:href="#prohod"   width="108" height="108" transform="scale(1,-1) translate(6470,-4988)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(-1,-1) translate(-6892,-5432)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(-1,-1) translate(-6885,-5117)" />
+	<use xlink:href="#prohod_h"   width="90" height="90" transform="scale(1,-1) translate(6720,-4062)" />
+	<use xlink:href="#prohod_h"   width="90" height="90" transform="scale(-1,-1) translate(-6896,-4062)" />
+	<use xlink:href="#prohod"   width="90" height="90" transform="scale(-1,-1) translate(-7430,-3931)" />
+	<use xlink:href="#prohod"   width="91" height="91" transform="scale(-1,1) translate(-7430,3754)" />
+	<use xlink:href="#prohod"   width="106" height="106" transform="scale(-1,1) translate(-7463,4036)" />
+	<use xlink:href="#prohod"   width="120" height="120" transform="scale(-1,1) translate(-7690,4233)" />
+	<use xlink:href="#prohod_h"   width="83" height="83" transform="scale(1,1) translate(7379,4270)" />
+	<use xlink:href="#prohod_h"   width="83" height="83" transform="scale(-1,1) translate(-7542,4270)" />
+	<use xlink:href="#prohod"   width="106" height="106" transform="scale(1,-1) translate(7253,-4974)" />
+	<use xlink:href="#prohod"   width="106" height="106" transform="scale(1,-1) translate(7253,-5226)" />
+	<use xlink:href="#prohod"   width="108" height="108" transform="scale(1,1) translate(7481,5104)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(1,1) translate(7682,4767)" />
+	<use xlink:href="#prohod"   width="108" height="108" transform="scale(1,-1) translate(8052,-5838)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(-1,1) translate(-8114,6228)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(1,1) translate(7605,6228)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(1,-1) translate(6567,-7643)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(-1,1) translate(-7262,7389)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(1,1) translate(7349,7389)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(-1,-1) translate(-8892,-7480)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(-1,-1) translate(-8892,-7643)" />
+	<use xlink:href="#prohod_h"   width="120" height="120" transform="scale(1,-1) translate(8974,-7643)" />
+	<use xlink:href="#prohod_h"   width="106" height="106" transform="scale(1,1) translate(9632,7652)" />
+	<use xlink:href="#prohod_h"   width="116" height="116" transform="scale(1,1) translate(9495,7073)" />
+	<use xlink:href="#prohod"   width="118" height="118" transform="scale(-1,1) translate(-10634,6426)" />
+	<use xlink:href="#prohod_h"   width="108" height="108" transform="scale(1,-1) translate(9223,-6496)" />
+	<use xlink:href="#prohod_h"   width="102" height="102" transform="scale(-1,-1) translate(-9428,-6490)" />
+	<use xlink:href="#prohod"   width="140" height="140" transform="scale(-1,1) translate(-8884,5565)" />
+	<use xlink:href="#prohod"   width="106" height="106" transform="scale(1,-1) translate(2372,-5590) rotate(26)" />
+	<use xlink:href="#prohod"   width="73" height="73" transform="scale(1,1) translate(2326,5419) rotate(-26)" />
+</g>
+<g>
+	<desc>Лестница</desc>
+	<path d="M3685,7689 L3848,7689" class="border" />
+	<path d="M3685,7723 L3848,7723" class="border" />
+	<path d="M3685,7757 L3848,7757" class="border" />
+	<path d="M3685,7791 L3848,7791" class="border" />
+	<path d="M3685,7825 L3848,7825" class="border" />
+	<path d="M3685,7859 L3848,7859" class="border" />
+	<path d="M4153,7862 L4153,8027" class="border" />
+	<path d="M4119,7862 L4119,8027" class="border" />
+	<path d="M4085,7862 L4085,8027" class="border" />
+	<path d="M4051,7862 L4051,8027" class="border" />
+	<path d="M4017,7862 L4017,8027" class="border" />
+	<path d="M3983,7862 L3983,8027" class="border" />
+	<path d="M3949,7862 L3949,8027" class="border" />
+	<path d="M3915,7862 L3915,8027" class="border" />
+	<path d="M3881,7862 L3881,8027" class="border" />
+	<path d="M3847,7862 L3847,8027" class="border" />
+	<path d="M4153,7537 L4153,7699" class="border" />
+	<path d="M4119,7537 L4119,7699" class="border" />
+	<path d="M4085,7537 L4085,7699" class="border" />
+	<path d="M4051,7537 L4051,7699" class="border" />
+	<path d="M4017,7537 L4017,7699" class="border" />
+	<path d="M3983,7537 L3983,7699" class="border" />
+	<path d="M3949,7537 L3949,7699" class="border" />
+	<path d="M3915,7537 L3915,7699" class="border" />
+	<path d="M3881,7537 L3881,7699" class="border" />
+	<path d="M3847,7537 L3847,7699" class="border" />
+	<path d="M4187,7537 L4187,7699" class="border" />
+	<path d="M4188,7699 L4349,7699" class="border" />
+	<path d="M4188,7733 L4349,7733" class="border" />
+	<path d="M4188,7767 L4349,7767" class="border" />
+	<path d="M4188,7801 L4349,7801" class="border" />
+	<path d="M3684,7836 L3755,7802 3758,7789 3767,7808 3770,7795 3847,7759" class="border" />
+	<path d="M3684,7856 L3755,7822 3758,7809 3767,7828 3770,7815 3847,7779" class="border" />
+	<path d="M4270,7798 L4270,7615 3763,7615 3763,7787" class="border" />
+	<path d="M3748,7772 L3763,7787 3777,7772" class="border" />
+	<path d="M3763,7800 L3763,7947 4191,7947" class="border" />
+	<path d="M4177,7933 L4191,7947 4177,7962" class="border" />
+	<circle cx="4270" cy="7798" r="9" fill="none" stroke="#A7A7A5" stroke-width="1" />
+	<desc>Лестница ЛК7</desc>
+	<rect x="3824" y="6795"  height="106"  width="384" class="border" />
+	<rect x="3831" y="6802"  height="92"  width="370" class="border" />
+	<path d="M3828,6655 L3828,6795" class="border" />
+	<path d="M3862,6655 L3862,6795" class="border" />
+	<path d="M3896,6655 L3896,6795" class="border" />
+	<path d="M3930,6655 L3930,6795" class="border" />
+	<path d="M3964,6655 L3964,6795" class="border" />
+	<path d="M3998,6655 L3998,6795" class="border" />
+	<path d="M4032,6655 L4032,6795" class="border" />
+	<path d="M4066,6655 L4066,6795" class="border" />
+	<path d="M4100,6655 L4100,6795" class="border" />
+	<path d="M4134,6655 L4134,6795" class="border" />
+	<path d="M4168,6655 L4168,6795" class="border" />
+	<path d="M4202,6655 L4202,6795" class="border" />
+	<path d="M3896,6901 L3896,7039" class="border" />
+	<path d="M3930,6901 L3930,7039" class="border" />
+	<path d="M3964,6901 L3964,7039" class="border" />
+	<path d="M3998,6901 L3998,7039" class="border" />
+	<path d="M4032,6901 L4032,7039" class="border" />
+	<path d="M4066,6901 L4066,7039" class="border" />
+	<path d="M4100,6901 L4100,7039" class="border" />
+	<path d="M4134,6901 L4134,7039" class="border" />
+	<path d="M4168,6901 L4168,7039" class="border" />
+	<path d="M4202,6901 L4202,7039" class="border" />
+	<path d="M4209,6799 L4349,6799" class="border" />
+	<path d="M4209,6833 L4349,6833" class="border" />
+	<path d="M4209,6867 L4349,6867" class="border" />
+	<path d="M4209,6901 L4349,6901" class="border" />
+	<path d="M4019,6655 L4048,6717 4061,6720 4042,6729 4055,6733 4084,6796" class="border" />
+	<path d="M4039,6655 L4068,6717 4081,6720 4062,6729 4075,6733 4104,6796" class="border" />
+	<path d="M3893,6970 L4279,6970 4279,6724 4085,6724" class="border" />
+	<path d="M4095,6739 L4085,6724 4095,6710" class="border" />
+	<circle cx="3893" cy="6970" r="9" fill="none" stroke="#A7A7A5" stroke-width="1" />
+	<desc>Лестница 2</desc>
+	<rect x="5424" y="7695"  height="173"  width="279" class="border" />
+	<rect x="5430" y="7701"  height="161"  width="267" class="border" />
+	<path d="M5427,7695 L5427,7537" class="border" />
+	<path d="M5461,7695 L5461,7537" class="border" />
+	<path d="M5495,7695 L5495,7537" class="border" />
+	<path d="M5529,7695 L5529,7537" class="border" />
+	<path d="M5563,7695 L5563,7537" class="border" />
+	<path d="M5597,7695 L5597,7537" class="border" />
+	<path d="M5631,7695 L5631,7537" class="border" />
+	<path d="M5665,7695 L5665,7537" class="border" />
+	<path d="M5699,7695 L5699,7537" class="border" />
+	<path d="M5427,7868 L5427,8026" class="border" />
+	<path d="M5461,7868 L5461,8026" class="border" />
+	<path d="M5495,7868 L5495,8026" class="border" />
+	<path d="M5529,7868 L5529,8026" class="border" />
+	<path d="M5563,7868 L5563,8026" class="border" />
+	<path d="M5597,7868 L5597,8026" class="border" />
+	<path d="M5631,7868 L5631,8026" class="border" />
+	<path d="M5665,7868 L5665,8026" class="border" />
+	<path d="M5699,7868 L5699,8026" class="border" />
+	<path d="M5266,7695 L5424,7695" class="border" />
+	<path d="M5266,7729 L5424,7729" class="border" />
+	<path d="M5266,7763 L5424,7763" class="border" />
+	<path d="M5266,7797 L5424,7797" class="border" />
+	<path d="M5266,7831 L5424,7831" class="border" />
+	<path d="M5266,7865 L5424,7865" class="border" />
+	<path d="M5702,7615 L5343,7615 5343,7947 5703,7947" class="border" />
+	<path d="M5688,7933 L5703,7947 5688,7962" class="border" />
+	<circle cx="5702" cy="7615" r="9" fill="none" stroke="#A7A7A5" stroke-width="1" />
+	<desc>Лестница ЛК3 низ</desc>
+	<rect x="10156" y="6761"  height="348"  width="174" class="border" />
+	<rect x="10163" y="6768"  height="334"  width="160" class="border" />
+	<path d="M9998,6761 L10156,6761" class="border" />
+	<path d="M9998,6796 L10156,6796" class="border" />
+	<path d="M9998,6831 L10156,6831" class="border" />
+	<path d="M9998,6866 L10156,6866" class="border" />
+	<path d="M9998,6901 L10156,6901" class="border" />
+	<path d="M9998,6936 L10156,6936" class="border" />
+	<path d="M9998,6971 L10156,6971" class="border" />
+	<path d="M9998,7006 L10156,7006" class="border" />
+	<path d="M9998,7041 L10156,7041" class="border" />
+	<path d="M9998,7076 L10156,7076" class="border" />
+	<path d="M9998,7111 L10156,7111" class="border" />
+	<path d="M10330,6761 L10489,6761" class="border" />
+	<path d="M10330,6796 L10489,6796" class="border" />
+	<path d="M10330,6831 L10489,6831" class="border" />
+	<path d="M10330,6866 L10489,6866" class="border" />
+	<path d="M10330,6901 L10489,6901" class="border" />
+	<path d="M10330,6936 L10489,6936" class="border" />
+	<path d="M10330,6971 L10489,6971" class="border" />
+	<path d="M10330,7006 L10489,7006" class="border" />
+	<path d="M10330,7041 L10489,7041" class="border" />
+	<path d="M10410,7040 L10410,6681 10077,6681 10077,7029" class="border" />
+	<path d="M10063,7013 L10077,7029 10092,7013" class="border" />
+	<path d="M9998,7076 L10070,7043 10072,7030 10081,7050 10084,7036 10156,7004" class="border" />
+	<path d="M9998,7096 L10070,7063 10072,7050 10081,7070 10084,7056 10156,7024" class="border" />
+	<circle cx="10410" cy="7040" r="9" fill="none" stroke="#A7A7A5" stroke-width="1" />
+	<desc>Лестница 3</desc>
+	<rect x="11160" y="5671"  height="173"  width="349" class="border" />
+	<rect x="11166" y="5677"  height="161"  width="337" class="border" />
+	<path d="M11160,5513 L11160,5670" class="border" />
+	<path d="M11195,5513 L11195,5670" class="border" />
+	<path d="M11230,5513 L11230,5670" class="border" />
+	<path d="M11265,5513 L11265,5670" class="border" />
+	<path d="M11300,5513 L11300,5670" class="border" />
+	<path d="M11335,5513 L11335,5670" class="border" />
+	<path d="M11370,5513 L11370,5670" class="border" />
+	<path d="M11405,5513 L11405,5670" class="border" />
+	<path d="M11440,5513 L11440,5670" class="border" />
+	<path d="M11475,5513 L11475,5670" class="border" />
+	<path d="M11510,5513 L11510,5670" class="border" />
+	<path d="M11265,5845 L11265,6002" class="border" />
+	<path d="M11300,5845 L11300,6002" class="border" />
+	<path d="M11335,5845 L11335,6002" class="border" />
+	<path d="M11370,5845 L11370,6002" class="border" />
+	<path d="M11405,5845 L11405,6002" class="border" />
+	<path d="M11440,5845 L11440,6002" class="border" />
+	<path d="M11475,5845 L11475,6002" class="border" />
+	<path d="M11510,5845 L11510,6002" class="border" />
+	<path d="M11509,5671 L11667,5671" class="border" />
+	<path d="M11509,5706 L11667,5706" class="border" />
+	<path d="M11509,5741 L11667,5741" class="border" />
+	<path d="M11509,5776 L11667,5776" class="border" />
+	<path d="M11509,5811 L11667,5811" class="border" />
+	<path d="M11509,5846 L11667,5846" class="border" />
+	<path d="M11002,5671 L11160,5671" class="border" />
+	<path d="M11002,5706 L11160,5706" class="border" />
+	<path d="M11002,5741 L11160,5741" class="border" />
+	<path d="M11002,5776 L11160,5776" class="border" />
+	<path d="M11404,5513 L11435,5583 11450,5586 11430,5596 11443,5599 11477,5671" class="border" />
+	<path d="M11424,5513 L11455,5583 11470,5586 11450,5596 11463,5599 11497,5671" class="border" />
+	<path d="M11080,5775 L11080,5592 11428,5592" class="border" />
+	<path d="M11413,5576 L11428,5592 11413,5608" class="border" />
+	<circle cx="11080" cy="5775" r="9" fill="none" stroke="#A7A7A5" stroke-width="1" />
+	<desc>Лестница ЛК7</desc>
+	<path d="M5008,2490 L5099,2646" class="border" />
+	<path d="M5125,2629 L5035,2472" class="border" />
+	<path d="M5155,2611 L5064,2455" class="border" />
+	<path d="M5307,2523 L5216,2370" class="border" />
+	<path d="M5338,2506 L5245,2351" class="border" />
+	<path d="M5369,2489 L5276,2334" class="border" />
+	<path d="M5401,2473 L5307,2317" class="border" />
+	<path d="M5430,2454 L5337,2298" class="border" />
+	<path d="M5461,2436 L5369,2281" class="border" />
+	<path d="M5490,2418 L5397,2264" class="border" />
+	<path d="M5521,2401 L5427,2247" class="border" />
+	<path d="M5552,2383 L5457,2230" class="border" />
+	<path d="M5583,2365 L5487,2213" class="border" />
+	<path d="M5025,2585 L5540,2289" class="border" />
+	<path d="M5520,2283 L5540,2289 5534,2308" class="border" />
+	<desc>Лестница ЛК1</desc>
+	<rect x="9605" y="1806"  height="140"  width="245" class="border" />
+	<rect x="9611" y="1812"  height="128"  width="233" class="border" />
+	<path d="M9605,1806 L9605,1630" class="border" />
+	<path d="M9640,1806 L9640,1630" class="border" />
+	<path d="M9675,1806 L9675,1630" class="border" />
+	<path d="M9710,1806 L9710,1630" class="border" />
+	<path d="M9745,1806 L9745,1630" class="border" />
+	<path d="M9780,1806 L9780,1630" class="border" />
+	<path d="M9815,1806 L9815,1630" class="border" />
+	<path d="M9850,1806 L9850,1630" class="border" />
+	<path d="M9605,1946 L9605,2120" class="border" />
+	<path d="M9640,1946 L9640,2120" class="border" />
+	<path d="M9675,1946 L9675,2120" class="border" />
+	<path d="M9710,1946 L9710,2120" class="border" />
+	<path d="M9745,1946 L9745,2120" class="border" />
+	<path d="M9780,1946 L9780,2120" class="border" />
+	<path d="M9815,1946 L9815,2120" class="border" />
+	<path d="M9850,1946 L9850,2120" class="border" />
+	<path d="M9850,1718 L9514,1718 9514,2032 9854,2032" class="border" />
+	<path d="M9837,2018 L9854,2032 9837,2046" class="border" />
+	<desc>Лестница 11</desc>
+	<path d="M11090,3902 L11180,3902" class="border" />
+	<path d="M11090,4017 L11180,4017" class="border" />
+	<path d="M11090,3902 L11090,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M11105,3902 L11105,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M11120,3902 L11120,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M11135,3902 L11135,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M11150,3902 L11150,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M11165,3902 L11165,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M11180,3902 L11180,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M12300,3902 L12375,3902" class="border" />
+	<path d="M12300,4017 L12375,4017" class="border" />
+	<path d="M12300,3902 L12300,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M12315,3902 L12315,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M12330,3902 L12330,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M12345,3902 L12345,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M12360,3902 L12360,4017" class="border"  stroke-dasharray="5 3" />
+	<path d="M12375,3902 L12375,4017" class="border"  stroke-dasharray="5 3" />
+	<rect x="12395" y="3901"  height="18"  width="27" class="border" />
+	<rect x="12385" y="3947"  height="70"  width="70"  fill="#A7A7A5" />
+</g>
+<g>
+	<desc>Лифт</desc>
+	<use xlink:href="#lift"   x="3685" y="7069" width="320" height="320"  fill="#ececec" stroke="#c5c5c5"  />
+	<use xlink:href="#lift"  width="320" height="320" transform="scale(-1,1) translate(-4347,7069)"   fill="#fdf46c" stroke="#ffd200"   />
+	<use xlink:href="#lift"  width="310" height="310" transform="scale(-1,-1) translate(-11705,-5813) rotate(90)" fill="#93f630" stroke="#5a991b"   />
+	<use xlink:href="#lift"  width="310" height="310" transform="scale(1,-1) translate(12115,-5813) rotate(90)"  fill="#93f630" stroke="#5a991b"   />
+	<use xlink:href="#lift_icon"   x="11774" y="5670" width="100" height="100" />
+	<use xlink:href="#lift_icon"   x="11934" y="5670" width="100" height="100" />
+	<use xlink:href="#lift2"  width="320" height="320" transform="scale(-1,1) translate(-10000,7537) rotate(90)" fill="#93f630" stroke="#5a991b"  />
+	<use xlink:href="#lift"  width="310" height="310" transform="scale(-1,1) translate(-10386,1630)"   fill="#fdf46c" stroke="#ffd200"   />
+	<use xlink:href="#lift2"  width="320" height="320" transform="scale(-1,1) translate(-5955,7823) rotate(90)" fill="#93f630" stroke="#5a991b"  />
+	<use xlink:href="#lift2"  width="320" height="320" transform="scale(1,1) translate(6520,7823) rotate(90)" fill="#93f630" stroke="#5a991b"  />
+</g>
+	<use xlink:href="#auto"  width="700" height="700" x="5380" y="5521" />
+	<use xlink:href="#auto"  width="700" height="700" x="5380" y="5109" />
+	<use xlink:href="#auto"  width="700" height="700" x="5380" y="4613" />
+	<use xlink:href="#auto"  width="700" height="700" x="5380" y="4161" />
+	<use xlink:href="#auto"  width="700" height="700" transform="translate(3500,4430) rotate(60)" />
+	<use xlink:href="#auto"  width="700" height="700" transform="translate(3800,4255) rotate(60)" />
+	<use xlink:href="#window"  width="120" height="120" x="6511" y="2067" />
+	<use xlink:href="#window"  width="120" height="120" x="6981" y="2067" />
+	<use xlink:href="#window"  width="120" height="120" x="7562" y="2067" />
+	<use xlink:href="#window"  width="120" height="120" x="8032" y="2067" />
+	<use xlink:href="#window"  width="120" height="120" x="8612" y="2067" />
+	<use xlink:href="#window"  width="120" height="120" x="9082.5" y="2067" />
+	<use xlink:href="#window"  width="110" height="110"  transform="translate(9409,1876) rotate(90)"/>
+	<use xlink:href="#window"  width="110" height="110"  transform="translate(9409,1770) rotate(90)"/>
+	<use xlink:href="#window"  width="106" height="106"  transform="translate(11043,1823) rotate(90)"/>
+	<use xlink:href="#window"  width="330" height="330"  transform="translate(11057,2158) rotate(90)"/>
+	<use xlink:href="#window"  width="330" height="330"  transform="translate(11057,2477) rotate(90)"/>
+	<use xlink:href="#window"  width="135" height="135" x="7385" y="6742" />
+	<use xlink:href="#window"  width="110" height="110" x="8608" y="8058" />
+	<use xlink:href="#window"  width="110" height="110" x="8708" y="8058" />
+	<use xlink:href="#window"  width="110" height="110" x="9012" y="8058" />
+	<use xlink:href="#window"  width="110" height="110" x="9112" y="8058" />
+	<use xlink:href="#window"  width="110" height="110" x="9817" y="8058" />
+	<use xlink:href="#window"  width="110" height="110" x="9917" y="8058" />
+	<use xlink:href="#window"  width="110" height="110" x="10220" y="8058" />
+	<use xlink:href="#window"  width="110" height="110" x="10320" y="8058" />
+	<use xlink:href="#window"  width="110" height="110" transform="translate(11443,7658) rotate(121)" />
+	<use xlink:href="#window"  width="110" height="110" transform="translate(11500,7570) rotate(123)" />
+	<path d="M11617,7505 L11693,7428 11689,7425 11610,7505 z" class="border2" />
+	<path d="M11681,7433 L11761,7352 11758,7348 11677,7429 z" class="border2" />
+	<path d="M11751,7362 L11833,7281 11829,7277 11748,7358 z" class="border2" />
+	<path d="M11828,7293 L11904,7217 11900,7213 11824,7290 z" class="border2" />
+	<path d="M11911,7217 L11829,7120 z" class="partition10" />
+	<path d="M11923,7214 L11959,7184 11930,7149  11894,7178 z" fill="#A7A7A5" />
+	<path d="M11872,7177 L11927,7132 11882,7078 11827,7123 z" fill="#A7A7A5" />
+	<path d="M11532,7523 L11567,7478 11513,7433 11478,7478 z" fill="#A7A7A5" />
+	<path d="M11554,7462 L11622,7514 z" class="partition10" />
+	<path d="M11548,7520 L11594,7560 11613,7524 11570,7490 z" fill="#A7A7A5" />
+	<path d="M11446,7348 L11526,7262 11523,7259 11442,7346 z" class="border2" />
+	<path d="M11514,7267 L11595,7186 11591,7182 11510,7263 z" class="border2" />
+	<path d="M11585,7195 L11666,7115 11662,7110 11582,7191 z" class="border2" />
+	<path d="M11660,7126 L11730,7056 11730,7050 11657,7123 z" class="border2" />
+	<path d="M11973,7105 L12069,7041 12066,7037 11970,7101 z" class="border2" />
+	<path d="M12056,7050 L12157,6986 12154,6981 12053,7045 z" class="border2" />
+	<use xlink:href="#rect"  width="70" height="70" x="11176" y="6049" />
+	<use xlink:href="#rect"  width="70" height="70" x="11527" y="6049" />
+	<use xlink:href="#rect"  width="90" height="90" x="11518" y="6562" />
+	<use xlink:href="#rect"  width="90" height="90" x="10962" y="7123" />
+	<use xlink:href="#rect"  width="70" height="70" x="6160" y="7986" />
+	<use xlink:href="#rect"  width="70" height="70" x="6245" y="7986" />
+	<use xlink:href="#rect"  width="70" height="70" x="5196" y="7985" />
+	<use xlink:href="#rect"  width="95" height="95" x="4134" y="6036" />
+	<use xlink:href="#rect"  width="70" height="70" x="5195" y="7129" />
+	<use xlink:href="#rect"  width="70" height="70" x="6160" y="6049" />
+	<use xlink:href="#rect"  width="70" height="70" x="6165" y="5967" />
+	<use xlink:href="#rect"  width="71" height="71" x="6245" y="5966" />
+	<use xlink:href="#rect"  width="71" height="71" x="6245" y="6049" />
+	<use xlink:href="#rect"  width="70" height="70" x="8347" y="4996" />
+	<use xlink:href="#rect"  width="70" height="70" x="9397" y="7128" />
+	<use xlink:href="#rect"  width="70" height="70" x="9397" y="6572" />
+	<use xlink:href="#rect"  width="70" height="70" x="8347.2" y="3949" />
+	<use xlink:href="#rect"  width="72" height="72" x="7296" y="3949" />
+	<use xlink:href="#rect"  width="70" height="70" x="6157" y="4991" />
+	<use xlink:href="#rect"  width="70" height="70" x="6157" y="3942" />
+	<use xlink:href="#rect"  width="70" height="70" x="6157" y="2891" />
+	<use xlink:href="#rect"  width="87" height="87" transform="translate(3433,5120) rotate(148)" />
+	<use xlink:href="#rect"  width="56" height="56" transform="translate(3455,5190) rotate(148)" />
+	<path d="M11245,6118 L11528,6118" class="border2" />
+	<path d="M11245,6118 L11245,6124 11399,6133" class="border" />
+	<path d="M11527,6117 L11527,6123 11399,6147" class="border" />
+	<rect x="11597" y="6076"  height="42"  width="99.5" class="border" />
+	<rect x="11598" y="6118"  height="40"  width="84" class="border" />
+	<rect x="11602" y="6122"  height="32"  width="76" class="border" />
+	<rect x="11213" y="6118"  height="40"  width="84" class="border" />
+	<rect x="11217" y="6122"  height="32"  width="76" class="border" />
+	<desc>Кнопки этажей</desc>
+<g id="navigation">
+	<use xlink:href="#et_1" onclick="go:sbb--1.svg"  width="350" height="350" x="13126" y="2929" class="number_et" />
+	<use xlink:href="#et_0"   width="350" height="350" x="13126" y="3379" class="number_active" />
+	<use xlink:href="#et1" onclick="go:sbb-1.svg" width="350" height="350" x="13126" y="3829" class="number_et" />
+	<use xlink:href="#et2" onclick="go:sbb-2.svg" width="350" height="350" x="13126" y="4279" class="number_et" />
+	<use xlink:href="#et3" onclick="go:sbb-3.svg" width="350" height="350" x="13126" y="4729" class="number_et" />
+	<use xlink:href="#et4" onclick="go:sbb-4.svg" width="350" height="350" x="13126" y="5179" class="number_et" />
+</g>
+	<g>
+	<desc>Кнопки темпeратуры</desc>
+	<symbol id="thermostat"  width="638" height="638" viewBox="0 0 638 638">
+		<text x="173" y="337" style="font-size:140px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >{%L960B17/TRUNK.SUB-05.Parameters.SETTEMP.85%}</text>
+		<text x="415" y="235" style="font-size:60px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >C</text>
+		<text x="401" y="207" style="font-size:22px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >o</text>
+	</symbol>
+
+
+	<g class="green_term" id="button1" cursor="pointer" transform="scale(1,1) translate(9000,3500)" >
+		<use xlink:href="#knopka_circle"  width="240" height="240" x="91" y="91" />
+		<text x="185" y="190" style="font-size:70px; font-family:'CRYSTAL'; font-weight:normal" >{%L960B17/TRUNK.SUB-05.Parameters.AI_0502.85%}</text>
+		<text x="185" y="260" style="font-size:60px;  font-family:'CRYSTAL'; font-weight:normal" >C</text>
+		<text x="212" y="228" style="font-size:30px;  font-family:'CRYSTAL'; font-weight:normal" >o</text>
+	</g>
+
+	<g id="sloi1" transform="scale(1,1) translate(9300,3500)" display="none" >
+		<use xlink:href="#rama-black"  width="744.062" height="744.062" fill="#000000" />
+		<rect x="71.7" y="170" width="600" height="345" fill="#111111" />
+		<use xlink:href="#sun" x="30" y="-285" width="540" height="540" />
+		<use xlink:href="#thermostat" x="69.75" y="30" width="667.5" height="667.5"  />
+		<use xlink:href="#shkala" x="-84" y="-189" width="787" height="787"  />
+		<text x="345.75" y="486" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#FFFFFF">{%L960B17/TRUNK.SUB-05.Parameters.SETTEMP.85%}</text>
+		<use xlink:href="#button" x="273" y="517.5" width="180" height="180" class="str" cursor="pointer" />
+		<use xlink:href="#str_b" x="189" y="525" width="180" height="180" class="str" cursor="pointer" />
+		<use xlink:href="#str_top" x="445.5" y="550.5" width="180" height="180" class="str" cursor="pointer" />
+		<use xlink:href="#bas" x="210" y="45" width="300" height="300" />
+		<text id="close"  x="645" y="90" style="font-size:60px; font-family:Arial, Helvetica, sans-serif" fill="#FFFFFF" cursor="pointer" >х</text>
+	</g>
+	<animate 
+    xlink:href="#sloi1"
+    attributeName="display" 
+    to="block" 
+    dur="0.5s"
+    begin="button1.click"
+    fill="freeze" 
+    id="rect-anim" />
+	<animate 
+    xlink:href="#sloi1"
+    attributeName="display" 
+    to="none" 
+    dur="0.5s"
+    begin="close.click"
+    fill="freeze" 
+    id="close" />
+	</g>
+
+	<desc>2</desc>
+	<g class="green_term" id="button2" cursor="pointer" transform="scale(1,1) translate(11600,3700)" >
+		<use xlink:href="#knopka_circle"  width="240" height="240" x="91" y="91" />
+		<text x="185" y="190" style="font-size:70px; font-family:'CRYSTAL'; font-weight:normal" >{%L960B17/TRUNK.SUB-04.Parameters.AI_0402.85%}</text>
+		<text x="185" y="260" style="font-size:60px;  font-family:'CRYSTAL'; font-weight:normal" >C</text>
+		<text x="212" y="228" style="font-size:30px;  font-family:'CRYSTAL'; font-weight:normal" >o</text>
+	</g>
+	<g>
+		<symbol id="thermostat2"  width="638" height="638" viewBox="0 0 638 638">
+			<text x="173" y="337" style="font-size:140px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >{%L960B17/TRUNK.SUB-04.Parameters.SETTEMP.85%}</text>
+			<text x="415" y="235" style="font-size:60px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >C</text>
+			<text x="401" y="207" style="font-size:22px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >o</text>
+		</symbol>
+		<g id="sloi2" transform="scale(1,1) translate(11900,3700)" display="none" >
+			<use xlink:href="#rama-black"  width="744.062" height="744.062" fill="#000000" />
+			<rect x="71.7" y="170" width="600" height="345" fill="#111111" />
+			<use xlink:href="#sun" x="30" y="-285" width="540" height="540" />
+			<use xlink:href="#thermostat2" x="69.75" y="30" width="667.5" height="667.5"  />
+			<use xlink:href="#shkala" x="-84" y="-189" width="787" height="787"  />
+			<text x="345.75" y="486" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#FFFFFF">{%L960B17/TRUNK.SUB-04.Parameters.SETTEMP.85%}</text>
+			<use xlink:href="#button2" x="273" y="517.5" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#str_b" x="189" y="525" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#str_top" x="445.5" y="550.5" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#bas" x="210" y="45" width="300" height="300" />
+			<text id="close2"  x="645" y="90" style="font-size:60px; font-family:Arial, Helvetica, sans-serif" fill="#FFFFFF" cursor="pointer" >х</text>
+		</g>
+		<animate
+				xlink:href="#sloi2"
+				attributeName="display"
+				to="block"
+				dur="0.5s"
+				begin="button2.click"
+				fill="freeze"
+				id="rect-anim" />
+		<animate
+				xlink:href="#sloi2"
+				attributeName="display"
+				to="none"
+				dur="0.5s"
+				begin="close2.click"
+				fill="freeze"
+				id="close2" />
+	</g>
+
+	<desc>3</desc>
+	<g class="green_term" id="button3" cursor="pointer" transform="scale(1,1) translate(11100,6600)" >
+		<use xlink:href="#knopka_circle"  width="240" height="240" x="91" y="91" />
+		<text x="185" y="190" style="font-size:70px; font-family:'CRYSTAL'; font-weight:normal" >{%L960B17/TRUNK.SUB-23.Parameters.AI_2302.85%}</text>
+		<text x="185" y="260" style="font-size:60px;  font-family:'CRYSTAL'; font-weight:normal" >C</text>
+		<text x="212" y="228" style="font-size:30px;  font-family:'CRYSTAL'; font-weight:normal" >o</text>
+	</g>
+	<g>
+		<symbol id="thermostat3"  width="638" height="638" viewBox="0 0 638 638">
+			<text x="173" y="337" style="font-size:140px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >{%L960B17/TRUNK.SUB-23.Parameters.SETTEMP.85%}</text>
+			<text x="415" y="235" style="font-size:60px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >C</text>
+			<text x="401" y="207" style="font-size:22px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >o</text>
+		</symbol>
+		<g id="sloi3" transform="scale(1,1) translate(11400,6600)" display="none" >
+			<use xlink:href="#rama-black"  width="744.062" height="744.062" fill="#000000" />
+			<rect x="71.7" y="170" width="600" height="345" fill="#111111" />
+			<use xlink:href="#sun" x="30" y="-285" width="540" height="540" />
+			<use xlink:href="#thermostat3" x="69.75" y="30" width="667.5" height="667.5"  />
+			<use xlink:href="#shkala" x="-84" y="-189" width="787" height="787"  />
+			<text x="345.75" y="486" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#FFFFFF">{%L960B17/TRUNK.SUB-23.Parameters.SETTEMP.85%}</text>
+			<use xlink:href="#button3" x="273" y="517.5" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#str_b" x="189" y="525" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#str_top" x="445.5" y="550.5" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#bas" x="210" y="45" width="300" height="300" />
+			<text id="close3"  x="645" y="90" style="font-size:60px; font-family:Arial, Helvetica, sans-serif" fill="#FFFFFF" cursor="pointer" >х</text>
+		</g>
+		<animate
+				xlink:href="#sloi3"
+				attributeName="display"
+				to="block"
+				dur="0.5s"
+				begin="button3.click"
+				fill="freeze"
+				id="rect-anim" />
+		<animate
+				xlink:href="#sloi3"
+				attributeName="display"
+				to="none"
+				dur="0.5s"
+				begin="close3.click"
+				fill="freeze"
+				id="close3" />
+	</g>
+
+	<desc>3</desc>
+	<g class="green_term" id="button4" cursor="pointer" transform="scale(1,1) translate(7300,5000)" >
+		<use xlink:href="#knopka_circle"  width="240" height="240" x="91" y="91" />
+		<text x="185" y="190" style="font-size:70px; font-family:'CRYSTAL'; font-weight:normal" >{%L960B17/TRUNK.SUB-24.Parameters.AI_2402.85%}</text>
+		<text x="185" y="260" style="font-size:60px;  font-family:'CRYSTAL'; font-weight:normal" >C</text>
+		<text x="212" y="228" style="font-size:30px;  font-family:'CRYSTAL'; font-weight:normal" >o</text>
+	</g>
+	<g>
+		<symbol id="thermostat4"  width="638" height="638" viewBox="0 0 638 638">
+			<text x="173" y="337" style="font-size:140px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >{%L960B17/TRUNK.SUB-24.Parameters.SETTEMP.85%}</text>
+			<text x="415" y="235" style="font-size:60px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >C</text>
+			<text x="401" y="207" style="font-size:22px;  font-family:'CRYSTAL'; font-weight:normal" fill="#FFFFFF" >o</text>
+		</symbol>
+		<g id="sloi4" transform="scale(1,1) translate(7600,5000)" display="none" >
+			<use xlink:href="#rama-black"  width="744.062" height="744.062" fill="#000000" />
+			<rect x="71.7" y="170" width="600" height="345" fill="#111111" />
+			<use xlink:href="#sun" x="30" y="-285" width="540" height="540" />
+			<use xlink:href="#thermostat4" x="69.75" y="30" width="667.5" height="667.5"  />
+			<use xlink:href="#shkala" x="-84" y="-189" width="787" height="787"  />
+			<text x="345.75" y="486" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#FFFFFF">{%L960B17/TRUNK.SUB-24.Parameters.SETTEMP.85%}</text>
+			<use xlink:href="#button4" x="273" y="517.5" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#str_b" x="189" y="525" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#str_top" x="445.5" y="550.5" width="180" height="180" class="str" cursor="pointer" />
+			<use xlink:href="#bas" x="210" y="45" width="300" height="300" />
+			<text id="close4"  x="645" y="90" style="font-size:60px; font-family:Arial, Helvetica, sans-serif" fill="#FFFFFF" cursor="pointer" >х</text>
+		</g>
+		<animate
+				xlink:href="#sloi4"
+				attributeName="display"
+				to="block"
+				dur="0.5s"
+				begin="button4.click"
+				fill="freeze"
+				id="rect-anim" />
+		<animate
+				xlink:href="#sloi4"
+				attributeName="display"
+				to="none"
+				dur="0.5s"
+				begin="close4.click"
+				fill="freeze"
+				id="close4" />
+	</g>
+
+	<g>
+	<animate
+	attributeType="xml"
+    attributeName="opacity"
+    from="0"
+    to="1"
+    dur="1s"
+    repeatCount="indefinite"
+    restart="whenNotActive" />
+	<use xlink:href="#atn"   x="3715" y="7030" width="250" height="250" />
+	</g>
+
+</svg>

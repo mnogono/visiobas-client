@@ -1,0 +1,24 @@
+<html><body><button onclick="loadPhones()" id="button">Start</button><br><script>
+function loadPhones() {
+	var url = '';
+	var port = '';
+	var gate = '/arossa/scada/gate/get/500';
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', url+port+gate, true);
+	xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				document.body.innerHTML += xhr.responseText;
+			}
+		else {
+				document.body.innerHTML += xhr.status + ': ' + xhr.statusText;
+			}
+		}
+		button.innerHTML = 'OK!';
+		};
+	xhr.send();
+	button.innerHTML = 'load...';
+	button.disabled = true;
+}
+</script></body></html>

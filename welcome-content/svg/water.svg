@@ -1,0 +1,685 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3840 2160">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3840 2160">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="3840" height="2160" > -->
+<defs>
+	<style>
+		svg{background:#41413F;}
+		foreignObject svg{background:#2F2F2D;}
+		#openWindow svg{background:#ffffff;}
+		.black{fill:#000000;}
+		.white{fill:#ffffff;}
+		.whiteStroke{stroke:#ffffff;}
+		.key{fill:#2F2F2D; cursor:pointer;}
+		.keyActive{fill:#232321; cursor:default;}
+		.keyColor{fill:#2F2F2D;}
+		.keysTop text{font-family:arial;text-anchor:left;font-size:22px; font-weight:500; fill:#E5E6E8;}
+		.click{cursor:pointer;}
+		#iconHome { fill:none; stroke:#E5E6CA; stroke-width:2;}
+		#keyLeft, #keyLeftFon {fill:none; stroke:#E5E6CA;}
+		.keyText{font-family:arial;text-anchor:left;font-size:28px; font-weight:500; fill:#E5E6E8; }
+		#radiator{ fill:white;stroke:white; }
+		#radiator rect{ stroke:none; }
+		.textFloor text{font-family:arial;text-anchor: middle;font-size:52px; font-weight:700; stroke:none; stroke-width:0;}
+		.keyFl{fill:#E5E6CA; stroke:#E5E6CA;  cursor:pointer;}
+		.keyFlActive{fill:#93F630; stroke:#93F630; cursor:default;}
+		.vent_yellow{fill:#FFFF00;}
+		.vent_gray{fill:#838383;}
+		.vent_green{fill:#32CD32;}
+		.text-big{font-family:arial;text-anchor:left;font-size:50px; font-weight:500; fill:#E5E6E8;}
+		.text-min{font-family:arial;text-anchor:left;font-size:36px; font-weight:500; fill:#E5E6E8;}
+		.str{fill:none; stroke:#ffffff; stroke-width:3;  stroke-linecap:round;}
+		.CObig{font-size:33px; font-family:arial; font-weight:normal; fill:#E5E6E8;}
+		.COmin{font-size:18px; font-family:arial; font-weight:normal; fill:#E5E6E8;}
+		.text-yellow{font-family:arial;text-anchor:left;font-size:43px; font-weight:500; fill:#FFFF00;}
+		.text-green{font-family:arial;text-anchor:left;font-size:43px; font-weight:500; fill:#32CD32;}
+		.text-min-ppm{font-family:arial;text-anchor:left;font-size:21px; font-weight:500; fill:#E5E6E8;}
+		.icon_yellow{stroke:#FFFF00; fill:#FFFF00;}
+		.icon_green{stroke:#32CD32; fill:#32CD32;}
+		.icon_white{stroke:#ffffff; fill:#ffffff;}
+		.B{fill:#ffffff; font-family:arial;text-anchor: left;font-size:40px; font-weight:500;}
+		.icon_sun{fill:#ff6a51;}
+		.icon_snow{fill:#516eff;}
+		.icon{fill:#ffffff; stroke:#ffffff; stroke-width:0;}
+		.sun{ fill:none; stroke:#ffffff; stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:2,8;}
+		.icon_snow{fill:#516eff;}
+		#close{font-size:70px; font-family:Arial, Helvetica, sans-serif; fill:#000000; cursor:pointer;}
+	</style>
+	
+	<symbol id="bas"  width="400" height="400"  viewBox="0 0 400 400" >
+	<rect
+     y="0.88731968"
+     x="1.7985159"
+     height="141.02242"
+     width="447.74619"
+     id="rect7312"
+     style="fill:none" /><g
+     id="shape1-1"
+     transform="translate(53.8583,-53.0079)"><title
+       id="title11">Лист.1</title><desc
+       id="desc13">VISIOBAS</desc><path
+       id="rect15"
+       d="m 0,104.697 354.33099,0 0,35.1761 -354.33099,0 z"
+       style="fill:none;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round" /><g
+       id="text17"
+       style="font-size:59.99987793px;font-family:'Eras Bold ITC';fill:#000000"><path
+         id="path7296"
+         style="font-size:59.99987793px;font-family:'Eras Bold ITC';fill:#ffffff"
+         d="M 17.564426,148.16 16.480443,144.58579 9.3320204,123.99013 3.7070318,108.16985 q 3.9843669,0.0586 7.0898292,0.0586 1.904293,0 5.976551,-0.0586 0.673826,2.60742 1.054685,3.95507 0.527343,1.75781 1.992183,6.35741 l 4.306632,13.85739 q 0.64453,2.16797 1.582028,5.65429 l 1.347654,-3.36914 10.224588,-22.38276 q 0.263672,-0.61524 0.585937,-1.40625 0.351561,-0.79101 1.083982,-2.66601 4.248038,0.0586 6.826158,0.0586 1.611325,0 6.386706,-0.0586 -2.988276,5.5664 -6.767565,13.00779 l -10.107401,20.03902 q -1.464841,2.92968 -3.281243,6.94334 -4.921865,-0.0586 -7.031236,-0.0586 -1.962887,0 -7.412094,0.0586 z" /><path
+         id="path7298"
+         style="font-size:59.99987793px;font-family:'Eras Bold ITC';fill:#ffffff"
+         d="m 52.281152,148.16 q 1.699216,-23.52534 1.699216,-36.21086 l -0.0293,-3.77929 q 5.126942,0.0586 6.855455,0.0586 0.791014,0 6.298815,-0.0586 -0.527343,6.59178 -0.849608,12.48044 -0.410155,8.20311 -0.585936,15.35154 -0.175781,7.11912 -0.175781,12.15817 l -6.005847,-0.0586 q -1.757809,0 -7.207017,0.0586 z" /><path
+         id="path7300"
+         style="font-size:59.99987793px;font-family:'Eras Bold ITC';fill:#ffffff"
+         d="m 72.32017,147.54477 q -0.380859,-6.24022 -0.878905,-9.99021 3.281244,1.46484 5.830067,2.05077 2.578119,0.55664 4.511709,0.55664 2.548823,0 4.042961,-0.73242 1.523434,-0.76171 1.523434,-2.22656 0,-0.49804 -0.146484,-0.93749 -0.146484,-0.46875 -0.556639,-1.02539 -0.410156,-0.58594 -1.171873,-1.25976 l -5.507801,-4.80468 q -1.93359,-1.64062 -2.695307,-2.37304 -1.552731,-1.49414 -2.431636,-2.7832 -0.849608,-1.28906 -1.259763,-2.60742 -0.380859,-1.34765 -0.380859,-2.84179 0,-1.78711 0.615234,-3.48632 0.644529,-1.72851 1.904293,-3.22265 1.259763,-1.49414 3.339836,-2.57812 2.080074,-1.08398 4.453116,-1.46484 2.373042,-0.41016 4.892569,-0.41016 4.951161,0 10.781228,1.14258 0.08789,2.02148 0.205077,3.72069 0.117188,1.66992 0.55664,5.88866 -2.695307,-1.08398 -4.921865,-1.49413 -2.226558,-0.43946 -3.837883,-0.43946 -2.285152,0 -3.808586,0.84961 -1.494138,0.84961 -1.494138,2.10937 0,0.58594 0.234375,1.14258 0.234375,0.55664 0.878904,1.31836 0.64453,0.73242 1.699216,1.64062 1.054685,0.8789 3.31054,2.63671 l 2.109371,1.66992 q 0.937498,0.76172 2.02148,1.8457 1.083982,1.08398 1.874996,2.13867 0.791014,1.05468 1.201169,1.93359 0.439453,0.8789 0.64453,1.7871 0.205074,0.87891 0.205074,1.90429 0,2.63672 -1.259759,5.03906 -1.259763,2.37304 -3.574211,3.92577 -2.314449,1.52343 -5.097646,2.13867 -2.753901,0.61523 -5.830067,0.61523 -4.746084,0 -11.982397,-1.37695 z" /><path
+         id="path7302"
+         style="font-size:59.99987793px;fill:#ffffff"
+         d="m 105.95292,148.16 q 1.69922,-23.52534 1.69922,-36.21086 l -0.0293,-3.77929 q 5.12694,0.0586 6.85545,0.0586 0.79102,0 6.29882,-0.0586 -0.52734,6.59178 -0.84961,12.48044 -0.41015,8.20311 -0.58593,15.35154 -0.17579,7.11912 -0.17579,12.15817 l -6.00584,-0.0586 q -1.75781,0 -7.20702,0.0586 z" /><path
+         id="path7304"
+         style="font-size:59.99987793px;fill:#ffffff"
+         d="m 150.54267,107.40813 q 4.68749,0 9.02342,1.25977 4.33593,1.25976 7.58787,4.04296 3.25195,2.7539 4.86328,6.35741 1.61132,3.6035 1.61132,8.29099 0,4.92187 -1.78711,9.05272 -1.7578,4.10155 -5.09764,6.97264 -3.33984,2.87109 -7.96874,4.21874 -4.62889,1.31836 -9.63865,1.31836 -4.95116,0 -9.49217,-1.28906 -4.541,-1.31836 -7.91014,-4.21874 -3.33983,-2.92968 -4.74608,-6.50389 -1.40625,-3.57421 -1.40625,-7.93944 0,-6.416 2.95898,-11.24998 2.98828,-4.86327 8.81834,-7.58787 5.85937,-2.72461 13.18357,-2.72461 z m -0.52734,8.81834 q -3.36914,0 -6.09374,1.66992 -2.7246,1.64063 -4.18945,4.5996 -1.46484,2.92968 -1.46484,6.29882 0,3.10546 1.31836,5.68358 1.34765,2.57812 4.07226,4.04296 2.7246,1.43555 5.77147,1.43555 3.25195,0 5.94725,-1.61133 2.72461,-1.64062 4.13085,-4.5703 1.43555,-2.95898 1.43555,-6.18163 0,-3.13476 -1.31836,-5.77147 -1.31835,-2.66601 -3.86718,-4.13085 -2.54882,-1.46485 -5.74217,-1.46485 z" /><path
+         id="path7306"
+         style="font-size:89.99981689px;font-family:'Brush Script MT';fill:#ff0000"
+         d="m 200.18612,118.45303 -2.2412,2.63672 q 3.91112,0.35156 6.98729,0.96679 3.07616,0.57129 5.66893,1.31836 2.63671,0.70312 4.61425,1.49414 6.94334,2.90038 6.94334,8.08592 0,3.16405 -2.90038,6.19627 -2.90039,3.03222 -7.55858,5.40527 -4.61425,2.37304 -9.53611,3.69139 -4.87792,1.36231 -8.87694,1.36231 -6.67967,0 -10.41502,-2.46094 -3.73534,-2.50487 -3.73534,-6.81151 0,-2.98827 2.28515,-7.03123 2.28515,-4.04296 7.07518,-10.06346 -3.60351,-0.17578 -5.09764,-1.05468 -1.49414,-0.92285 -1.49414,-2.54883 0,-1.01074 0.57129,-1.53808 0.57129,-0.52734 1.53808,-0.74707 0.96679,-0.26367 3.6914,-0.61523 2.76855,-0.35156 7.07518,-0.87891 4.79003,-5.88866 8.56932,-8.83299 3.82323,-2.98827 8.17381,-3.42772 0.35156,-0.0439 0.74707,-0.0439 0.43945,0 0.43945,0.21973 0,0.26367 -1.01074,1.40625 -0.96679,1.14257 -3.208,3.64745 -2.19726,2.50488 -5.22948,5.9326 8.2617,-1.09863 13.49118,-2.50487 5.27343,-1.4502 7.95409,-3.42773 2.68066,-1.97754 2.68066,-4.39452 0,-2.94433 -2.85644,-4.26269 -2.85644,-1.318357 -8.7451,-1.318357 -3.25195,0 -7.47069,0.659179 -4.1748,0.659178 -7.60253,1.494138 -3.38378,0.83496 -6.06444,1.80175 -2.63671,0.92285 -2.63671,1.36231 0,0.13183 0.26367,0.26367 2.15332,0.79101 2.15332,1.31835 0,0.70313 -6.59179,2.72461 -6.59178,1.97753 -8.87693,1.97753 -1.62597,0 -1.62597,-1.62597 0,-1.93359 3.51561,-6.94335 3.55957,-5.053697 6.45995,-6.459944 1.01074,-0.483398 4.70214,-1.538083 3.6914,-1.054685 8.08592,-2.02148 4.43847,-0.966795 9.00877,-1.625973 4.57031,-0.659179 8.08592,-0.659179 8.30565,0 12.48045,2.988275 4.17479,2.94433 4.17479,7.426743 0,3.032221 -1.93359,5.844711 -1.88964,2.8125 -5.9326,5.31738 -4.04296,2.50487 -10.54686,4.39452 -6.45994,1.88964 -15.24899,2.90038 z m -4.65819,5.66894 q -2.28515,2.7246 -4.08691,4.83397 -1.75781,2.06543 -2.54882,3.38378 -0.74707,1.27441 -0.74707,2.59277 0,2.10937 2.15332,3.77929 2.19726,1.62597 6.28416,1.62597 3.77929,0 8.04198,-1.31835 4.30663,-1.3623 7.20702,-3.51562 2.94433,-2.15332 2.94433,-4.35058 0,-1.88964 -2.15332,-3.12011 -2.15332,-1.23046 -6.54784,-2.15331 -4.39452,-0.9668 -10.54685,-1.75781 z" /><path
+         id="path7308"
+         style="font-size:89.99981689px;font-family:'Brush Script MT';fill:#ff0000"
+         d="m 264.34614,130.05457 q -5.27342,0.17578 -7.73436,0.17578 -3.77929,0 -10.45896,-0.17578 -1.40625,1.53808 -3.42773,3.64746 -2.02148,2.06542 -3.82323,3.86717 -1.80176,1.75781 -3.12011,3.03223 -1.27441,1.23046 -2.10937,2.06542 -4.87792,4.74608 -6.37206,6.19628 -1.45019,1.45019 -3.07617,2.59277 -1.62597,1.18652 -2.98827,1.18652 -1.53808,0 -1.53808,-1.40625 0,-1.53808 2.19726,-4.74608 2.19726,-3.20801 4.96581,-5.66894 2.76855,-2.46093 4.52635,-2.46093 0.4834,0 1.36231,0.43945 l 8.34959,-8.92088 q -1.58203,-0.21973 -4.13085,-0.26367 -2.54882,-0.0879 -3.42773,-0.39551 -0.8789,-0.30761 -0.8789,-1.49414 0,-1.88964 4.04296,-5.9326 2.19726,-2.24121 4.13085,-2.85644 1.93359,-0.61523 7.3828,-0.65918 -3.20801,0.43945 -4.57031,1.05469 -1.31835,0.57129 -1.45019,1.75781 1.27441,0 2.3291,0 1.09863,0 2.81249,0 1.75781,-0.0439 2.59277,-0.0879 7.20702,-7.03124 13.09568,-12.21678 5.88866,-5.22948 12.39255,-9.887671 6.54784,-4.702139 13.93063,-8.613264 1.4502,1.889644 1.4502,3.95507 0,1.713864 -1.14258,3.95507 -1.09863,2.241205 -4.74608,8.437485 -3.60351,6.15233 -7.33886,13.09567 1.23047,0 2.02148,0.0439 0.83496,0 1.75781,0.0439 2.50488,0 3.03222,0.0879 0.57129,0.0879 0.57129,0.8789 0,0.35156 -0.70312,1.27441 -0.65918,0.87891 -2.37304,2.98828 -1.71387,2.06542 -3.33984,4.21874 l -6.45995,0.52734 q -5.14159,9.66795 -5.14159,10.89842 0,1.80175 1.88965,1.80175 0.92284,0 7.64646,-3.86718 l -0.35156,2.3291 q -3.60351,2.7246 -5.62499,4.30663 -1.97753,1.53808 -3.47167,2.59277 -1.45019,1.01074 -2.68066,1.49413 -1.18652,0.52735 -2.41699,0.52735 -1.45019,0 -2.85643,-1.3623 -1.40625,-1.31836 -1.40625,-3.77929 0,-1.01074 0.74707,-2.85644 0.74707,-1.88965 1.58203,-3.60351 0.8789,-1.71387 4.35057,-8.21776 z m -8.30564,-9.97556 14.23825,-0.26368 q 2.50488,-4.26268 4.04296,-6.8994 1.58203,-2.63671 3.42773,-5.71287 1.88964,-3.12012 3.208,-5.27343 1.3623,-2.153317 2.98827,-4.877921 -3.16405,1.977535 -6.45995,4.394521 -3.29589,2.41699 -7.42674,5.84472 -4.13085,3.38378 -7.33885,6.32811 -3.208,2.90038 -6.67967,6.45995 z" /><path
+         id="path7310"
+         style="font-size:89.99981689px;font-family:'Brush Script MT';fill:#ff0000"
+         d="m 328.50616,135.45983 q -1.09863,-2.02148 -3.29589,-3.64745 -2.19726,-1.62597 -4.96581,-2.59277 -2.7246,-1.01074 -5.71288,-1.49414 -8.87693,-1.31835 -16.56735,-5.75682 -0.65918,-0.35156 -1.40625,-1.49414 -0.74706,-1.14257 -0.74706,-2.19726 0,-3.86718 1.27441,-7.73436 1.31835,-3.91112 3.33983,-6.10838 3.25195,-3.64746 11.68943,-6.372061 8.48143,-2.724603 19.07223,-2.724603 6.32811,0 9.75584,0.966794 3.47167,0.966795 3.47167,2.988276 0,3.295894 -0.92285,5.097644 -0.8789,1.80176 -1.93359,2.41699 -1.01074,0.57129 -3.6035,1.58203 -2.76855,0.96679 -4.83398,2.02148 -2.02148,1.05468 -3.47167,2.02148 -1.45019,0.96679 -1.80176,0.96679 -0.43945,0 -0.43945,-0.35156 0,-0.74707 1.53808,-2.24121 1.58203,-1.53808 3.86718,-2.68065 2.41699,-1.27442 2.41699,-1.62598 0,-0.57129 -2.68066,-0.57129 -8.12986,0 -15.02926,1.4502 -6.8994,1.45019 -10.89842,3.82323 -3.95507,2.37304 -3.95507,4.83398 0,1.53808 1.62597,2.19726 1.66992,0.61523 7.29491,2.10937 5.62499,1.49414 10.06346,3.42772 6.37205,2.72461 9.44822,5.66894 3.07617,2.94433 3.07617,6.59178 0,2.50488 -1.23047,5.0537 -1.18652,2.50488 -3.51562,4.61425 -2.3291,2.10937 -5.36132,3.47167 -2.59276,1.09863 -6.54783,2.06543 -3.91113,0.96679 -8.52538,1.49414 -4.5703,0.57128 -8.7451,0.57128 -7.69041,0 -12.39255,-1.45019 -4.65819,-1.45019 -4.65819,-4.39452 0,-1.31836 1.58203,-4.08691 1.58202,-2.81249 3.73534,-3.77928 1.88964,-0.74707 3.64745,-0.83496 1.75781,-0.13184 1.75781,0.3955 0,0.13184 -0.13183,0.26367 -0.13184,0.13184 -0.30762,0.21973 -0.17578,0.0879 -0.35156,0.17578 -0.87891,0.35156 -1.45019,0.57129 -0.52735,0.17578 -0.87891,0.39551 -0.30762,0.17578 -0.30762,0.52734 0,0.92285 9.09667,0.92285 7.91014,0 12.96384,-0.57129 5.0537,-0.57129 8.92088,-2.06542 3.86718,-1.49414 7.03123,-4.13086 z" /></g></g>
+	</symbol>
+	<desc>Лифт иконка систем левая часть</desc>
+	<linearGradient id="lft-above">
+		<stop stop-color="#ffffff" offset="0%"/>
+		<stop stop-color="#ffffff" offset="100%"/>
+	</linearGradient>
+	<linearGradient id="lft-right" x1="0%" y1="0" x2="0%" y2="100%" >
+		<stop stop-color="#ffffff" offset="0%"/>
+		<stop stop-color="#ffffff" offset="65%"/>
+		<stop stop-color="#ffffff" offset="100%"/>
+	</linearGradient>
+	<linearGradient id="lft-left" x1="0%" y1="0" x2="0%" y2="100%" >
+		<stop stop-color="#ffffff" offset="0%"/>
+		<stop stop-color="#ffffff" offset="15%"/>
+		<stop stop-color="#ffffff" offset="65%"/>
+		<stop stop-color="#ffffff" offset="100%"/>
+	</linearGradient>
+	<radialGradient r="50%" cy="40%" cx="50%" id="lft-doors">
+		<stop offset="0%" stop-color="#8D8C88"/>
+		<stop offset="100%" stop-color="black"/>
+	</radialGradient>
+	<radialGradient id="lft-doors_1" fx="50%" fy="35%" r="90%">
+		<stop stop-color="#ffffff" offset="0%"/>
+		<stop stop-color="#ffffff" offset="100%"/>
+	</radialGradient>
+	<linearGradient id="lft-doors-top" x1="0%" y1="0" x2="0%" y2="100%" >
+		<stop stop-color="#2F2F2D" offset="0%"/>
+		<stop stop-color="#2F2F2D" stop-opacity="0" offset="100%"/>
+	</linearGradient>
+	<symbol id="lift" viewBox="0 0 600 600">
+		<rect style="fill:url(#lft-doors_1)" height="78%" width="54%" y="12%" x="23%"  />
+			<rect style="fill:url(#lft-left)" height="81%" width="10%" y="12%" x="23%" stroke-width="1" stroke="#2F2F2D" />
+				<rect x="33%" y="12%" width="34%" height="10%" style="fill:url(#lft-above)" stroke-width="1" stroke="#2F2F2D" />
+			<rect style="fill:url(#lft-right)" height="81%" width="10%" y="12%" x="67%" stroke-width="1" stroke="#2F2F2D" />
+		<rect style="fill:#2F2F2D;" height="12%" width="4%" y="50%" x="26%" />
+			<rect style="fill:#ffffff; opacity:1" height="2.5%" width="2.5%" y="53%" x="26.75%"/>
+			<rect x="28%" y="54%" width="1%" height="1.5%" style="fill:#ffffff;"/>
+			<circle style="fill:#838383;" r=".35%" cy="51%" cx="28%"/>
+			<circle style="fill:#838383;" r=".35%" cy="61%" cx="28%"/>
+		<line x1="50%" y1="25%" x2="50%" y2="85%" style="stroke:#2F2F2D; stroke-width:1"/>
+		<line style="stroke:#2F2F2D;  stroke-width:1" y2="85%" x2="65%" y1="25%" x1="65%"/>
+		<line style="stroke:#2F2F2D; stroke-width:1" y2="85%" x2="35%" y1="25%" x1="35%"/>
+		<rect style="fill:url(#lft-doors-top)" height="5%" width="34%" y="22%" x="33%"/>
+	</symbol>
+	<symbol id="rd_section"  viewBox="0 0 100 100">
+		<rect rx="5%" x="15%" y="10%" width="10%" height="80%"  />
+		<line stroke-width="2%" x2="20%" y2="92%" y1="8%" x1="20%"/>
+	</symbol>
+	<symbol id="radiator" viewBox="0 0 100 100">
+		<line stroke-width="4%" x2="90%" y2="20%" y1="20%" x1="0%"/>
+		<line x1="10%" y1="20%" y2="20%" x2="90%" stroke-width="10%" />
+		<line  stroke-width="4%" x2="100%" y2="80%" y1="80%" x1="10%"/>
+		<line  stroke-width="10%" x2="90%" y2="80%" y1="80%" x1="10%"/>
+		<use xlink:href="#rd_section" x="0" y="0" />
+		<use xlink:href="#rd_section" x="15" y="0" />
+		<use xlink:href="#rd_section" x="30" y="0" />
+		<use xlink:href="#rd_section" x="45" y="0" />
+		<use xlink:href="#rd_section" x="60" y="0" />
+	</symbol>
+	<desc>Иконка снежинка</desc>
+	<symbol id="snow"  viewBox="0 0 50 50" class="whiteStroke">
+		<path d="M4,13 L45,37 M4,37 L45,13 M25,1 V49" fill="none" stroke-width="4"  />
+		<path d="M4,22 L12,18 M11,9 L12,18" fill="none" stroke-width="2" />
+		<path d="M45,22 L36,18 M37,9 L36,18" fill="none" stroke-width="2" />
+		<path d="M4,28 L13,32 M11,41 L13,32" fill="none" stroke-width="2" />
+		<path d="M45,28 L36,32 M37,41 L36,32" fill="none" stroke-width="2" />
+		<path d="M18,5 L25,10 M32,5 L25,10" fill="none" stroke-width="2" />
+		<path d="M18,45 L25,40 M32,45 L25,40" fill="none" stroke-width="2" />
+	</symbol>
+	<desc>Иконка Лампа</desc>
+	<symbol id="lampa"  viewBox="0 0 400 400" class="white" >
+		<path d="M147,265 C127,228 99,193 103,144 117,15 292,27 302,142 309,198 281,223 255,265 285,226 323,196 323,133
+		323,86 274,23 204,23 134,23 81,79 81,151 81,193 120,233 147,265 z" />
+		<path d="M176,238 L165,169 C163,155 165,152 175,148 193,143 205,145 226,147 237,150 242,155 240,166 L227,238" />
+		<rect x="142" y="272" rx="7" ry="7" height="30" width="120" />
+		<rect x="152" y="310" rx="5" ry="5" height="34" width="100" />
+		<ellipse cx="202" cy="343" rx="50" ry="25" />
+		<path d="M183,371 C197,374 209,374 222,371 221,387 186,387 183,371 z" />
+	</symbol>
+	<desc>иконка кран</desc>
+	<symbol id="kran" viewBox="0 0 100 100" class="white">
+		<path d="M13,21 V36 H17 L20,34 V23 L17,21 z" />
+		<path d="M22,23 V34 H59 C70,34 72,42 72,50 H83 C83,35 76,23 59,23 z" />
+		<rect height="5" width="11" x="72" y="53" />
+		<circle cx="49" cy="28" r="10.5" />
+		<rect height="4" width="14" x="42" y="15" rx="2" ry="2" />
+		<rect height="22" width="8" x="45" y="4" rx="3" ry="3" />
+		<rect height="5" width="25" x="37" y="7" />
+		<circle cx="39" cy="9.5" r="4" />
+		<circle cx="59" cy="9.5" r="4" />
+		<circle cx="77" cy="86.5" r="8" />
+		<path d="M77,65 L84.9,85 H69.1 z" />
+		<path d="M75,92 C78,93 82,91 83,88" fill="none" stroke-width="1.5" stroke="#2F2F2D" />
+	</symbol>
+	<desc>иконка молния</desc>
+	<symbol id="molniya" viewBox="0 0 125 125">
+		<path d="M63,14 L10,103 H116 z" class="white" />
+		<path d="M58,35 H69 L51,68 76,57 59,94 65,68 41,78 z" fill="#2F2F2D" stroke-width="0" />
+		<path d="M55,83 C59,89 63,89 69,85 L57,98 z" fill="#2F2F2D" stroke-width="0" />
+	</symbol>
+	<desc>Огнетушитель</desc>
+	<symbol id="fireext"  viewBox="0 0 125 125" class="white" >
+		<rect x="48" y="38" height="60" width="27" />
+		<rect x="48" y="29" height="20" width="27" rx="20" ry="20" />
+		<rect x="58" y="24" height="10" width="7" />
+		<ellipse cx="62" cy="21" rx="8" ry="5" />
+		<path d="M56,18 L41,29 V33 H43 V31 L58,23 z" />
+	</symbol>
+	<symbol id="platten"  viewBox="0 0 100 100" class="white" >
+		<desc>Теплозавеса</desc>
+		<rect x="4" y="13" height="36" width="92" rx="6" ry="6" fill="none" stroke-width="4" class="whiteStroke" />
+		<rect x="55" y="21" height="4" width="12" rx="1" ry="1" stroke-width="0" />
+		<rect x="75" y="21" height="4" width="12" rx="1" ry="1" stroke-width="0" />
+		<path d="M21,59 C15,60 14,66 18,72 22,78 20,84 14,86" fill="none" stroke-width="4"  stroke-linecap="round" class="whiteStroke" />
+		<path d="M51,59 C45,60 44,66 48,72 52,78 50,84 44,86" fill="none" stroke-width="4"  stroke-linecap="round" class="whiteStroke" />
+		<path d="M81,59 C75,60 74,66 78,72 82,78 80,84 74,86" fill="none" stroke-width="4"  stroke-linecap="round" class="whiteStroke" />
+	</symbol>
+	
+	<desc>Група кнопок меню</desc>	
+	<g class="keysTop">
+		<symbol id="iconScript" >
+			<rect x="0" y="0" height="110" width="180" />
+			<text x="30" y="65" class="keyText" >СЦЕНАРИИ</text>
+		</symbol>
+		<symbol id="iconSystem" >
+			<rect x="0" y="0" height="110" width="180" />
+			<text x="35" y="65" class="keyText" >СИСТЕМЫ</text>
+		</symbol>
+		<symbol id="iconEvent" >
+			<rect x="0" y="0" height="110" width="180" />
+			<text x="35" y="65" class="keyText"  >СОБЫТИЯ</text>
+		</symbol>
+		<symbol id="iconNetwork" >
+			<rect x="0" y="0" height="110" width="180" />
+			<text x="65" y="65" class="keyText"  >СЕТЬ</text>
+		</symbol>
+	</g>
+	
+	<g>
+		<desc>Група кнопок настройки домой свернуть</desc>	
+		<symbol id="iconSetting">
+			<circle cx="50" cy="50" r="45" class="keyColor" />
+			<path d="M30,55 L35,52 V48 L30,45 35,35 40,39 45,36 45,30 H55 V36 L60,39 65,35 70,45 65,48 V52 L70,55
+			65,65 60,61 55,64 V70 H45 V64 L40,61 35,65 z" class="white" />
+			<circle cx="50" cy="50" r="7" class="keyColor" />
+		</symbol>
+		<symbol id="iconHome" width="135" height="135" >
+			<circle cx="67" cy="67" r="65" fill="#000000f" />
+			<path d="M56,48 C52,38 54,34.5 58,35.3 61,23 82,31.5 80,36 79,41 78.5,44 77.7,47 80,47 81,48 81,49 80,52 79,54 78,55 78,58 76.5,60.5 76.5,60.5 70,70 58,65 57,61 56,56 56,54 55,52 53,50.5 52,49 56,48 z" />
+			<path d="M59,35 C64,40 70,42 75,42" />
+			<path d="M61,64 V70 L43,78 V95 C57,108 80,108 90,95 V78 L72,70 V64" />
+		</symbol>
+		<symbol id="keyLeftFon"  viewBox="0 0 50 50" >
+			<rect x="15.5" y="2.5" rx="3"  ry="3"  height="40"  width="60" stroke-width="5" />
+		</symbol>
+		<symbol id="keyLeft"  viewBox="0 0 100 100" >
+			<path d="M43,50 H68 M60,40 L68,50 60,60" stroke-width="4" />
+		</symbol>
+		<symbol id="iconLeftMin" >
+			<circle cx="50" cy="50" r="45" class="keyColor" />
+			<use xlink:href="#keyLeftFon" x="17" y="28" width="50" height="50" transform="scale(-1,1) translate(-100,0)" />
+			<use xlink:href="#keyLeft" x="0" y="0" width="100" height="100" transform="scale(-1,1) translate(-100,0)" />
+		</symbol>
+		<symbol id="iconLeftMax">
+			<circle cx="50" cy="50" r="45" class="keyColor" />
+			<use xlink:href="#keyLeftFon" x="17" y="28" width="50" height="50" transform="scale(-1,1) translate(-100,0)" />
+			<use xlink:href="#keyLeft" x="-12" y="0" width="100" height="100" />
+		</symbol>
+	</g>
+	
+	<g>
+		<desc>Група кнопок визуализаций для маленькой полоски</desc>
+		<symbol id="iconVentingS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#vent" height="100" width="100" y="23" x="23"  class="white" />
+		</symbol>
+		<symbol id="iconLiftS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#lift" x="12.5" y="11" width="100" height="100"/>
+		</symbol>
+		<symbol id="iconHeatS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#radiator" x="22" y="22" width="80" height="80"/>
+		</symbol>
+		<symbol id="iconColdS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#snow" x="22.5" y="22.5" width="80" height="80" />
+		</symbol>
+		<symbol id="iconLightS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#lampa"  width="90" height="90" x="18" y="16"  class="white" />
+		</symbol>
+		<symbol id="iconWaterS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#kran"  width="100" height="100" x="12" y="16"  class="white" />
+		</symbol>
+		<symbol id="iconElectroS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#molniya"  width="100" height="100" x="12" y="12" />
+		</symbol>
+		<symbol id="iconFireS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#fireext"  width="125" height="125" x="2" y="5"  class="white" />
+		</symbol>
+		<symbol id="iconZavesuS" viewBox="0 0 125 125">
+			<rect x="2.5" y="2.5" width="120" height="120" />
+			<use xlink:href="#platten"  width="90" height="90" x="17.5" y="17.5" />
+		</symbol>
+	</g>
+	
+	<g>
+		<desc>Група кнопок визуализаций</desc>
+		<desc>Иконка вентиляция</desc>
+		<symbol id="vent" viewBox="0 0 125 125">
+			<path id="lop" d="M 50,50 C 50,0 92,-5 99,20 Q100 40 90 35 C80,35 79,30 50,50"/>
+			<use xlink:href="#lop" transform="rotate(90, 50,50)" />
+			<use xlink:href="#lop" transform="rotate(180, 50,50)" />
+			<use xlink:href="#lop" transform="rotate(270, 50,50)" />
+			<circle cx="50" cy="50" r="15" style="fill:#2F2F2D;opacity:1; stroke:white; stroke-width:2" />
+			<circle cx="50" cy="50" r="10" style="fill:none; stroke:white; stroke-width:2" />
+		</symbol>
+		<symbol id="iconVenting">
+			<rect x="0" y="0" height="158" width="218" />
+			<use xlink:href="#vent" height="100" width="100" x="70" y="25" stroke="none" class="white" />
+			<text x="33" y="143" class="keyText" >Вентиляция</text>
+		</symbol>
+		<symbol id="iconLift">
+			<rect height="158" width="218" x="0" y="0" />
+			<use xlink:href="#lift" height="110" width="110" x="57" y="5"  />
+			<text x="75" y="143" class="keyText" >Лифт</text>
+		</symbol>
+		<symbol id="iconHeat">
+			<rect height="158" width="218" x="0" y="0" />
+			<use xlink:href="#radiator" height="100" width="100" x="59" y="18"  />
+			<text x="36" y="143" class="keyText" >Отопление</text>
+		</symbol>
+		<symbol id="iconCold">
+			<rect  height="158" width="218" x="0" y="0" />
+			<use xlink:href="#snow" width="90" height="90" x="64" y="20"  />
+			<text x="37" y="143" class="keyText" >Хладоснаб.</text>
+		</symbol>
+		<symbol id="iconLight">
+			<rect height="158" width="218" x="0" y="0" />
+			<use xlink:href="#lampa" width="100" height="100" x="59" y="13"  />
+			<text x="32" y="143" class="keyText" >Освещение</text>
+		</symbol>
+		<symbol id="iconWater">
+			<rect height="158" width="218" x="0" y="0" />
+			<use xlink:href="#kran" width="100" height="100" x="59" y="13"  />
+			<text x="45" y="143" class="keyText" >Водоснаб.</text>
+		</symbol>
+		<symbol id="iconElectro">
+			<rect height="158" width="218" class="but_top" x="0" y="0" />
+			<use xlink:href="#molniya" width="110" height="110" x="54" y="10"  />
+			<text x="22" y="143" class="keyText" >Электроснаб.</text>
+		</symbol>
+		<symbol id="iconFire">
+			<rect height="158" width="218" x="0" y="0" />
+			<use xlink:href="#fireext" width="126" height="126" x="46" y="5"  />
+			<text x="20" y="143" class="keyText" >Пож. безопас.</text>
+		</symbol>
+		<symbol id="iconZavesu">
+			<rect height="158" width="218" x="0" y="0" />
+			<use xlink:href="#platten" width="100" height="100" x="59" y="13"  />
+			<text x="21" y="143" class="keyText" >Тепл. завесы</text>
+		</symbol>
+	</g>
+	
+	<desc>Иконка градусник</desc>	
+	<symbol id="thermometer" preserveAspectRatio="xMidYMid slice" viewBox="0 0 30 30">
+			<rect style="fill:#fff" height="55%" width="16%" y="10%" x="42%"/>
+		<circle cx="50%" cy="10%" r="8%" style="fill:#fff"/>
+			<circle cx="50%" cy="80%" stroke-width="7%" stroke="white" r="14%" style="fill:none"/>
+		<line x1="50%" y1="20%" x2="50%" y2="70%" stroke="#2F2F2D" stroke-width="5%" style="stroke-linecap:round;"/>
+		<line stroke="#2F2F2D" stroke-width="10%" style=" stroke-dasharray: 2%, 5%;" y2="65%" x2="50%" y1="20%" x1="50%"/>
+	</symbol>
+	<desc>Иконка CO2</desc>	
+	<symbol id="co2" viewBox="-3 0 55 55">
+		<path d="M7,18 C7,0 28.5,4 30,12.5 33.5,8 42,9.5 43,18 51,18 54,34 43,36 43,41
+		28,50 20,40 17,46 4,44 7,35 2,34 -4,23 7,18 z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" />
+		<text x="21" y="32" fill="#2F2F2D" style="font-family:arial;text-anchor: middle;font-size:19px; font-weight:700;" >CO</text>
+		<text x="38" y="36" fill="#2F2F2D" style="font-family:arial;text-anchor: middle;font-size:14px; font-weight:700;" >2</text>
+	</symbol>
+	<desc>Иконки авто выкл вкл</desc>
+	<symbol id="iconOn"  viewBox="0 0 55 55" >
+		<circle cx="26" cy="26" r="25" fill="#ffffff" fill-opacity="0"  stroke-width="2" stroke-dasharray="300%" stroke-dashoffset="60%" />
+		<path d="M23,13 H31 L27,23 H36 L21,39 24,27 H16.5 z" fill="#ffffff" fill-opacity="0"   stroke-width="2" />
+		<circle cx="47" cy="15" r="4" fill="none" stroke-width="2" />
+	</symbol>
+	<symbol id="iconOff"  viewBox="0 0 55 55" >
+		<circle cx="26" cy="26" r="25" fill="#ffffff" fill-opacity="0"  stroke-width="2" stroke-dasharray="300%" stroke-dashoffset="60%" />
+		<path d="M23,13 H31 L27,23 H36 L21,39 24,27 H16.5 z" fill="none"  stroke-width="2" />
+		<path d="M10,7 L43,44" fill="#ffffff" fill-opacity="0"   stroke-width="2" />
+		<circle cx="47" cy="15" r="4" fill="none" stroke-width="2" />
+	</symbol>
+	<symbol id="iconAuto"  viewBox="0 0 55 55" >
+		<circle cx="26" cy="26" r="25" fill="#ffffff" fill-opacity="0" stroke-width="2" stroke-dasharray="300%" stroke-dashoffset="60%" />
+		<path d="M23,13 H31 L27,23 H36 L21,39 24,27 H16.5 z" fill="#ffffff" fill-opacity="0"  stroke-width="2" />
+		<text x="40" y="21" stroke-width="0" style="font-family:arial;text-anchor:left;font-size:19px; font-weight:500;" >А</text>
+	</symbol>
+	<desc>Иконка солнышко</desc>
+	<symbol id="sun"  viewBox="0 0 50 50">
+		<circle cx="25" cy="25" r="16" class="sun"  />
+		<circle cx="25" cy="25" r="10"  class="icon"  />
+	</symbol>
+	<g>
+		<desc>Група кнопок визуализаций режимы</desc>
+		<symbol id="OnYellow">
+			<rect x="0" y="0" height="170" width="100" fill="#2F2F2D" />
+			<use  xlink:href="#iconOn" height="80" width="80" x="10" y="45" class="icon_yellow" />
+		</symbol>
+		<symbol id="OnWhite">
+			<rect x="0" y="0" height="170" width="100" fill="#2F2F2D" />
+			<use  xlink:href="#iconOn" height="80" width="80" x="10" y="45" class="icon_white" />
+		</symbol>
+		<symbol id="OffYellow">
+			<rect x="0" y="0" height="170" width="100" fill="#2F2F2D" />
+			<use  xlink:href="#iconOff" height="80" width="80" x="10" y="45" class="icon_yellow" />
+		</symbol>
+		<symbol id="OffWhite">
+			<rect x="0" y="0" height="170" width="100" fill="#2F2F2D" />
+			<use  xlink:href="#iconOff" height="80" width="80" x="10" y="45" class="icon_white" />
+		</symbol>
+		<symbol id="AutoGreen">
+			<rect x="0" y="0" height="170" width="100" fill="#2F2F2D" />
+			<use  xlink:href="#iconAuto" height="80" width="80" x="10" y="45" class="icon_green" />
+		</symbol>
+		<symbol id="AutoWhite">
+			<rect x="0" y="0" height="170" width="100" fill="#2F2F2D" />
+			<use  xlink:href="#iconAuto" height="80" width="80" x="10" y="45" class="icon_white" />
+		</symbol>
+	</g>
+	<g>
+		<desc>Група кнопок визуализаций правая часть</desc>
+		<desc>Вентилятор серый </desc>
+		<symbol id="iconFan" >
+			<circle  r="60" cy="60" cx="60" />
+			<use  xlink:href="#vent" height="100" width="100" x="20" y="20" class="black" />
+		</symbol>
+		<desc>солнце красны кружок</desc>
+		<symbol id="Heating">
+			<circle  r="60" cy="60" cx="60" class="icon_sun" />
+			<use  xlink:href="#sun" height="95" width="95" x="12.5" y="12.5" class="icon_white" />
+		</symbol>
+		<desc>снежинка синий кружок</desc>
+		<symbol id="ColdV">
+			<circle  r="60" cy="60" cx="60" class="icon_snow" />
+			<use  xlink:href="#snow" height="70" width="70" x="25" y="25" class="icon_white" />
+		</symbol>
+		<desc>Кнопки вниз вверх</desc>	
+		<symbol id="str_b"  viewBox="0 0 40 40" >
+			<path d="M5,5 L20,20 M20,20 35,5"  class="str"  />
+		</symbol>
+		<symbol id="str_top" viewBox="0 0 40 40" >
+			<path d="M5,20 L20,5 M20,5 35,20" class="str"  />
+		</symbol>
+		<symbol id="iconDown" >
+			<rect x="0" y="0" height="170" width="90" fill="#2F2F2D" />
+			<use  xlink:href="#str_b" height="80" width="80" x="5" y="60"/>
+		</symbol>
+		<symbol id="iconUp" >
+			<rect x="0" y="0" height="170" width="90" fill="#2F2F2D" />
+			<use  xlink:href="#str_top" height="80" width="80" x="5" y="60"/>
+		</symbol>
+		
+		<symbol id="co">
+			<text x="30" y="30" class="CObig" >C</text>
+			<text x="20" y="17" class="COmin" >o</text>
+		</symbol>
+	</g>
+		
+		
+	<desc>Кнопки этажей</desc>
+	<g >
+		<symbol id="floor_1"  class="textFloor">
+			<circle cx="50" cy="50" r="45" fill="#2F2F2D" stroke-width="5" />
+			<text x="41" y="68">-1</text>
+		</symbol>
+		<symbol id="floor_2" class="textFloor">
+			<circle cx="50" cy="50" r="45" fill="#2F2F2D" stroke-width="5" />
+			<text x="41" y="68">-2</text>
+		</symbol>
+		<symbol id="floor1" class="textFloor">
+			<circle cx="50" cy="50" r="45" fill="#2F2F2D" stroke-width="5" />
+			<text x="50" y="68">1</text>
+		</symbol>
+		<symbol id="floor2" class="textFloor">
+			<circle cx="50" cy="50" r="45" fill="#2F2F2D" stroke-width="5" />
+			<text x="50" y="68">2</text>
+		</symbol>
+		
+		<symbol id="et_1"  class="textFloor">
+			<rect height="158" width="163" x="0" y="0" fill="#2F2F2D" stroke-width="0" stroke="none" />
+			<use xlink:href="#floor_1" width="100" height="100" x="32" y="29"  />
+		</symbol>
+		<symbol id="et_2" class="textFloor">
+			<rect height="158" width="163" x="0" y="0" fill="#2F2F2D" stroke-width="0" stroke="none" />
+			<use xlink:href="#floor_2" width="100" height="100" x="32" y="29"  />
+		</symbol>
+		<symbol id="et1" class="textFloor">
+			<rect height="158" width="163" x="0" y="0" fill="#2F2F2D" stroke-width="0" stroke="none" />
+			<use xlink:href="#floor1" width="100" height="100" x="32" y="29"  />
+		</symbol>
+		<symbol id="et2" class="textFloor">
+			<rect height="158" width="163" x="0" y="0" fill="#2F2F2D" stroke-width="0" stroke="none" />
+			<use xlink:href="#floor2" width="100" height="100" x="32" y="29"  />
+		</symbol>
+	</g>
+</defs>
+
+
+<!-- правый блок -->
+	<g>
+		<foreignObject id="rightAll" x="750" y="30" width="3060" height="2100">
+		<body xmlns="http://www.w3.org/1999/xhtml">
+		<style type="text/css">
+			.wrap {width:100%; height:2100px; background: #41413F; overflow: auto;}
+			.line{width:100%; height:170px; background: #2F2F2D; margin-bottom:5px; clear:both;}
+		</style>
+			<div class="wrap">
+				<div class="line">
+					
+				</div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</body>
+		</foreignObject>
+	</g>
+
+<!-- Левый блок -->
+<g>
+	<g id="leftMin" display="none">
+		<rect x="0" y="0" height="2160" width="170" class="black" />
+		<use id="keyLMax" xlink:href="#iconLeftMax" x="35" y="48" class="click" />
+		<g>		
+			<use onclick="go:admin.svg" xlink:href="#iconVentingS" height="140" width="140" y="196" x="15" class="key" />
+			<use onclick="go:lift.svg" xlink:href="#iconLiftS" height="140" width="140" y="393" x="15" class="key" />
+			<use onclick="go:heating.svg" xlink:href="#iconHeatS" height="140" width="140" y="590" x="15" class="key" />
+			<use onclick="go:cold.svg" xlink:href="#iconColdS" height="140" width="140" y="787" x="15" class="key" />
+			<use onclick="go:light.svg" xlink:href="#iconLightS" height="140" width="140" y="984" x="15" class="key" />
+			<use onclick="go:water.svg" xlink:href="#iconWaterS" height="140" width="140" y="1181" x="15" class="keyActive" />
+			<use onclick="go:electro.svg" xlink:href="#iconElectroS" height="140" width="140" y="1378" x="15" class="key" />
+			<use onclick="go:fire.svg" xlink:href="#iconFireS" height="140" width="140" y="1575" x="15" class="key" />
+			<use onclick="go:zavesu.svg" xlink:href="#iconZavesuS" height="140" width="140" y="1772" x="15" class="key" />
+		</g>
+	</g>
+	<g id="leftMax" display="block">
+		<rect x="0" y="0" height="2160" width="720" class="black" />
+		<use xlink:href="#bas" x="210" y="30" width="270" height="270" />
+		<!-- кнопки выбора Сценарий и т.д.-->
+		<g>
+			<use id="keyScr" xlink:href="#iconScript" x="0" y="155" class="key" />
+			<use id="keySys" xlink:href="#iconSystem" x="180" y="155" class="keyActive" />
+			<use id="keyEve" xlink:href="#iconEvent" x="360" y="155" class="key" />
+			<use id="keyNet" xlink:href="#iconNetwork" x="540" y="155" class="key" />
+		</g>
+		<!-- центр -->
+		<g class="click">
+			<use id="keySet" xlink:href="#iconSetting" x="95" y="358" />
+			<use id="keyHome" xlink:href="#iconHome" x="292" y="338" />
+			<use id="keyLMin" xlink:href="#iconLeftMin" x="525" y="358" />
+		</g>
+		<!-- кнопки иконки -->
+		<g>
+			<use onclick="go:admin.svg" xlink:href="#iconVenting" x="30" y="545" class="key" />
+			<use onclick="go:lift.svg" xlink:href="#iconLift" x="250" y="545" class="key" />
+			<use onclick="go:heating.svg" xlink:href="#iconHeat" x="470" y="545" class="key" />
+			<use onclick="go:cold.svg" xlink:href="#iconCold" x="30" y="705" class="key" />
+			<use onclick="go:light.svg" xlink:href="#iconLight" x="250" y="705" class="key" />
+			<use onclick="go:water.svg" xlink:href="#iconWater" x="470" y="705" class="keyActive" />
+			<use onclick="go:electro.svg" xlink:href="#iconElectro" x="30" y="865" class="key" />
+			<use onclick="go:fire.svg" xlink:href="#iconFire" x="250" y="865" class="key" />
+			<use onclick="go:zavesu.svg" xlink:href="#iconZavesu" x="470" y="865" class="key" />
+		</g>
+		<!-- кнопки этажей-->
+		<g class="click">
+			<use id="keyEt_1" xlink:href="#et_1" onclick="go:et-1.svg" x="30" y="1025" class="keyFl" />
+			<use id="keyEt_2" xlink:href="#et_2" onclick="go:et-2.svg" x="195" y="1025" class="keyFl" />
+			<use id="keyEt1" xlink:href="#et1" onclick="go:et1.svg" x="360" y="1025" class="keyFl" />
+			<use id="keyEt2" xlink:href="#et2" onclick="go:et2.svg" x="525" y="1025" class="keyFl" />
+		</g>
+	</g>
+
+</g>
+<g id="openWindow" display="none">
+	<foreignObject x="50" y="50" width="3740" height="2060" >
+		<body xmlns="http://www.w3.org/1999/xhtml">
+		<style type="text/css">
+			html, body{height:100%; min-height:100%;}
+			.wrapW {width:100%; height:100%;}
+		</style>
+			<div class="wrapW">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+					<!-- СЮДА ВСТАВИТЬ СВГ ИЗ ФАЙЛА ВИЗУАЛИЗАЦИИ-->
+					<text id="close"  x="3660" y="70" >x</text>
+				</svg>
+			</div>
+		</body>
+	</foreignObject>
+</g>
+
+
+<!-- При нажатии на кнопку свернуть -->
+<animate 
+    xlink:href="#leftMax"
+    attributeName="display" 
+    to="none" 
+    dur="0.5s"
+    begin="keyLMin.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#leftMin"
+    attributeName="display" 
+    to="block" 
+    dur="0.5s"
+    begin="keyLMin.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#rightAll"
+    attributeName="width" 
+    to="3640" 
+    dur="0.5s"
+    begin="keyLMin.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#rightAll"
+    attributeName="x" 
+    to="200" 
+    dur="0.5s"
+    begin="keyLMin.click"
+    fill="freeze"  />
+<!-- При нажатии на кнопку резвернуть -->
+<animate 
+    xlink:href="#rightAll"
+    attributeName="width" 
+    to="3070" 
+    dur="0.1s"
+    begin="keyLMax.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#leftMin"
+    attributeName="display" 
+    to="none" 
+    dur="0s"
+    begin="keyLMax.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#leftMax"
+    attributeName="display" 
+    to="block" 
+    dur="0.5s"
+    begin="keyLMax.click"
+    fill="freeze"  />
+<animate 
+    xlink:href="#rightAll"
+    attributeName="x" 
+    to="750" 
+    dur="0.5s"
+    begin="keyLMax.click"
+    fill="freeze"  />
+<animate 
+	 xlink:href="#openWindow"
+    attributeName="display" 
+    to="none" 
+    dur="0.5s"
+    begin="close.click"
+    fill="freeze" 
+    id="close2" />	
+	
+<!-- вентилятор значения при х =0 у= 0
+ xlink:href="#openWindow"
+<animateTransform 
+	xlink:href="#FanVAY"
+	attributeName="transform" 
+	type="rotate" 
+	from="0 60 60" 
+	to="360 60 60" 
+	dur="2s" 
+	repeatCount="indefinite" 
+	restart="whenNotActive"/>
+ -->
+</svg>

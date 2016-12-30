@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario name="Пожар в номере">
+    <scen_values>
+        <scen_value alias="fire_sensor_1">
+            <object_name>L960B17/TRUNK.SUB-03.Parameters.AI_0316</object_name>
+            <value_name>presentValue</value_name>
+        </scen_value>
+        <scen_value alias="fire_sensor_2">
+            <object_name>L960B17/TRUNK.SUB-03.Parameters.AI_0315</object_name>
+            <value_id>85</value_id>
+        </scen_value>
+        <scen_value alias="energy_off_value">
+            <object_name>L960B17/TRUNK.SUB-03.Parameters.AO_0314</object_name>
+            <value_name>outOfService</value_name>
+            <value>true</value>
+        </scen_value>
+        <scen_value alias="water_on_value">
+            <object_name>L960B17/TRUNK.SUB-03.Parameters.BO_0313</object_name>
+            <value_name>presentValue</value_name>
+            <value>active</value>
+        </scen_value>
+        <scen_value alias="water_off_value">
+            <object_name>L960B17/TRUNK.SUB-03.Parameters.BO_0313</object_name>
+            <value_name>presentValue</value_name>
+            <value>inactive</value>
+        </scen_value>
+    </scen_values>
+    <condition><![CDATA[fire_sensor_1== 100 && fire_sensor_2== 100]]></condition>
+    <actions>
+        <action name="Запись в лог" type="WRITE_LOG" what="fire_sensor_1,fire_sensor_2" case_code="1"/>
+        <action name="Обесточить помещение" type="WRITE_TABLE" what="energy_off_value"/>
+        <action name="Включить систему пожаротушения" type="WRITE_TABLE" what="water_on_value"/>
+        <action name="Выключить систему пожаротушения" type="START_TIMER" what="water_off_value" delay="30" time_unit="min"/>
+        <action name="Запустить что-то по расписанию" type="START_TIMER" what="whatever" delay="10" repeat="120" time_unit="s"/>
+        <action name="Запустить другой сценарий" type="RUN_OTHER" what="scenario_name"/>
+    </actions>
+</scenario>
