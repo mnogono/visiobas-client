@@ -1,29 +1,5 @@
-<!doctype html>
-<html>
-<head>
-	<!-- well known library -->
-	<script src="../js/jquery.min.js" type="text/javascript"></script>
-	<script src="../js/underscore-min.js" type="text/javascript"></script>
-	<script src="../js/rx.lite.min.js" type="text/javascript"></script>
-	
-	<!-- custom library -->
-	<script src="./js/libBaseTypes.js" type="text/javascript"></script>
-	<script src="./js/libCollections.js" type="text/javascript"></script>
-	<script src="./js/libObjects.js" type="text/javascript"></script>
-	<script src="./js/libArrays.js" type="text/javascript"></script>
-	<script src="./js/libAssert.js" type="text/javascript"></script>
-	
-	<!-- visio bas interpreter -->
-	<script src="../js/interpreter.js" type="text/javascript"></script>
-	<script src="../js/visiobas.executer.js" type="text/javascript"></script>
-	
-	<!-- custom project library -->
-	<!--<script src="../js/md5-min.js" type="text/javascript"></script>-->
-	<!--<script src="../js/user.js" type="text/javascript"></script>-->
-	<!--<script src="../js/authorization.js" type="text/javascript"></script>-->
-	<!--<script src="../js/dashboard.js" type="text/javascript"></script>-->
-</head>
-<body>
+﻿<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3840 2160">
 <!-- Библиотека -->
 <defs>
@@ -80,9 +56,7 @@
 		begin="0"
 		dur="indefinite"
 		values="#838383"
-		calcMode="linear" 
-		
-		/>
+		calcMode="linear" />
 	<use xlink:href="#iconFan" x="10" y="22.5"/>
 </g>
 <!-- Знак аварии -->
@@ -107,26 +81,48 @@
 <!-- Текст -->
 <g cursor="pointer">
 	<text id="Text1" x="164" y="148" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#000000">Загрузка</text>
-</g>
+</g>	
 
+<visiobas interval="1000">
 
-<visiobas timer=1000>
 <![CDATA[
 
-sensor2048 = requestFloat("some id");
+VB.Debug("hello world every 1000ms...");
 
-if (sensor2048 < 50) {
-    startAnimation("Fan1_trans");
-} else {
-    stopAnimation("Fan1_trans");
-};
-    
+let value1 = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DI_2402.85");
+if (value1 > 50) {
+	VB.Debug("value1 more then 50");
+}
 
-setText("Text1", sensor2048);
+VB.Debug(value1);
+
+let result = VB.Write("L960B17/TRUNK.SUB-24.Parameters.DI_2402.85", value1);
+
+VB.Debug(result);
 
 ]]>
+
 </visiobas>
 
+<!-- Конец элементов на странице	 -->
+<!-- Программирование -->
+<vbas id="Fan1_trans" type="beginend" >(bbv('L960B17/TRUNK.SUB-24.Parameters.DI_2402.85', me)==1);</vbas><!-- Устанавливает begin="0" если истина, begin="indefinite" если лож -->
+<vbas id="Fan1_fill" type="enumeration"
+		attribute="fill"
+		value0="Gray" 
+		value1="Green" 
+		value2="Yellow"
+		enum0="0" 
+		enum1="1" 
+		enum2="2"
+		enumcount="3" 
+		>(bbv('L960B17/TRUNK.SUB-24.Parameters.DI_2402.85', me)==0)?(0):(1); (bbv('L960B17/TRUNK.SUB-24.Parameters.DI_2402.809', me)==1)?(2);</vbas>	<!-- Устанавливает атребуту соответствующее значение Пример: (bbv('L960B17/TRUNK.SUB-24.Parameters.AI_2402.85', me)>25)?(0):(1);  -->
+<vbas id="Alarm1_hide" type="beginend" >(bbv('L960B17/TRUNK.SUB-24.Parameters.DI_2402.85', me)==0);</vbas>
+<vbas id="Text1" type="text" >bfv('L960B17/TRUNK.SUB-24.Parameters.AI_2402.85', me)+ '' + '%';</vbas><!-- Заменяет текст на значение -->
+<vbas id="Fan1" type="leftclick" >ShowForm('L960B17/TRUNK.SUB-24.Parameters.Start_AHU1');</vbas><!-- Открывает форму html для элемента -->
+<vbas id="Fan2" type="leftclick" >AnalogUp('L960B17/TRUNK.SUB-24.Parameters.SetTemp');</vbas><!-- Увеличивает значение элемента -->
+<vbas id="Fan3" type="leftclick" >AnalogDown('L960B17/TRUNK.SUB-24.Parameters.SetTemp');</vbas><!-- Уменьшает значение элемента -->
+<vbas id="Fan4" type="leftclick" >Control('L960B17/TRUNK.SUB-24.Parameters.Start_AHU1')('L960B17/TRUNK.SUB-24.Parameters.DI_2403.809');</vbas><!-- Присваивает дискретное значение элементу -->
+<vbas id="Text1" type="leftclick" >Go('index.svg');</vbas><!-- Переход на другую страницу -->
+<!-- Конец программирования -->		
 </svg>
-</body>
-</html>

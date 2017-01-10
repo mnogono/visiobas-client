@@ -1,0 +1,20 @@
+{
+	"name": "threejs-throwing-dice",
+	"version": "0.0.1",
+	"description": "visiobas client",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mnogono/visiobas-client.git"
+	},
+	"dependencies": {
+		"express": "*",
+		"body-parser": "*",
+		"handlebars": "*",
+		"express-handlebars": "*",
+		"body-parser": "*",
+		"merge": "*",
+		"dateformat": "*"
+	},
+	"license": "MIT",
+	"readby": "no readmy"
+}

@@ -1,0 +1,33 @@
+1. всплывающие окна с svg документом и интерпретацией логики
+
+2. javascript как язык логоки
+Read();
+Write(id, val);
+
+3. визуализация рассписания. (контролы стр. 13)
+
+текущее значение
+Read("L540B23:NAE/TRUNK1.SUB28.Parameters.START_AHU21.85");
+Write("L540B23:NAE/TRUNK1.SUB28.Parameters.START_AHU21.85", 20);
+
+//open popup window
+Popup("some.svg");
+
+//redirect to other svg document
+Redirect("some.svg");
+
+OnClick(Schedule("L540B23:NAE/TRUNK1.SUB28.Schedule.AHU22"));
+
+4. Пульты (визуализация)
+
+5. Визуализация вентилятора
+
+6. Визуализация ошибки (треугольник), изменение цвета.
+
+7. Вывод графиков.
+
+8. Вывод отчетов. графики.
+
+9. Визуализация дренажных насосов.
+
+10. шаблонизация svg докуменда с возможностью вставлять другой svg документ.

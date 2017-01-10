@@ -1,3 +1,35 @@
+(function() {
+	function VisiobasPredefined() {
+	}
+	VisiobasPredefined.prototype.Debug = function(val) {
+		console.log(val);
+	}
+	VisiobasPredefined.prototype.Read = function(id) {
+		return Math.random() * 100;
+	}
+	VisiobasPredefined.prototype.Write = function(id, val) {
+		return true;
+	}
+	
+	function VisiobasExecuter() {
+		var predefined = new VisiobasPredefined();
+		
+		return {
+			execute: execute
+		}		
+		
+		/**
+		* @param {string} code to execute
+		*/
+		function execute(code) {
+			(new Function("var VB = this;" + code)).bind(predefined)();
+		}
+	}
+	
+	window.VISIOBAS_EXECUTER = VisiobasExecuter();
+})();
+
+/*
 $(document).ready(function(){
 	var globalEnv = new Environment();
 	
@@ -20,23 +52,29 @@ $(document).ready(function(){
 	
 	globalEnv.def("startAnimation", function(id){
 		//$("#" + id)[0].unpauseAnimations();
-		$("#" + id).attr("repeatCount", "0");
+		$("#" + id).attr("dur", "indefinite");
 	});
 	
 	globalEnv.def("stopAnimation", function(id){
 		//$("#FFF")[0].pauseAnimations();
-		$("#" + id).attr("repeatCount", "indefinite");
+		$("#" + id).attr("dur", "2s");
+		//$("#" + id).attr("repeatCount", "1");
 	});
 	
 	$("visiobas").each(function(i, visiobas) {
-		var timer = $(visiobas).attr("timer");
+		var interval = $(visiobas).attr("interval");
 		
 		var code = visiobas.textContent;
-        var ast = parse(TokenStream(InputStream(code)));
+        //var ast = parse(TokenStream(InputStream(code)));
         
 		setInterval(function() {
-			evaluate(ast, globalEnv);
-		}, timer);
-		
+			"use strict";
+			
+			console.log("execute some function...");
+			//new Function();
+			
+			//evaluate(ast, globalEnv);
+		}, interval);
 	});
 })
+*/

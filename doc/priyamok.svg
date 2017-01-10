@@ -1,0 +1,264 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="3840" width="2160">
+<!-- Библиотека -->
+<defs>
+		<style>
+		svg{background:#2F2F2D;}
+		.black{fill:#000000;}
+		.dnGray{fill:#A7A7A5; stroke:#212120;}
+		.dnGeen{fill:#93f630; stroke:#5a991b;}
+		.prYellow{stroke:#ffd200;}
+		.prRed{stroke:#ff0000;}
+		.prGray{stroke:#A7A7A5;}
+		</style>
+		<desc>Знак аварии</desc>
+		<symbol id="atn"  viewBox="0 0 100 100" >
+			<path d="M5 95  50 5  95 95z"  style="stroke:#4b0808;stroke-width:5px;stroke-linejoin: round; fill:#ff0000"/>
+			<text x="50" y="80" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700; fill:black;" >!</text>
+		</symbol>
+		
+		<desc>Иконка приямок</desc>
+		<symbol id="dn" viewBox="0 0 200 100" >
+			<path d="M6,4 V94 H174 V4" fill="none"  stroke-width="4" />
+			<!--<rect x="10" y="18" width="150" height="70" />-->
+		</symbol>
+		
+		<desc>Иконка насос</desc>
+		<symbol id="dnn" viewBox="0 0 120 200" >
+			<path d="M62,196 V182 L66,173 V106 L88,96 110,106 V173 L114,182 V196 z" stroke-width="2" />
+			<path d="M62,189 H114" fill="none" stroke-width="1" />
+			<path d="M62,187 H114" fill="none" stroke-width="1" />
+			<path d="M62,182 H114" fill="none" stroke-width="1" />
+			<path d="M82,108 H94 L96,110 V120 H92 V111 H84 V120 H80 V110 z" stroke-width="2" />
+			<path d="M81,40 H95 V107 H81 z" stroke-width="2" />
+			<path d="M39,160 C57,153 63,138 64,117 L64,104 C65,96 96,95 88,111"  fill="none" stroke-width="3" />
+			<path d="M36,159 L43,155 46,156 46,159 38,163 z" stroke-width="2" />
+			<path d="M15.5,162 L29,155.5 35,158 37,163 37,170 23,177 16,173.5 14,168.5 z" stroke-width="2" />
+			<path d="M12.5,170.5 L35.5,158 38.5,164 15.5,176 z" stroke-width="2" />
+			<circle r="1.5" cx="88" cy="192" fill="none" stroke-width="1" />
+			<circle r="1.5" cx="81" cy="192" fill="none" stroke-width="1" />
+			<circle r="1.5" cx="95" cy="192" fill="none" stroke-width="1" />	
+			<circle r="1.5" cx="74" cy="192" fill="none" stroke-width="1" />
+			<circle r="1.5" cx="102" cy="192" fill="none" stroke-width="1" />
+			<circle r="1.5" cx="109" cy="192" fill="none" stroke-width="1" />
+			<circle r="1.5" cx="67" cy="192" fill="none" stroke-width="1" />
+		</symbol>
+</defs>
+
+<!-- Обобщенная неисправность насоса. Или переполнение приямка-->
+<g transform="translate(20,50)">
+	<g>
+		<!-- эта анимация компенсирует смещение от трансформации -->
+		<animateTransform xlink:href="#water" attributeName="transform"  type="translate" from="0 0" to="0 -160"
+			begin="0" dur="2s" repeatCount="indefinite" fill="freeze" />
+		<!-- эта анимация заставляет воду двигатся -->	
+		<animateTransform xlink:href="#water" attributeName="transform"  type="scale" from="1 1" to="1 2.8" begin="0" dur="2s" 
+			repeatCount="indefinite" additive="sum" fill="freeze" id="alarm" />
+		<!-- это вода -->	
+		<rect id="water"  x="12"  y="58" width="156" height="30"  fill="#000066" />
+	</g>
+	<g>
+		<!-- приямок рамка форма -->	
+		<use id="priyamok"  xlink:href="#dn"  x="0" y="0" width="200" height="100" class="prRed"  />
+	</g>
+	<g>
+		<!-- насос первый имена id будут соответвовать названию насоса -->
+		<use id="dn1" xlink:href="#dnn" x="8" y="-32"  width="72" height="120" class="dnGray" />	
+		<!-- насос второй -->
+		<use id="dn2" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="dnGray" />
+	</g>
+	<g>
+		<!-- анимация восклицательного знака для общей аварии -->
+		<animate xlink:href="#alarmAll"  attributeName="display" from="none" to="block" begin="alarm.begin + 1s" dur="2s" repeatCount="indefinite" />
+		<!-- восклицательный знак общей аварии -->
+		<use id="alarmAll" xlink:href="#atn" x="58" y="10" width="70" height="70" display="none" />
+	</g>
+</g>
+
+
+
+<!-- статус не пришол -->
+<g transform="translate(210,50)">
+	<g>
+		<!-- эта анимация компенсирует смещение от трансформации -->
+		<animateTransform xlink:href="#water_2" attributeName="transform"  type="translate" from="0 0" to="0 -160"
+			begin="0" dur="0" repeatCount="0" fill="freeze" />
+		<!-- эта анимация заставляет воду двигатся -->	
+		<animateTransform xlink:href="#water_2" attributeName="transform"  type="scale" from="1 1" to="1 2.8" begin="0" dur="0" 
+			repeatCount="0" additive="sum" fill="freeze" id="alarm_2" />
+		<!-- это вода -->	
+		<rect id="water_2"  x="12"  y="58" width="156" height="30"  fill="#000066" />
+	</g>
+	<g>
+		<!-- приямок рамка форма -->	
+		<use id="priyamok_2"  xlink:href="#dn"  x="0" y="0" width="200" height="100" class="prGray" />
+	</g>
+	<g>
+		<!-- насос первый имена id будут соответвовать названию насоса -->
+		<use id="dn1_2" xlink:href="#dnn" x="8" y="-32"  width="72" height="120" class="dnGray" />	
+		<!-- насос второй -->
+		<use id="dn2_2" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="dnGray" />
+		<!-- авария первого насоса -->
+		<animate xlink:href="#alarmdn1_2"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
+		<use id="alarmdn1_2" xlink:href="#atn" x="25" y="20" width="70" height="70" display="none" />
+		<!-- авария второго насоса -->
+		<animate xlink:href="#alarmdn2_2"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
+		<use id="alarmdn2_2" xlink:href="#atn" x="90" y="20" width="70" height="70" display="none" />
+	</g>
+	<g>
+		<!-- анимация восклицательного знака для общей аварии -->
+		<animate xlink:href="#alarmAll_2"  attributeName="display" from="none" to="block" begin="alarm_2.begin + 1s" dur="0s" repeatCount="0" />
+		<!-- восклицательный знак общей аварии -->
+		<use id="alarmAll_2" xlink:href="#atn" x="58" y="10" width="70" height="70" display="none" />
+	</g>
+</g>
+
+<!-- насосы работа -->
+<g transform="translate(400,50)">
+	<g>
+		<!-- эта анимация компенсирует смещение от трансформации -->
+		<animateTransform xlink:href="#water_3" attributeName="transform"  type="translate" from="0 -52.8" to="0 62"
+			begin="0" dur="2s" repeatCount="indefinite" fill="freeze" />
+		<!-- эта анимация заставляет воду двигатся -->	
+		<animateTransform xlink:href="#water_3" attributeName="transform"  type="scale" from="1 1.6" to="1 0.3" begin="0" dur="2s" 
+			repeatCount="indefinite" additive="sum" fill="freeze" id="alarm_3" />
+		<!-- это вода -->	
+		<rect id="water_3"  x="12"  y="58" width="156" height="30"  fill="#000066" />
+	</g>
+	<g>
+		<!-- приямок рамка форма -->	
+		<use id="priyamok_3"  xlink:href="#dn"  x="0" y="0" width="200" height="100"  class="prYellow" />
+	</g>
+	<g>
+		<!-- насос первый имена id будут соответвовать названию насоса -->
+		<use id="dn1_3" xlink:href="#dnn" x="8" y="-32"  width="72" height="120" class="dnGeen" />	
+		<!-- насос второй -->
+		<use id="dn2_3" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="dnGeen" />
+		<!-- авария первого насоса -->
+		<animate xlink:href="#alarmdn1_3"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
+		<use id="alarmdn1_3" xlink:href="#atn" x="25" y="20" width="70" height="70" display="none" />
+		<!-- авария второго насоса -->
+		<animate xlink:href="#alarmdn2_3"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
+		<use id="alarmdn2_3" xlink:href="#atn" x="90" y="20" width="70" height="70" display="none" />
+	</g>
+	<g>
+		<!-- анимация восклицательного знака для общей аварии -->
+		<animate xlink:href="#alarmAll_3"  attributeName="display" from="none" to="block" begin="alarm_3.begin + 1s" dur="0s" repeatCount="0" />
+		<!-- восклицательный знак общей аварии -->
+		<use id="alarmAll_3" xlink:href="#atn" x="58" y="10" width="70" height="70" display="none" />
+	</g>
+</g>
+
+
+<!-- не работает первый насос -->
+<g transform="translate(20,200)">
+	<g>
+		<!-- эта анимация компенсирует смещение от трансформации -->
+		<animateTransform xlink:href="#water_5" attributeName="transform"  type="translate" from="0 0" to="0 -160"
+			begin="0" dur="0" repeatCount="0" fill="freeze" />
+		<!-- эта анимация заставляет воду двигатся -->	
+		<animateTransform xlink:href="#water_5" attributeName="transform"  type="scale" from="1 1" to="1 2.8" begin="0" dur="0" 
+			repeatCount="0" additive="sum" fill="freeze" id="alarm_4" />
+		<!-- это вода -->	
+		<rect id="water_5"  x="12"  y="58" width="156" height="30"  fill="#000066" />
+	</g>
+	<g>
+		<!-- приямок рамка форма -->	
+		<use id="priyamok_5"  xlink:href="#dn"  x="0" y="0" width="200" height="100" class="prGray" />
+	</g>
+	<g>
+		<!-- насос первый имена id будут соответвовать названию насоса -->
+		<use id="dn1_5" xlink:href="#dnn" x="8" y="-32"  width="72" height="120" class="dnGray" />	
+		<!-- насос второй -->
+		<use id="dn2_5" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="dnGeen" />
+		<!-- авария первого насоса -->
+		<animate xlink:href="#alarmdn1_5"  attributeName="display" from="none" to="block" begin="0" dur="2s" repeatCount="indefinite" />
+		<use id="alarmdn1_5" xlink:href="#atn" x="25" y="20" width="70" height="70" display="none" />
+		<!-- авария второго насоса -->
+		<animate xlink:href="#alarmdn2_5"  attributeName="display" from="none" to="block" begin="0" dur="0s" repeatCount="0" />
+		<use id="alarmdn2_5" xlink:href="#atn" x="90" y="20" width="70" height="70" display="none" />
+	</g>
+	<g>
+		<!-- анимация восклицательного знака для общей аварии -->
+		<animate xlink:href="#alarmAll_5"  attributeName="display" from="none" to="block" begin="alarm_5.begin + 1s" dur="0s" repeatCount="0" />
+		<!-- восклицательный знак общей аварии -->
+		<use id="alarmAll_5" xlink:href="#atn" x="58" y="10" width="70" height="70" display="none" />
+	</g>
+</g>
+
+<!-- не работает второй насос -->
+<g transform="translate(210,200)">
+	<g>
+		<!-- эта анимация компенсирует смещение от трансформации -->
+		<animateTransform xlink:href="#water_4" attributeName="transform"  type="translate" from="0 0" to="0 -160"
+			begin="0" dur="0" repeatCount="0" fill="freeze" />
+		<!-- эта анимация заставляет воду двигатся -->	
+		<animateTransform xlink:href="#water_4" attributeName="transform"  type="scale" from="1 1" to="1 2.8" begin="0" dur="0" 
+			repeatCount="0" additive="sum" fill="freeze" id="alarm_4" />
+		<!-- это вода -->	
+		<rect id="water_4"  x="12"  y="58" width="156" height="30"  fill="#000066" />
+	</g>
+	<g>
+		<!-- приямок рамка форма -->	
+		<use id="priyamok_4"  xlink:href="#dn"  x="0" y="0" width="200" height="100" class="prGray" />
+	</g>
+	<g>
+		<!-- насос первый имена id будут соответвовать названию насоса -->
+		<use id="dn1_4" xlink:href="#dnn" x="8" y="-32"  width="72" height="120" class="dnGeen" />	
+		<!-- насос второй -->
+		<use id="dn2_4" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="dnGray" />
+		<!-- авария первого насоса -->
+		<animate xlink:href="#alarmdn1_4"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
+		<use id="alarmdn1_4" xlink:href="#atn" x="25" y="20" width="70" height="70" display="none" />
+		<!-- авария второго насоса -->
+		<animate xlink:href="#alarmdn2_4"  attributeName="display" from="none" to="block" begin="0" dur="2s" repeatCount="indefinite" />
+		<use id="alarmdn2_4" xlink:href="#atn" x="90" y="20" width="70" height="70" display="none" />
+	</g>
+	<g>
+		<!-- анимация восклицательного знака для общей аварии -->
+		<animate xlink:href="#alarmAll_4"  attributeName="display" from="none" to="block" begin="alarm_4.begin + 1s" dur="0s" repeatCount="0" />
+		<!-- восклицательный знак общей аварии -->
+		<use id="alarmAll_4" xlink:href="#atn" x="58" y="10" width="70" height="70" display="none" />
+	</g>
+</g>
+
+
+<!-- насосы выключены -->
+<g transform="translate(400,200)">
+	<g>
+		<!-- эта анимация компенсирует смещение от трансформации -->
+		<animateTransform xlink:href="#water_6" attributeName="transform"  type="translate" from="0 0" to="0 -160"
+			begin="0" dur="0" repeatCount="0" fill="freeze" />
+		<!-- эта анимация заставляет воду двигатся -->	
+		<animateTransform xlink:href="#water_6" attributeName="transform"  type="scale" from="1 1" to="1 2.8" begin="0" dur="0" 
+			repeatCount="0" additive="sum" fill="freeze" id="alarm_6" />
+		<!-- это вода -->	
+		<rect id="water_6"  x="12"  y="58" width="156" height="30"  fill="#000066" />
+	</g>
+	<g>
+		<!-- приямок рамка форма -->	
+		<use id="priyamok_6"  xlink:href="#dn"  x="0" y="0" width="200" height="100" class="prYellow" />
+	</g>
+	<g>
+		<!-- насос первый имена id будут соответвовать названию насоса -->
+		<use id="dn1_6" xlink:href="#dnn" x="8" y="-32"  width="72" height="120" class="dnGray" />	
+		<!-- насос второй -->
+		<use id="dn2_6" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="dnGray" />
+		<!-- авария первого насоса -->
+		<animate xlink:href="#alarmdn1_6"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
+		<use id="alarmdn1_6" xlink:href="#atn" x="25" y="20" width="70" height="70" display="none" />
+		<!-- авария второго насоса -->
+		<animate xlink:href="#alarmdn2_6"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
+		<use id="alarmdn2_6" xlink:href="#atn" x="90" y="20" width="70" height="70" display="none" />
+	</g>
+	<g>
+		<!-- анимация восклицательного знака для общей аварии -->
+		<animate xlink:href="#alarmAll_6"  attributeName="display" from="none" to="block" begin="alarm_6.begin + 1s" dur="0s" repeatCount="0" />
+		<!-- восклицательный знак общей аварии -->
+		<use id="alarmAll_6" xlink:href="#atn" x="58" y="10" width="70" height="70" display="none" />
+	</g>
+</g>
+
+
+</svg>
