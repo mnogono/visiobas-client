@@ -40,7 +40,7 @@
 <!-- Элементы на странице -->
 <!-- Вентилятор на странице -->
 <g id="Fan1" cursor="pointer">
-	<animateTransform 
+	<animateTransform
 		id="Fan1_trans"
 		attributeName="transform"
 		begin="0"
@@ -50,7 +50,7 @@
 		repeatCount="indefinite"
 		restart="whenNotActive"
 		dur="2s" /> <!-- begin="0"/ begin="indefinite"  -->
-	<animate 
+	<animate
 		id="Fan1_fill"
 		attributeName="fill"
 		begin="0"
@@ -69,11 +69,11 @@
 		dur="1s"
 		repeatCount="indefinite"
 		restart="whenNotActive" />
-	<animate 
+	<animate
 		id="Alarm1_hide"
-		attributeName="display" 
+		attributeName="display"
 		begin="indefinite"
-		to="none" 
+		to="none"
 		dur="0.1s"
 		fill="freeze" /><!-- begin="0"/ begin="indefinite"  -->
 	<use xlink:href="#atn" x="150" y="170" width="130" height="130" />
@@ -81,41 +81,35 @@
 <!-- Текст -->
 <g cursor="pointer">
 	<text id="Text1" x="164" y="148" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#000000">Загрузка</text>
-</g>	
+</g>
 
-<visiobas interval="1000">
+<visiobas interval="indefinite">
+	<![CDATA[
 
-<![CDATA[
+	console.log("execute only once");
 
-VB.Debug("hello world every 1000ms...");
+	var Fan0 = VB.Register({
+	  type: "fan",
+	  id: "Fan1",
+	  addr: "L960B17/TRUNK.SUB-24.Parameters.DI_2402"
+	});
 
-let value1 = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DI_2402.85");
-if (value1 > 50) {
-	VB.Debug("value1 more then 50");
-}
-
-VB.Debug(value1);
-
-let result = VB.Write("L960B17/TRUNK.SUB-24.Parameters.DI_2402.85", value1);
-
-VB.Debug(result);
-
-]]>
-
+	]]>
 </visiobas>
+<visiobas interval="1000" src="scenarios/sandbox.js"></visiobas>
 
 <!-- Конец элементов на странице	 -->
 <!-- Программирование -->
 <vbas id="Fan1_trans" type="beginend" >(bbv('L960B17/TRUNK.SUB-24.Parameters.DI_2402.85', me)==1);</vbas><!-- Устанавливает begin="0" если истина, begin="indefinite" если лож -->
 <vbas id="Fan1_fill" type="enumeration"
 		attribute="fill"
-		value0="Gray" 
-		value1="Green" 
+		value0="Gray"
+		value1="Green"
 		value2="Yellow"
-		enum0="0" 
-		enum1="1" 
+		enum0="0"
+		enum1="1"
 		enum2="2"
-		enumcount="3" 
+		enumcount="3"
 		>(bbv('L960B17/TRUNK.SUB-24.Parameters.DI_2402.85', me)==0)?(0):(1); (bbv('L960B17/TRUNK.SUB-24.Parameters.DI_2402.809', me)==1)?(2);</vbas>	<!-- Устанавливает атребуту соответствующее значение Пример: (bbv('L960B17/TRUNK.SUB-24.Parameters.AI_2402.85', me)>25)?(0):(1);  -->
 <vbas id="Alarm1_hide" type="beginend" >(bbv('L960B17/TRUNK.SUB-24.Parameters.DI_2402.85', me)==0);</vbas>
 <vbas id="Text1" type="text" >bfv('L960B17/TRUNK.SUB-24.Parameters.AI_2402.85', me)+ '' + '%';</vbas><!-- Заменяет текст на значение -->
@@ -124,5 +118,5 @@ VB.Debug(result);
 <vbas id="Fan3" type="leftclick" >AnalogDown('L960B17/TRUNK.SUB-24.Parameters.SetTemp');</vbas><!-- Уменьшает значение элемента -->
 <vbas id="Fan4" type="leftclick" >Control('L960B17/TRUNK.SUB-24.Parameters.Start_AHU1')('L960B17/TRUNK.SUB-24.Parameters.DI_2403.809');</vbas><!-- Присваивает дискретное значение элементу -->
 <vbas id="Text1" type="leftclick" >Go('index.svg');</vbas><!-- Переход на другую страницу -->
-<!-- Конец программирования -->		
+<!-- Конец программирования -->
 </svg>
