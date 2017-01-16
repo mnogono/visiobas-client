@@ -1,0 +1,4 @@
+<animateTransform id="Fan1_trans" attributeName="transform" begin="0" type="rotate" from="0 70 82.5" to="360 70 82.5" repeatCount="indefinite" restart="whenNotActive" dur="2s"/>
+<!-- begin="0"/ begin="indefinite"  -->
+<animate id="Fan1_fill" attributeName="fill" begin="0" dur="indefinite" values="#838383" calcMode="linear"/>
+<use xlink:href="#iconFan" x="10" y="22.5"/>

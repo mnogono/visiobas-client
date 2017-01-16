@@ -1,0 +1,57 @@
+﻿	<g id="leftMin" display="none">
+		<rect x="0" y="0" height="2160" width="170" class="black" />
+		<use id="keyLMax" xlink:href="#iconLeftMax" x="35" y="35" class="click" />
+		<g>		
+			<use onclick="go:sys_ahu.svg"  xlink:href="#iconVentingS" height="140" width="140" y="170" x="15" class="keyActive" />
+			<use onclick="go:sys_lift.svg" xlink:href="#iconLiftS" height="140" width="140" y="340" x="15" class="key" />
+			<use onclick="go:sys_heat.svg" xlink:href="#iconHeatS" height="140" width="140" y="510" x="15" class="key" />
+			<use onclick="go:sys_cool.svg" xlink:href="#iconColdS" height="140" width="140" y="680" x="15" class="key" />
+			<use onclick="go:sys_meter.svg" xlink:href="#iconLightS" height="140" width="140" y="850" x="15" class="key" />
+			<use onclick="go:sys_ws.svg" xlink:href="#iconWaterS" height="140" width="140" y="1020" x="15" class="key" />
+			<use onclick="go:sys_es.svg" xlink:href="#iconElectroS" height="140" width="140" y="1190" x="15" class="key" />
+			<use onclick="go:sys_sef.svg" xlink:href="#iconFireS" height="140" width="140" y="1360" x="15" class="key" />
+			<use onclick="go:zavesu.svg" xlink:href="#iconZavesuS" height="140" width="140" y="1530" x="15" class="key" />
+			
+			<use onclick="go:sys_fan.svg" xlink:href="#iconVentminS" height="140" width="140" y="1700" x="15" class="key" />
+			<use onclick="go:sys_swp.svg" xlink:href="#iconPumpS" height="140" width="140" y="1870" x="15" class="key" />
+		</g>
+	</g>
+	<g id="leftMax" display="block">
+		<rect x="0" y="0" height="2160" width="720" class="black" />
+		<use xlink:href="#bas" x="210" y="30" width="270" height="270" />
+		<!-- кнопки выбора Сценарий и т.д.-->
+		<g>
+			<use id="keyScr" xlink:href="#iconScript" x="0" y="155" class="key" />
+			<use id="keySys" xlink:href="#iconSystem" x="180" y="155" class="keyActive" />
+			<use id="keyEve" xlink:href="#iconEvent" x="360" y="155" class="key" />
+			<use id="keyNet" xlink:href="#iconNetwork" x="540" y="155" class="key" />
+		</g>
+		<!-- центр -->
+		<g class="click">
+			<use id="keySet" xlink:href="#iconSetting" x="95" y="358" />
+			<use id="keyHome" xlink:href="#iconHome" x="292" y="338" />
+			<use id="keyLMin" xlink:href="#iconLeftMin" x="525" y="358" />
+		</g>
+		<!-- кнопки иконки -->
+		<g>
+			<use onclick="go:sys_ahu.svg" xlink:href="#iconVenting" x="30" y="545" class="keyActive" />
+			<use onclick="go:sys_lift.svg" xlink:href="#iconLift" x="250" y="545" class="key" />
+			<use onclick="go:sys_heat.svg" xlink:href="#iconHeat" x="470" y="545" class="key" />
+			<use onclick="go:sys_cool.svg" xlink:href="#iconCold" x="30" y="705" class="key" />
+			<use onclick="go:sys_meter.svg" xlink:href="#iconLight" x="250" y="705" class="key" />
+			<use onclick="go:sys_ws.svg" xlink:href="#iconWater" x="470" y="705" class="key" />
+			<use onclick="go:sys_es.svg" xlink:href="#iconElectro" x="30" y="865" class="key" />
+			<use onclick="go:sys_sef.svg" xlink:href="#iconFire" x="250" y="865" class="key" />
+			<use onclick="go:zavesu.svg" xlink:href="#iconZavesu" x="470" y="865" class="key" />
+			
+			<use onclick="go:sys_fan.svg" xlink:href="#iconVentmin" x="30" y="1025" class="key" />
+			<use onclick="go:sys_swp.svg" xlink:href="#iconPump" x="250" y="1025" class="key" />
+		</g>
+		<!-- кнопки этажей-->
+		<g class="click">
+			<use id="keyEt_1" xlink:href="#et_1" onclick="go:et-1.svg" x="30" y="1185" class="keyFl" />
+			<use id="keyEt_2" xlink:href="#et_2" onclick="go:et-2.svg" x="195" y="1185" class="keyFl" />
+			<use id="keyEt1" xlink:href="#et1" onclick="go:et1.svg" x="360" y="1185" class="keyFl" />
+			<use id="keyEt2" xlink:href="#et2" onclick="go:et2.svg" x="525" y="1185" class="keyFl" />
+		</g>
+	</g>

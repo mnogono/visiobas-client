@@ -1,3 +1,21 @@
+/**
+function Circle(radius) {
+    this.radius = radius;
+}
+
+Object.defineProperty(Circle.prototype, 'circumference', {
+    get: function() { return 2*Math.PI*this.radius; }
+});
+
+Object.defineProperty(Circle.prototype, 'area', {
+    get: function() { return Math.PI*this.radius*this.radius; }
+});
+
+c = new Circle(10);
+console.log(c.area); // Should output 314.159
+console.log(c.circumference); // Should output 62.832
+*/
+
 (function(){
   /**
   * fan object
@@ -15,7 +33,6 @@
 
       get addr() {},
       get id() {},
-      get systemStatus() { return this.systemStatus; },
 
       start: start,
       stop: stop

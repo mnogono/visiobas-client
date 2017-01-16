@@ -1,0 +1,16 @@
+<!-- Иконка вентилятора -->
+<desc>Лопостя вентилятора</desc>
+<symbol id="vent" viewBox="0 0 125 125">
+    <path id="lop" d="M 50,50 C 50,0 92,-5 99,20 Q100 40 90 35 C80,35 79,30 50,50"/>
+    <use xlink:href="#lop" transform="rotate(90, 50,50)"/>
+    <use xlink:href="#lop" transform="rotate(180, 50,50)"/>
+    <use xlink:href="#lop" transform="rotate(270, 50,50)"/>
+    <circle cx="50" cy="50" r="15" style="fill:#2F2F2D; opacity:1; stroke:white; stroke-width:2"/>
+    <circle cx="50" cy="50" r="10" style="fill:none; stroke:white; stroke-width:2"/>
+</symbol>
+<desc>Вентилятор</desc>
+<symbol id="iconFan">
+    <circle r="60" cy="60" cx="60"/>
+    <use xlink:href="#vent" height="100" width="100" x="20" y="20" fill="#000000"/>
+    <!-- Вставляем лопостя вентилятора -->
+</symbol>

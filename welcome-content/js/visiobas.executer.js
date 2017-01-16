@@ -6,10 +6,6 @@
 		this.controls = {};
 	}
 
-	VisiobasPredefined.prototype.Debug = function(val) {
-		console.log(val);
-	}
-
 	VisiobasPredefined.prototype.Read = function(id) {
 		return Math.random() * 100;
 	}

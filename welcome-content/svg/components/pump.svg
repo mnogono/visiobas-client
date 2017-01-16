@@ -1,0 +1,20 @@
+<desc>Иконка насос</desc>
+<symbol id="dnn" viewBox="0 0 120 200">
+    <path d="M62,196 V182 L66,173 V106 L88,96 110,106 V173 L114,182 V196 z" stroke-width="2" fill="#212120"/>
+    <path d="M62,189 H114" fill="none" stroke-width="1"/>
+    <path d="M62,187 H114" fill="none" stroke-width="1"/>
+    <path d="M62,182 H114" fill="none" stroke-width="1"/>
+    <path d="M82,108 H94 L96,110 V120 H92 V111 H84 V120 H80 V110 z" stroke-width="2" fill="#212120"/>
+    <path d="M81,40 H95 V107 H81 z" stroke-width="2" fill="#212120"/>
+    <path d="M39,160 C57,153 63,138 64,117 L64,104 C65,96 96,95 88,111" fill="none" stroke-width="3"/>
+    <path d="M36,159 L43,155 46,156 46,159 38,163 z" stroke-width="2" fill="#212120"/>
+    <path d="M15.5,162 L29,155.5 35,158 37,163 37,170 23,177 16,173.5 14,168.5 z" stroke-width="2" fill="#212120"/>
+    <path d="M12.5,170.5 L35.5,158 38.5,164 15.5,176 z" stroke-width="2" fill="#212120"/>
+    <circle r="1.5" cx="88" cy="192" fill="none" stroke-width="1"/>
+    <circle r="1.5" cx="81" cy="192" fill="none" stroke-width="1"/>
+    <circle r="1.5" cx="95" cy="192" fill="none" stroke-width="1"/>
+    <circle r="1.5" cx="74" cy="192" fill="none" stroke-width="1"/>
+    <circle r="1.5" cx="102" cy="192" fill="none" stroke-width="1"/>
+    <circle r="1.5" cx="109" cy="192" fill="none" stroke-width="1"/>
+    <circle r="1.5" cx="67" cy="192" fill="none" stroke-width="1"/>
+</symbol>

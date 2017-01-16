@@ -23,8 +23,7 @@ console.log("executed...");
 let Fan1 = VB.Controls("Fan1");
 
 console.log("system status:" + Fan1.systemStatus);
-debugger
-Fan1.systemStatus();
+//Fan1.systemStatus();
 
 console.log("system status:" + Fan1.systemStatus);
 

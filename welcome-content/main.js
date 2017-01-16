@@ -8,6 +8,7 @@ app.use("/js", express.static(path.join(__dirname, "js")));
 app.use("/css", express.static(path.join(__dirname, "css")));
 app.use("/svg", express.static(path.join(__dirname, "svg")));
 app.use("/scenarios", express.static(path.join(__dirname, "scenarios")));
+app.use("/html", express.static(path.join(__dirname, "html")));
 //app.engine(".html", express_handlebars({defaultLayout: "single", extname: ".html"}));
 app.set("view engine", ".html");
 app.use(bodyParser.json());

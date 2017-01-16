@@ -1,106 +1,129 @@
 /**
-* introduce DASHBOARD as a global variable
-*/
-(function(){
-	//current user dashboard
-	function Dashboard() {
-		init();
+ * introduce DASHBOARD as a global variable
+ */
+(function() {
+    //current user dashboard
+    function Dashboard() {
+        init();
 
-		function init() {
-			subscribe();
-		}
+        function init() {
+            subscribe();
+        }
 
-		/**
-		* dashboard subscribe for some of events
-		*/
-		function subscribe() {
-			EVENTS
-			.filter(event => event.type === "UserAuthorized")
-			.subscribe(
-				event => {
-					let user = event.user;
+        function executeVisiobasCodeBlockOnce(visiobas, code) {
+            "use strict";
+            VISIOBAS_EXECUTER.execute(code);
+        }
 
-					//request user dashboard startpage
-					$.ajax({
-						type: "GET",
-						url: "/vbas/scada/user/getfile/" + user.token + "?path=" + user.userFiles[0].filePath,
-					}).done(function(response) {
-						//response.data
-						$('#content').html(response.data);
+        function executeVisiobasCodeBlockInterval(visiobas, code) {
+            let interval = parseInt($(visiobas).attr("interval"));
 
-					}).fail(function(jqXHR, textStatus, errorThrown) {
-						console.warn("loading user dashboard failed... " + errorThrown);
-					});
-				}
-			);
+            setInterval(function() {
+                "use strict";
+                VISIOBAS_EXECUTER.execute(code);
+            }, interval);
+        }
 
-			EVENTS
-			.filter(event => event.type === "SandboxAuthorized")
-			.subscribe(
-				event => {
-					let user = event.user;
+        function executeVisiobasCodeBlockEmbed(visiobas, code) {
+            let parent = $(visiobas).attr("parent");
 
-					$.ajax({
-						type: "GET",
-						url: user.userFiles[0].filePath
-					}).done((data, textStatus, jqXHR) => {
-						$("#content").html(jqXHR.responseText);
+            $("#" + parent).append(code);
+        }
 
-						$("visiobas").each(function(i, visiobas) {
-							var interval = $(visiobas).attr("interval");
-							var src = $(visiobas).attr("src");
+        function executeVisiobasCodeBlock(visiobas, code) {
+            let interval = $(visiobas).attr("interval");
+            let parent = $(visiobas).attr("parent");
 
-							if (!_.isEmpty(src)) {
-								//src point to source file, load it and execute
-								$.ajax({
-									type: "GET",
-									url: src,
-									dataType: "text"
-								}).done((code, textStatus, jqXHR) => {
+            if (!_.isEmpty(parent)) {
+                executeVisiobasCodeBlockEmbed(visiobas, code);
 
-//TODO code dublication
-									if (interval === "indefinite") {
-										//execute ony once
-										let code = visiobas.textContent;
-										VISIOBAS_EXECUTER.execute(code);
+            } else {
+                if (interval === "indefinite") {
+                    executeVisiobasCodeBlockOnce(visiobas, code);
 
-									} else {
-										//execute every interval ms
-										setInterval(function() {
-											"use strict";
-											VISIOBAS_EXECUTER.execute(code);
-										}, interval);
-									}
+                } else {
+                    executeVisiobasCodeBlockInterval(visiobas, code);
+                }
+            }
+        }
 
-								}).fail((jqXHR, textStatus, errorThrown) => {
-									console.warn("loading visiobas code failed..." + src);
-								});
+        function parseVisiobasCodeBlocks(visiobas) {
+            var src = $(visiobas).attr("src");
+console.log("parse visiobas code blocks src: " + src);
+            if (!_.isEmpty(src)) {
+                //src point to source file, load it and execute
+                $.ajax({
+                    type: "GET",
+                    url: src,
+                    dataType: "text"
+                }).done((code, textStatus, jqXHR) => {
+                    executeVisiobasCodeBlock(visiobas, code);
 
-							} else {
-								let code = visiobas.textContent;
-								if (interval === "indefinite") {
-									//execute ony once
-									VISIOBAS_EXECUTER.execute(code);
+                }).fail((jqXHR, textStatus, errorThrown) => {
+                    console.warn("loading visiobas code failed..." + src);
+                });
 
-								} else {
-									//execute every interval ms
-									setInterval(function() {
-										"use strict";
-										VISIOBAS_EXECUTER.execute(code);
-									}, interval);
-								}
-							}
+            } else {
+                let code = visiobas.textContent;
+                executeVisiobasCodeBlock(visiobas, code);
+            }
+        }
 
-						});
+        function userAuthorized(user) {
+            //request user dashboard startpage
+            $.ajax({
+                type: "GET",
+                url: "/vbas/scada/user/getfile/" + user.token + "?path=" + user.userFiles[0].filePath,
+            }).done(function(response) {
+                //response.data
+                $('#content').html(response.data);
 
-					}).fail((jqXHR, textStatus, errorThrown) => {
-						console.warn("loading sand box failed...");
-					});
-				}
-			);
-		}
-	}
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                console.warn("loading user dashboard failed... " + errorThrown);
+            });
+        }
 
-	//global variable of current authorized user
-	window.DASHBOARD = new Dashboard();
+        function sandbox(user) {
+            $.ajax({
+                type: "GET",
+                url: user.userFiles[0].filePath
+            }).done((data, textStatus, jqXHR) => {
+                $("#content").html(jqXHR.responseText);
+
+                $("visiobas").each(function(i, visiobas) {
+                    parseVisiobasCodeBlocks(visiobas);
+
+                });
+
+            }).fail((jqXHR, textStatus, errorThrown) => {
+                console.warn("loading sand box failed...");
+            });
+        }
+
+        /**
+         * dashboard subscribe for some of events
+         */
+        function subscribe() {
+            EVENTS
+                .filter(event => event.type === "UserAuthorized")
+                .subscribe(
+                    event => {
+                        let user = event.user;
+                        userAuthorized(user);
+                    }
+                );
+
+            EVENTS
+                .filter(event => event.type === "SandboxAuthorized")
+                .subscribe(
+                    event => {
+                        let user = event.user;
+                        sandbox(user);
+                    }
+                );
+        }
+    }
+
+    //global variable of current authorized user
+    window.DASHBOARD = new Dashboard();
 })();
