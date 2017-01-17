@@ -1,92 +1,106 @@
 /**
-* this is mock object only for test purpose
-*/
+ * this is mock object only for test purpose
+ */
 
 (function() {
-	/**
-	* scope of predefined method like "VB."
-	*/
-	function VisiobasPredefined() {
-		this.controls = {};
-	}
-
-	VisiobasPredefined.prototype.Read = function(id) {
-    if (_.isEmpty(id)) {
-      return;
+    /**
+     * scope of predefined method like "VB."
+     */
+    function VisiobasPredefined() {
+        this.controls = {};
     }
 
-		let addr = is.split(".");
-    let code = addr.pop();
-		let device = addr.join(".");
+    VisiobasPredefined.prototype.Read = function(id) {
+        if (_.isEmpty(id)) {
+            return;
+        }
 
-		let devices = {
-			"L960B17/TRUNK.SUB-24.Parameters.DI_2402": {
-				type: "analog"
-			},
-			"L960B17/TRUNK.SUB-24.Parameters.DA_2402": {
-				type: "binary"
-			}
-		}
+        //replace all special symbols into
+        //id = id.replace(/[:\s\/\.-]/g, "_");
 
-    if (code == 112) {
-			//there are system status
-      return $("#system-status").val();
+        let addr = id.split(".");
+        let code = addr.pop();
+        let device = addr.join(".");
 
-    } else if (code == 85) {
-			//there are value
-			let info = devices[device];
-			if (!_.isEmpty(info)) {
-				if (info.type == "analog") {
-					return $("#analog-value").val();
-				} else if (info.type == "binary") {
-					return $("#binary-value").val();
-				}
-			}
-		}
+        let devices = {
+            "L960B17/TRUNK.SUB-24.Parameters.DI_2402": {
+                type: "analog"
+            },
+            "L960B17/TRUNK.SUB-24.Parameters.DA_2402": {
+                type: "binary"
+            },
+            "L960B17/TRUNK.SUB-24.Parameters.DA_2403": {
+                type: "binary"
+            },
+            "L960B17/TRUNK.SUB-24.Parameters.DA_2404": {
+                type: "binary"
+            }
+        }
 
-		return Math.random() * 100;
-	}
+        if (code == 112) {
+            //there are system status
+            return $("#system-status").val();
 
-	VisiobasPredefined.prototype.Write = function(id, val) {
-		return true;
-	}
+        } else if (code == 85) {
+            //there are value
+            let info = devices[device];
+            if (!_.isEmpty(info)) {
+                if (device == "L960B17/TRUNK.SUB-24.Parameters.DA_2404") {
+                  return $("#binary-value-2").val();
+                }
 
-	VisiobasPredefined.prototype.Fan = function(id) {
-		console.log("creating new fan... " + id);
-		return Fan(id);
-	}
+                if (info.type == "analog") {
+                    return $("#analog-value").val();
+                } else if (info.type == "binary") {
+                    return $("#binary-value").val();
+                }
+            }
+        }
 
-	VisiobasPredefined.prototype.Controls = function(id) {
-		return this.controls[id];
-	};
+        return Math.random() * 100;
+    }
 
-  VisiobasPredefined.prototype.Attr = function(id, attr, value) {
-    $("#" + id).attr(attr, value);
-  }
+    VisiobasPredefined.prototype.Write = function(id, val) {
+        return true;
+    }
 
-  /**
-	* register some control
-	*/
-	VisiobasPredefined.prototype.Register = function(control) {
-		if (control.type === "fan") {
-			this.controls[control.id] = Fan(control)
-		}
-	}
+    VisiobasPredefined.prototype.Fan = function(id) {
+        console.log("creating new fan... " + id);
+        return Fan(id);
+    }
 
-	function VisiobasExecuter() {
-		var predefined = new VisiobasPredefined();
+    VisiobasPredefined.prototype.Controls = function(id) {
+        return this.controls[id];
+    };
 
-		return {
-			execute: execute
-		}
+    VisiobasPredefined.prototype.Attr = function(selector, attr, value) {
+        //$("#" + id).attr(attr, value);
+        $(selector).attr(attr, value);
+    }
 
-		/**
-		* @param {string} code to execute
-		*/
-		function execute(code) {
-			(new Function("var VB = this;" + code)).bind(predefined)();
-		}
-	}
+    /**
+     * register some control
+     */
+    VisiobasPredefined.prototype.Register = function(control) {
+        if (control.type === "fan") {
+            this.controls[control.id] = Fan(control)
+        }
+    }
 
-	window.VISIOBAS_EXECUTER = VisiobasExecuter();
+    function VisiobasExecuter() {
+        var predefined = new VisiobasPredefined();
+
+        return {
+            execute: execute
+        }
+
+        /**
+         * @param {string} code to execute
+         */
+        function execute(code) {
+            (new Function("var VB = this;" + code)).bind(predefined)();
+        }
+    }
+
+    window.VISIOBAS_EXECUTER = VisiobasExecuter();
 })();

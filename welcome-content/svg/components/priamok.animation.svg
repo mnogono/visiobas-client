@@ -1,0 +1,24 @@
+<g xmlns="http://www.w3.org/2000/svg" id="dn1" transform="scale(2,2) translate(0,20)">
+    <g class="amin" transform="translate(0 -3.11322) scale(1 1.03734)">
+        <animateTransform attributeName="transform" type="translate" from="0 -52.8" to="0 62" begin="0" dur="2s" repeatCount="indefinite" fill="freeze"/>
+        <animateTransform attributeName="transform" type="scale" from="1 1.6" to="1 0.3" begin="0" dur="2s" repeatCount="indefinite" additive="sum" fill="freeze"/>
+        <rect x="12" y="58" width="156" height="30" transform="" fill="#000066"/>
+    </g>
+    <g class="rama">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dn" x="0" y="0" width="200" height="100" class="nan"/>
+    </g>
+    <g class="pump">
+        <g class="pump1">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dnn" x="8" y="-32" width="72" height="120" class="normal"/>
+            <animate attr="p1" attributeName="display" from="none" to="block" begin="0" dur="1.5s" repeatCount="indefinite"/>
+        </g>
+        <g class="pump2">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="normal"/>
+            <animate attr="p2" attributeName="display" from="none" to="block" begin="0" dur="1.5s" repeatCount="indefinite"/>
+        </g>
+    </g>
+    <g class="error">
+        <animate attributeName="display" from="none" to="block" begin="0.5s" dur="2s" repeatCount="indefinite"/>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#atn" x="58" y="10" width="70" height="70" class="hide"/>
+    </g>
+</g>

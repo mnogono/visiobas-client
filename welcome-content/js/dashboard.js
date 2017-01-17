@@ -24,21 +24,25 @@
             }, interval);
         }
 
-        function executeVisiobasCodeBlockEmbed(visiobas, code) {
-            let parent = $(visiobas).attr("parent");
-
-            $("#" + parent).append(code);
+        function embeddedVisiobasSvg(svgText, parentNode) {
+            $(parentNode).html(svgText);
         }
 
-        function executeVisiobasCodeBlock(visiobas, code) {
-            let interval = $(visiobas).attr("interval");
+        function executeVisiobasCodeBlock(visiobas, code, parentNode, src) {
+            let interval = $(visiobas).attr("interval") || $(visiobas).attr("timer");
             let parent = $(visiobas).attr("parent");
+            let srcExt = "";
 
-            if (!_.isEmpty(parent)) {
-                executeVisiobasCodeBlockEmbed(visiobas, code);
+            if (!_.isEmpty(src)) {
+              srcExt =  src.split(".").pop();
+            }
+
+            if (srcExt.toLowerCase() == "svg") {
+                let _parentNode = _.isEmpty(parent) ? parentNode : $("#" + parent)[0];
+                embeddedVisiobasSvg(code, _parentNode);
 
             } else {
-                if (interval === "indefinite") {
+                if (interval === "indefinite" || interval === "-1") {
                     executeVisiobasCodeBlockOnce(visiobas, code);
 
                 } else {
@@ -48,16 +52,19 @@
         }
 
         function parseVisiobasCodeBlocks(visiobas) {
-            var src = $(visiobas).attr("src");
-console.log("parse visiobas code blocks src: " + src);
+            let parentNode = visiobas.parentNode;
+
+            let src = $(visiobas).attr("src");
+            let dataType = "text";
+
             if (!_.isEmpty(src)) {
                 //src point to source file, load it and execute
                 $.ajax({
                     type: "GET",
                     url: src,
-                    dataType: "text"
+                    dataType: dataType
                 }).done((code, textStatus, jqXHR) => {
-                    executeVisiobasCodeBlock(visiobas, code);
+                    executeVisiobasCodeBlock(visiobas, code, parentNode, src);
 
                 }).fail((jqXHR, textStatus, errorThrown) => {
                     console.warn("loading visiobas code failed..." + src);
@@ -65,7 +72,7 @@ console.log("parse visiobas code blocks src: " + src);
 
             } else {
                 let code = visiobas.textContent;
-                executeVisiobasCodeBlock(visiobas, code);
+                executeVisiobasCodeBlock(visiobas, code, parentNode, src);
             }
         }
 

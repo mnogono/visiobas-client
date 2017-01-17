@@ -1,20 +1,25 @@
-<div style="border: 1px solid;">
+<div style="border: 1px solid; height: 100px;">
     <div>
         <label for="system-status">System Status</label>
         <select id="system-status">
-      <option value="out_of_service">Out Of Service</option>
-      <option value="offline">Offline</option>
-      <option value="unreliable">Unreliable</option>
-      <option value="alarm">Alarm</option>
-      <option value="normal">Normal</option>
-    </select>
+          <option value="out_of_service">Out Of Service</option>
+          <option value="offline">Offline</option>
+          <option value="unreliable">Unreliable</option>
+          <option value="alarm">Alarm</option>
+          <option value="normal">Normal</option>
+      </select>
     </div>
     <div>
-        <label for="binary-value">Binary Value</label>
+        <label for="binary-value">Binary Value1</label>
         <select id="binary-value">
-      <option value="0">Off</option>
-      <option value="1">On</option>
-    </select>
+          <option value="0">Off</option>
+          <option value="1" selected>On</option>
+        </select>
+        <label for="binary-value">Binary Value2</label>
+        <select id="binary-value-2">
+          <option value="0">Off</option>
+          <option value="1" selected>On</option>
+        </select>
     </div>
     <div>
         <label for="analog-value">Analog Value</label>
@@ -22,7 +27,7 @@
     </div>
     <div>
         <label for="just-text">Just Text</label>
-        <intput id="just-text" type="text">Just Text></input>
+        <input id="just-text" type="text" value="Just Text" />
     </div>
 </div>
 
@@ -44,203 +49,149 @@
     		.prRed{stroke:#ff0000;}
     		.prGray{stroke:#A7A7A5;}
 
+        .outOfService{fill:#FFFF00; stroke:#FFFF00;}
+    		.overridden{fill:#FFFF00;  stroke:#FFFF00;}
+    		.offline{fill:#595959; stroke:#595959;}
+    		.nan{fill:#595959; stroke:#595959;}
+    		.unreliable{fill:#595959; stroke:#595959;}
+    		.normal{fill:#32CD32; stroke:#32CD32;}
+    		.off{fill:#595959; stroke:#595959;}
+    		.on{fill:#32CD32; stroke:#32CD32;}
+    		.alarm{fill:#ff0000; stroke:#ff0000;}
+
+        .hide{display:none;}
+
     		</style>
+    </defs>
 
-      <!-- Знак аварии -->
-      <!--<visiobas src="/svg/components/alarm.icon.svg" parent="svg-definition"/>-->
-      <desc>Знак аварии</desc>
-      <symbol id="atn" viewBox="0 0 100 100">
-          <radialGradient id="exclame">
-              <stop offset="0.25" stop-color="white"/>
-              <stop offset="0.75" stop-color="yellow"/>
-          </radialGradient>
-          <path d="M5 95  50 5  95 95z" style="stroke:#EF9248;stroke-width:5px;stroke-linejoin: round; fill:url(#exclame)"/>
-          <text x="50" y="80" style="font-family:arial;text-anchor: middle;font-size:52px; font-weight:700; fill:black;">!</text>
-      </symbol>
-
+    <defs>
       <!-- Вентилятор и лопасти -->
-      <!--<visiobas src="/svg/components/fan.svg" parent="svg-definition"/>-->
-      <desc>Лопостя вентилятора</desc>
-      <symbol id="vent" viewBox="0 0 125 125">
-          <path id="lop" d="M 50,50 C 50,0 92,-5 99,20 Q100 40 90 35 C80,35 79,30 50,50"/>
-          <use xlink:href="#lop" transform="rotate(90, 50,50)"/>
-          <use xlink:href="#lop" transform="rotate(180, 50,50)"/>
-          <use xlink:href="#lop" transform="rotate(270, 50,50)"/>
-          <circle cx="50" cy="50" r="15" style="fill:#2F2F2D; opacity:1; stroke:white; stroke-width:2"/>
-          <circle cx="50" cy="50" r="10" style="fill:none; stroke:white; stroke-width:2"/>
-      </symbol>
-      <desc>Вентилятор</desc>
-      <symbol id="iconFan">
-          <circle r="60" cy="60" cx="60"/>
-          <use xlink:href="#vent" height="100" width="100" x="20" y="20" fill="#000000"/>
-          <!-- Вставляем лопостя вентилятора -->
-      </symbol>
+      <visiobas src="/svg/components/fan.svg"/>
+    </defs>
 
+    <defs>
+      <!-- Знак аварии -->
+      <visiobas src="/svg/components/alarm.icon.svg"/>
+    </defs>
+
+    <defs>
       <!-- Приямок -->
-      <!--<visiobas src="/svg/components/priamok.svg" parent="svg-definition"/>-->
+      <visiobas src="/svg/components/priamok.svg"/>
+    </defs>
 
+    <defs>
       <!-- Насос -->
-      <!--<visiobas src="/svg/components/pump.svg" parent="svg-definition"/>-->
-
+      <visiobas src="/svg/components/pump.svg"/>
     </defs>
 
     <!-- Конец библиотеки -->
     <!-- Элементы на странице -->
     <!-- Вентилятор на странице -->
-    <g id="Fan1" cursor="pointer">
-    	<!--<visiobas src="/svg/components/fan.animation.svg" parent="Fan1"/>-->
-      <animateTransform id="Fan1_trans" attributeName="transform" begin="0" type="rotate" from="0 70 82.5" to="360 70 82.5" repeatCount="indefinite" restart="whenNotActive" dur="2s"/>
-      <!-- begin="0"/ begin="indefinite"  -->
-      <animate id="Fan1_fill" attributeName="fill" begin="0" dur="indefinite" values="#838383" calcMode="linear"/>
-      <use xlink:href="#iconFan" x="10" y="22.5"/>
+    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2402" cursor="pointer">
+    	<visiobas src="/svg/components/fan.animation.svg"/>
     </g>
 
-
-
-    <!-- Знак аварии -->
-    <g>
-        <animate
-    		attributeName="opacity"
-    		begin="0"
-    		from="0"
-    		to="1"
-    		dur="1s"
-    		repeatCount="indefinite"
-    		restart="whenNotActive" />
-    	<animate
-    		id="Alarm1_hide"
-    		attributeName="display"
-    		begin="indefinite"
-    		to="none"
-    		dur="0.1s"
-    		fill="freeze" /><!-- begin="0"/ begin="indefinite"  -->
-    	<use xlink:href="#atn" x="150" y="170" width="130" height="130" />
-    </g>
-
-    <!-- Текст -->
-    <g cursor="pointer">
-    	<text id="Text1" x="164" y="148" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#000000">Загрузка</text>
-    </g>
-
-    <!-- Обобщенная неисправность насоса. Или переполнение приямка-->
-    <g transform="translate(50,400) scale(4)">
-    	<g>
-    		<!-- эта анимация компенсирует смещение от трансформации -->
-    		<animateTransform id="compencation" xlink:href="#water" attributeName="transform"  type="translate" from="0 0" to="0 -160"
-    			begin="0" dur="2s" repeatCount="indefinite" fill="freeze" />
-    		<!-- эта анимация заставляет воду двигатся -->
-    		<animateTransform xlink:href="#water" attributeName="transform"  type="scale" from="1 1" to="1 2.8" begin="0" dur="2s"
-    			repeatCount="indefinite" additive="sum" fill="freeze" id="alarm" />
-    		<!-- это вода -->
-    		<rect id="water"  x="12"  y="58" width="156" height="30"  fill="#000066" />
-    	</g>
-    	<g>
-    		<!-- приямок рамка форма -->
-    		<use id="priyamok"  xlink:href="#dn"  x="0" y="0" width="200" height="100" class="prRed"  />
-    	</g>
-    	<g>
-    		<!-- насос первый имена id будут соответвовать названию насоса -->
-    		<use id="dn1" xlink:href="#dnn" x="8" y="-32"  width="72" height="120" class="dnGray" />
-    		<!-- насос второй -->
-    		<use id="dn2" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="dnGray" />
-    	</g>
-    	<g>
-    		<!-- анимация восклицательного знака для общей аварии -->
-    		<animate id="animation-alarm-all" xlink:href="#alarmAll"  attributeName="display" from="none" to="block" begin="alarm.begin + 1s" dur="2s" repeatCount="indefinite" />
-    		<!-- восклицательный знак общей аварии -->
-    		<use id="alarmAll" xlink:href="#atn" x="58" y="10" width="70" height="70" display="none" />
-    	</g>
-    </g>
-
-    <!-- насосы работа -->
-    <g transform="translate(50,800) scale(4)">
-    	<g>
-    		<!-- эта анимация компенсирует смещение от трансформации -->
-    		<animateTransform xlink:href="#water_3" attributeName="transform"  type="translate" from="0 -52.8" to="0 62"
-    			begin="0" dur="2s" repeatCount="indefinite" fill="freeze" />
-    		<!-- эта анимация заставляет воду двигатся -->
-    		<animateTransform xlink:href="#water_3" attributeName="transform"  type="scale" from="1 1.6" to="1 0.3" begin="0" dur="2s"
-    			repeatCount="indefinite" additive="sum" fill="freeze" id="alarm_3" />
-    		<!-- это вода -->
-    		<rect id="water_3"  x="12"  y="58" width="156" height="30"  fill="#000066" />
-    	</g>
-    	<g>
-    		<!-- приямок рамка форма -->
-    		<use id="priyamok_3"  xlink:href="#dn"  x="0" y="0" width="200" height="100"  class="prYellow" />
-    	</g>
-    	<g>
-    		<!-- насос первый имена id будут соответвовать названию насоса -->
-    		<use id="dn1_3" xlink:href="#dnn" x="8" y="-32"  width="72" height="120" class="dnGeen" />
-    		<!-- насос второй -->
-    		<use id="dn2_3" xlink:href="#dnn" x="72" y="-32" width="72" height="120" class="dnGeen" />
-    		<!-- авария первого насоса -->
-    		<animate xlink:href="#alarmdn1_3"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
-    		<use id="alarmdn1_3" xlink:href="#atn" x="25" y="20" width="70" height="70" display="none" />
-    		<!-- авария второго насоса -->
-    		<animate xlink:href="#alarmdn2_3"  attributeName="display" from="none" to="block" begin="0" dur="0" repeatCount="0" />
-    		<use id="alarmdn2_3" xlink:href="#atn" x="90" y="20" width="70" height="70" display="none" />
-    	</g>
-    	<g>
-    		<!-- анимация восклицательного знака для общей аварии -->
-    		<animate xlink:href="#alarmAll_3"  attributeName="display" from="none" to="block" begin="alarm_3.begin + 1s" dur="0s" repeatCount="0" />
-    		<!-- восклицательный знак общей аварии -->
-    		<use id="alarmAll_3" xlink:href="#atn" x="58" y="10" width="70" height="70" display="none" />
-    	</g>
-    </g>
-
-    <visiobas interval="indefinite">
-    	<![CDATA[
-      /*
-    	console.log("execute only once");
-
-    	var Fan0 = VB.Register({
-    	  type: "fan",
-    	  id: "Fan1",
-    	  addr: "L960B17/TRUNK.SUB-24.Parameters.DI_2402"
-    	});
-      */
-    	]]>
-    </visiobas>
-
-    <visiobas interval="1000">
+    <visiobas timer="100">
       <![CDATA[
-        /*
-        let systemStatus = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DI_2402.112");
+        let value = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2402.85");
 
-
-
-
-        if (systemStatus == "normal") {
-          VB.Attr("Fan1_trans", "dur", "2s");
-
-        } else if (systemStatus == "out_of_service") {
-          //pump
-          VB.Attr("priyamok", "class", "prRed");
-          VB.Attr("alarm", "repeatCount", "indefinite");
-          VB.Attr("alarm", "dur", "2s");
-          VB.Attr("compencation", "dur", "2s");
-          VB.Attr("compencation", "repeatCount", "indefinite");
-          VB.Attr("animation-alarm-all", "dur", "2s");
-          VB.Attr("animation-alarm-all", "repeatCount", "indefinite");
-
-          //fan
-          VB.Attr("Fan1_trans", "dur", "0");
-
-        } else if (systemStatus == "offline") {
-          //pump
-          VB.Attr("priyamok", "class", "prGray");
-          VB.Attr("alarm", "repeatCount", "0");
-          VB.Attr("alarm", "dur", "0");
-          VB.Attr("compencation", "dur", "0");
-          VB.Attr("compencation", "repeatCount", "0");
-          VB.Attr("animation-alarm-all", "dur", "0");
-          VB.Attr("animation-alarm-all", "repeatCount", "0");
-
-          //fun
-          VB.Attr("Fan1_trans", "dur", "0");
+        if (value == 0) {
+          VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] animateTransform", "dur", "0");
+          VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] animateTransform", "to", "0 70 82.5");
+        } else {
+          VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] animateTransform", "dur", "2s");
+          VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] animateTransform", "to", "360 70 82.5");
         }
-        */
+
+        let status = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2402.112");
+
+        switch (status) {
+          case "out_of_service": {
+            VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] use", "class", "outOfService");
+            break;
+          }
+          case "offline": {
+            VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] use", "class", "offline");
+            break;
+          }
+          case "unreliable": {
+            VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] use", "class", "unreliable");
+            break;
+          }
+          case "alarm": {
+            VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] use", "class", "alarm");
+            break;
+          }
+          case "normal": {
+            VB.Attr("[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402'] use", "class", "normal");
+            break;
+          }
+        }
       ]]>
     </visiobas>
+
+    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2403" transform="translate(0, 150)">
+      <visiobas src="/svg/components/priamok.animation.svg"/>
+    </g>
+
+    <visiobas interval="100">
+      <![CDATA[
+      let valuePump1 = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2403.85");
+      let valuePump2 = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2404.85");
+      let status = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2402.112");
+
+      console.log("valuePump1: " + valuePump1 + " valuePump2: " + valuePump2 + " status: " + status);
+
+      //water level animation
+      if (valuePump1 == 0 && valuePump2 == 0) {
+        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .amin animateTransform[type='translate']", "to", "0 -52.8");
+        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .amin animateTransform[type='scale']", "to", "1 1.6");
+      } else {
+        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .amin animateTransform[type='translate']", "to", "0 62");
+        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .amin animateTransform[type='scale']", "to", "1 0.3");
+      }
+
+      if (status == "normal") {
+        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .rama use", "class", "nan");
+
+        if (valuePump1 == 1) {
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 use", "class", "normal");
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 animate", "from", "none");
+        } else if (valuePump1 == 0) {
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 use", "class", "normal");
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 animate", "from", "block");
+        }
+
+        if (valuePump2 == 1) {
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 use", "class", "normal");
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 animate", "from", "none");
+        } else if (valuePump2 == 0) {
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 use", "class", "normal");
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 animate", "from", "block");
+        }
+
+      } else if (status == "out_of_service") {
+        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .rama use", "class", "nan");
+
+        if (valuePump1 == 1) {
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 use", "class", "outOfService");
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 animate", "from", "none");
+        } else if (valuePump1 == 0) {
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 use", "class", "outOfService");
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 animate", "from", "block");
+        }
+
+        if (valuePump2 == 1) {
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 use", "class", "outOfService");
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 animate", "from", "none");
+        } else if (valuePump2 == 0) {
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 use", "class", "outOfService");
+          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 animate", "from", "block");
+        }
+      }
+
+      ]]>
+    </visiobas>
+
   </svg>
 </div>
