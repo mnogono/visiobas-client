@@ -1,4 +1,4 @@
-<div style="border: 1px solid; height: 100px;">
+<div style="border: 1px solid; height:400px;">
     <div>
         <label for="system-status">System Status</label>
         <select id="system-status">
@@ -29,6 +29,26 @@
         <label for="just-text">Just Text</label>
         <input id="just-text" type="text" value="Just Text" />
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div>
+    <label for="binary-value">Binary Value1</label>
+    <select id="binary-value">
+      <option value="0">Off</option>
+      <option value="1">On</option>
+      <option value="1" selected>Default</option>
+    </select>
+  </div>
+
+
+  <div style="border: 1px solid black">
+    <input type="radio">Default addr.184 </input><label>25*C</label><br/>
+    <input type="radio">Set Point:</input><input type="text" value="" placeholder="Введите значение"/>
+  </div>
+
 </div>
 
 <div style="border: 1px solid;">
@@ -87,11 +107,27 @@
     <!-- Конец библиотеки -->
     <!-- Элементы на странице -->
     <!-- Вентилятор на странице -->
-    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2402" cursor="pointer">
+    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2402" translate="transform(100, 200)">
     	<visiobas src="/svg/components/fan.animation.svg"/>
     </g>
 
-    <visiobas timer="100">
+    <visibas interval="-1">
+      <![CDATA[
+        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
+        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
+        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
+        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
+        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
+        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
+      ]]>
+    </visiobas>
+
+    <visiobas interval="1000">
+      VB.Update();
+    </visiobas>
+
+    <!-- Fan .... -->
+    <visiobas interval="1000">
       <![CDATA[
         let value = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2402.85");
 
@@ -130,65 +166,14 @@
       ]]>
     </visiobas>
 
-    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2403" transform="translate(0, 150)">
+    <g id="SWP-05" transform="translate(0, 150)">
       <visiobas src="/svg/components/priamok.animation.svg"/>
     </g>
 
-    <visiobas interval="100">
+    <visiobas interval="1000" src="/scenarios/swp.js">
       <![CDATA[
-      let valuePump1 = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2403.85");
-      let valuePump2 = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2404.85");
-      let status = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2402.112");
 
-      console.log("valuePump1: " + valuePump1 + " valuePump2: " + valuePump2 + " status: " + status);
-
-      //water level animation
-      if (valuePump1 == 0 && valuePump2 == 0) {
-        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .amin animateTransform[type='translate']", "to", "0 -52.8");
-        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .amin animateTransform[type='scale']", "to", "1 1.6");
-      } else {
-        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .amin animateTransform[type='translate']", "to", "0 62");
-        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .amin animateTransform[type='scale']", "to", "1 0.3");
-      }
-
-      if (status == "normal") {
-        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .rama use", "class", "nan");
-
-        if (valuePump1 == 1) {
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 use", "class", "normal");
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 animate", "from", "none");
-        } else if (valuePump1 == 0) {
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 use", "class", "normal");
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 animate", "from", "block");
-        }
-
-        if (valuePump2 == 1) {
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 use", "class", "normal");
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 animate", "from", "none");
-        } else if (valuePump2 == 0) {
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 use", "class", "normal");
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 animate", "from", "block");
-        }
-
-      } else if (status == "out_of_service") {
-        VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .rama use", "class", "nan");
-
-        if (valuePump1 == 1) {
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 use", "class", "outOfService");
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 animate", "from", "none");
-        } else if (valuePump1 == 0) {
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 use", "class", "outOfService");
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump1 animate", "from", "block");
-        }
-
-        if (valuePump2 == 1) {
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 use", "class", "outOfService");
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 animate", "from", "none");
-        } else if (valuePump2 == 0) {
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 use", "class", "outOfService");
-          VB.Attr("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2403'] g .pump .pump2 animate", "from", "block");
-        }
-      }
+      UpdateSWP( "L960B17/TRUNK.SUB-24.Parameters.DA_2403" );
 
       ]]>
     </visiobas>

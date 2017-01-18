@@ -1,1 +1,12 @@
 node_modules
+app.js
+package.json
+README.md
+server.js
+TODO.txt
+
+doc/*
+welcome-content/main.js
+html/*
+router/*
+test/*

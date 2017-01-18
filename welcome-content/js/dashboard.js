@@ -81,21 +81,27 @@
             $.ajax({
                 type: "GET",
                 url: "/vbas/scada/user/getfile/" + user.token + "?path=" + user.userFiles[0].filePath,
-            }).done(function(response) {
-                //response.data
-                $('#content').html(response.data);
+                dataType: "json"
+            }).done((data, textStatus, jqXHR) => {
 
-            }).fail(function(jqXHR, textStatus, errorThrown) {
-                console.warn("loading user dashboard failed... " + errorThrown);
+                $("#content").html(data.data);
+
+                $("visiobas").each(function(i, visiobas) {
+                    parseVisiobasCodeBlocks(visiobas);
+                });
+
+            }).fail((jqXHR, textStatus, errorThrown) => {
+                console.warn("loading user svg failed...");
             });
         }
 
         function sandbox(user) {
             $.ajax({
                 type: "GET",
-                url: user.userFiles[0].filePath
+                url: user.userFiles[0].filePath,
+                dataType: "text"
             }).done((data, textStatus, jqXHR) => {
-                $("#content").html(jqXHR.responseText);
+                $("#content").html(data);
 
                 $("visiobas").each(function(i, visiobas) {
                     parseVisiobasCodeBlocks(visiobas);

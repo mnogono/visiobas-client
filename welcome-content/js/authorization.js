@@ -6,13 +6,13 @@
 $(document).ready(function() {
 	console.info("document ready...");
 
-	//$("#login").val("operator");
-	//$("#password").val("12345");
+	$("#login").val("operator");
+	$("#password").val("12345");
 
-	$("#login").val("sandbox");
+	//$("#login").val("sandbox");
 
 	//emulate to going into sandbox automatically
-	authorization();
+	//authorization();
 });
 
 function authorization() {
@@ -25,7 +25,7 @@ function authorization() {
 	if (login === "sandbox") {
 		sandboxAuthorization();
 	} else {
-		userAuthorization();
+		userAuthorization(login, password);
 	}
 
 
