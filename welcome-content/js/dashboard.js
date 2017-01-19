@@ -12,6 +12,7 @@
 
         function executeVisiobasCodeBlockOnce(visiobas, code) {
             "use strict";
+            debugger;
             VISIOBAS_EXECUTER.execute(code);
         }
 
@@ -20,7 +21,7 @@
 
             setInterval(function() {
                 "use strict";
-                VISIOBAS_EXECUTER.execute(code);
+                window.VISIOBAS_EXECUTER.execute(code);
             }, interval);
         }
 
@@ -64,6 +65,15 @@
                     url: src,
                     dataType: dataType
                 }).done((code, textStatus, jqXHR) => {
+                    //find all replace tags under visiobas, and make replace procedure
+
+                    $(visiobas).find("replace").each(function(i, e) {
+                      let find = $(e).attr("find");
+                      let replace = $(e).text();
+
+                      code = code.replace(new RegExp(find, "g"), replace);
+                    });
+
                     executeVisiobasCodeBlock(visiobas, code, parentNode, src);
 
                 }).fail((jqXHR, textStatus, errorThrown) => {

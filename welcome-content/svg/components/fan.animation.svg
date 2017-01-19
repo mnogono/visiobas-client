@@ -1,4 +1,8 @@
-<animateTransform attributeName="transform" begin="0" type="rotate" from="0 70 82.5" to="360 70 82.5" repeatCount="indefinite" restart="whenNotActive" dur="2s"/>
-<!-- begin="0"/ begin="indefinite"  -->
-<animate attributeName="fill" begin="0" dur="indefinite" values="#838383" calcMode="linear"/>
-<use xlink:href="#iconFan" x="10" y="22.5"/>
+<text id="Text1" x="0" y="200" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#000000">{%some-text-to-replace%}</text>
+<text id="Text1" x="0" y="250" style="font-size:54px; font-family:'CRYSTAL'; font-weight:normal;" fill="#000000">{%some-text-to-replace%}</text>
+<g>
+  <animateTransform attributeName="transform" begin="0" type="rotate" from="0 70 82.5" to="360 70 82.5" repeatCount="indefinite" restart="whenNotActive" dur="{%repeat-count-duration%}"/>
+  <!-- begin="0"/ begin="indefinite"  -->
+  <animate attributeName="fill" begin="0" dur="indefinite" values="#838383" calcMode="linear"/>
+  <use xlink:href="#iconFan" x="10" y="22.5"/>
+</g>

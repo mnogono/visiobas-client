@@ -107,24 +107,19 @@
     <!-- Конец библиотеки -->
     <!-- Элементы на странице -->
     <!-- Вентилятор на странице -->
-    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2402" translate="transform(100, 200)">
-    	<visiobas src="/svg/components/fan.animation.svg"/>
+    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2402" transform="translate(100, 0)">
+    	<visiobas src="/svg/components/fan.animation.svg">
+        <replace find="{%some-text-to-replace%}">Скорость вращения...</replace>
+        <replace find="{%repeat-count-duration%}">10s</replace>
+      </visiobas>
     </g>
 
-    <visibas interval="-1">
-      <![CDATA[
-        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
-        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
-        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
-        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
-        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
-        VB.Register("L960B17/TRUNK.SUB-24.Parameters.DA_2402");
-      ]]>
-    </visiobas>
-
-    <visiobas interval="1000">
-      VB.Update();
-    </visiobas>
+    <g addr="AHU-02" transform="translate(400, 0)">
+    	<visiobas src="/svg/components/fan.animation.svg">
+        <replace find="{%some-text-to-replace%}"></replace>
+        <replace find="{%repeat-count-duration%}">2s</replace>
+      </visiobas>
+    </g>
 
     <!-- Fan .... -->
     <visiobas interval="1000">
@@ -169,14 +164,6 @@
     <g id="SWP-05" transform="translate(0, 150)">
       <visiobas src="/svg/components/priamok.animation.svg"/>
     </g>
-
-    <visiobas interval="1000" src="/scenarios/swp.js">
-      <![CDATA[
-
-      UpdateSWP( "L960B17/TRUNK.SUB-24.Parameters.DA_2403" );
-
-      ]]>
-    </visiobas>
 
   </svg>
 </div>

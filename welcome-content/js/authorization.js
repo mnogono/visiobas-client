@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$("#login").val("operator");
 	$("#password").val("12345");
 
-	//$("#login").val("sandbox");
+	$("#login").val("sandbox");
 
 	//emulate to going into sandbox automatically
 	//authorization();
