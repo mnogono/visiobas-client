@@ -87,6 +87,42 @@
         }
     }
 
+    VisiobasPredefined.prototype.OnClick = function(selector, fn) {
+      $(selector).click(function(e) {
+        fn.call(window, e.currentTarget);
+      });
+    }
+
+    VisiobasPredefined.prototype.WindowBinary = function(src, e) {
+      $.ajax({
+          type: "GET",
+          url: src,
+          dataType: "html"
+      }).done((html, textStatus, jqXHR) => {
+          //some specific of binary window information
+          html = html.replace(new RegExp("{%title%}", "g"), e.id);
+
+          $(html).dialog({
+            buttons: [
+              {
+                text: "Save",
+                click: function() {
+                  $(this).dialog("close");
+                }
+              },
+              {
+                text: "Cancel",
+                click: function() {
+                  $(this).dialog("close");
+                }
+              }
+            ]
+          });
+      }).fail((jqXHR, textStatus, errorThrown) => {
+          console.warn("loading window binary failed..." + src);
+      });
+    }
+
     function VisiobasExecuter() {
         var predefined = new VisiobasPredefined();
 

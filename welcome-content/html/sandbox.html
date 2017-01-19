@@ -21,28 +21,6 @@
           <option value="1" selected>On</option>
         </select>
     </div>
-    <div>
-        <label for="analog-value">Analog Value</label>
-        <input id="analog-value" type="text"></input>
-    </div>
-    <div>
-        <label for="just-text">Just Text</label>
-        <input id="just-text" type="text" value="Just Text" />
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div>
-    <label for="binary-value">Binary Value1</label>
-    <select id="binary-value">
-      <option value="0">Off</option>
-      <option value="1">On</option>
-      <option value="1" selected>Default</option>
-    </select>
-  </div>
-
 
   <div style="border: 1px solid black">
     <input type="radio">Default addr.184 </input><label>25*C</label><br/>
@@ -107,19 +85,33 @@
     <!-- Конец библиотеки -->
     <!-- Элементы на странице -->
     <!-- Вентилятор на странице -->
-    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2402" transform="translate(100, 0)">
+    <g addr="L960B17/TRUNK.SUB-24.Parameters.DA_2402" id="AHU-01" transform="translate(100, 0)">
     	<visiobas src="/svg/components/fan.animation.svg">
         <replace find="{%some-text-to-replace%}">Скорость вращения...</replace>
         <replace find="{%repeat-count-duration%}">10s</replace>
+        <replace find="{%fan-id%}">L960B17/TRUNK.SUB-24.Parameters.DA_2402</replace>
       </visiobas>
     </g>
 
-    <g addr="AHU-02" transform="translate(400, 0)">
+    <g addr="AHU-02" id="AHU-02" transform="translate(400, 0)">
     	<visiobas src="/svg/components/fan.animation.svg">
         <replace find="{%some-text-to-replace%}"></replace>
         <replace find="{%repeat-count-duration%}">2s</replace>
+        <replace find="{%fan-id%}">AHU-02</replace>
       </visiobas>
     </g>
+
+    <visiobas>
+      <![CDATA[
+        VB.OnClick("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402']", function(e) {
+          VB.WindowBinary("/html/windows/window.binary.html", e);
+        });
+
+        VB.OnClick("g[addr='AHU-02']", function(e) {
+          VB.WindowBinary("/html/windows/window.binary.html", e);
+        });
+      ]]>
+    </visiobas>
 
     <!-- Fan .... -->
     <visiobas interval="1000">

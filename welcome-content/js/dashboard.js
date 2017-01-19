@@ -12,7 +12,6 @@
 
         function executeVisiobasCodeBlockOnce(visiobas, code) {
             "use strict";
-            debugger;
             VISIOBAS_EXECUTER.execute(code);
         }
 
@@ -30,7 +29,7 @@
         }
 
         function executeVisiobasCodeBlock(visiobas, code, parentNode, src) {
-            let interval = $(visiobas).attr("interval") || $(visiobas).attr("timer");
+            let interval = $(visiobas).attr("interval") || $(visiobas).attr("timer") || "-1";
             let parent = $(visiobas).attr("parent");
             let srcExt = "";
 
