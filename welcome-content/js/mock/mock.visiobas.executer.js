@@ -73,8 +73,14 @@
         return this.controls[id];
     };
 
+    /**
+    * set / get attr value
+    */
     VisiobasPredefined.prototype.Attr = function(selector, attr, value) {
-        //$("#" + id).attr(attr, value);
+        if (_.isUndefined(value)) {
+          return $(selector).attr(attr);
+        }
+
         $(selector).attr(attr, value);
     }
 
@@ -93,14 +99,23 @@
       });
     }
 
-    VisiobasPredefined.prototype.WindowBinary = function(src, e) {
+  /**
+  * @param {string} src
+  * @param {node} e
+  * @param {object} [replace]
+  */
+    VisiobasPredefined.prototype.WindowBinary = function(src, e, replace) {
       $.ajax({
           type: "GET",
           url: src,
           dataType: "html"
       }).done((html, textStatus, jqXHR) => {
           //some specific of binary window information
-          html = html.replace(new RegExp("{%title%}", "g"), e.id);
+          if (_.isObject(replace)) {
+            Object.keys(replace).forEach(function(key) {
+              html = html.replace(new RegExp(key, "g"), replace[key]);
+            });
+          };
 
           $(html).dialog({
             close: function() {
@@ -124,6 +139,23 @@
           });
       }).fail((jqXHR, textStatus, errorThrown) => {
           console.warn("loading window binary failed..." + src);
+      });
+    }
+
+    /**
+    * load some resource from server into some element by selector
+    * @param {string} src - server resource url
+    * @param {string} selector jquery selector to file parent where will be insertet resource
+    */
+    VisiobasPredefined.prototype.Load = function(src, selector) {
+      $.ajax({
+        type: "GET",
+        url: src,
+        dataType: "text"
+      }).done((data, textStatus, jqXHR) => {
+        $(selector).html(data);
+      }).fail((jqXHR, textStatus, errorThrown) => {
+        console.warn("loadin resource failed..." + src);
       });
     }
 

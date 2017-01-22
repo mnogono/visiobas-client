@@ -61,6 +61,7 @@ function authorization() {
 			userFiles: [{
 				description: "sandbox",
 				filePath: "html/sandbox.html"
+				//filePath: "svg/admin.svg"
 			}]
 		});
 

@@ -101,17 +101,22 @@
       </visiobas>
     </g>
 
-    <visiobas delay="5000">
+    <visiobas delay="1000">
       <![CDATA[
-
-      console.log("asdasd");
+        console.log("script delayd after 1000ms");
 
         VB.OnClick("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402']", function(e) {
-          VB.WindowBinary("/html/windows/window.binary.html", e);
+          VB.WindowBinary("/html/windows/window.binary.html", e, {
+            "{%title%}": "AHU-01",
+            "{%some-key%}": "Some key"
+          });
         });
 
         VB.OnClick("g[addr='AHU-02']", function(e) {
-          VB.WindowBinary("/html/windows/window.binary.html", e);
+          VB.WindowBinary("/html/windows/window.binary.html", e, {
+            "{%title%}": "AHU-02",
+            "{%some-key%}": "Some key"
+          });
         });
       ]]>
     </visiobas>
@@ -157,8 +162,12 @@
     </visiobas>
 
     <g id="SWP-05" transform="translate(0, 150)">
-      <visiobas src="/svg/components/priamok.animation.svg"/>
+      <!--<visiobas src="/svg/components/priamok.animation.svg"/>-->
     </g>
+
+    <visiobas delay="2000">
+      VB.Load("/svg/components/priamok.animation.svg", "#SWP-05");
+    </visiobas>
 
   </svg>
 </div>
