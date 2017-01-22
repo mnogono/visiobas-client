@@ -101,8 +101,11 @@
       </visiobas>
     </g>
 
-    <visiobas>
+    <visiobas delay="5000">
       <![CDATA[
+
+      console.log("asdasd");
+
         VB.OnClick("g[addr='L960B17/TRUNK.SUB-24.Parameters.DA_2402']", function(e) {
           VB.WindowBinary("/html/windows/window.binary.html", e);
         });
@@ -114,7 +117,7 @@
     </visiobas>
 
     <!-- Fan .... -->
-    <visiobas interval="1000">
+    <visiobas delay="2000" interval="1000">
       <![CDATA[
         let value = VB.Read("L960B17/TRUNK.SUB-24.Parameters.DA_2402.85");
 

@@ -106,6 +106,7 @@
             close: function() {
               $(this).dialog("destroy").remove();
             },
+            modal: true,
             buttons: [
               {
                 text: "Save",

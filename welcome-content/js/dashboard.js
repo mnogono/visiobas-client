@@ -12,16 +12,23 @@
 
         function executeVisiobasCodeBlockOnce(visiobas, code) {
             "use strict";
-            VISIOBAS_EXECUTER.execute(code);
+            let delay = parseInt($(visiobas).attr("delay") || "0");
+
+            setTimeout(function() {
+              VISIOBAS_EXECUTER.execute(code);
+            }, delay);
         }
 
         function executeVisiobasCodeBlockInterval(visiobas, code) {
             let interval = parseInt($(visiobas).attr("interval"));
+            let delay = parseInt($(visiobas).attr("delay") || "0");
 
-            setInterval(function() {
-                "use strict";
-                window.VISIOBAS_EXECUTER.execute(code);
-            }, interval);
+            setTimeout(function() {
+              setInterval(function() {
+                  "use strict";
+                  window.VISIOBAS_EXECUTER.execute(code);
+              }, interval);
+            }, delay);
         }
 
         function embeddedVisiobasSvg(svgText, parentNode) {
