@@ -103,6 +103,9 @@
           html = html.replace(new RegExp("{%title%}", "g"), e.id);
 
           $(html).dialog({
+            close: function() {
+              $(this).dialog("destroy").remove();
+            },
             buttons: [
               {
                 text: "Save",
